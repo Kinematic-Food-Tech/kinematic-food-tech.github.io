@@ -1,0 +1,578 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* header css start */
+
+header {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.12);
+}
+.header-main-wrap {
+    width: 90%;
+    margin: 0 auto;
+}
+.header-left-wrap, .header-right-wrap {
+    width:49%;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.header-left-wrap{
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.header-right-wrap {
+    text-align: right;
+    vertical-align: top;
+}
+.sign-in {
+    margin-top: 15px;
+}
+/* header css ends */
+
+/* banner div css starts */
+
+.banner-wrap {
+    width: 100%;
+    height: 820px;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 40px;
+    position: relative;
+    /* border-radius: 0% 0% 0% 70%; */
+}
+
+.banner-wrap .header-in .left, .banner-wrap .header-in .right {
+    display: inline-block;
+}
+.banner-wrap .header-in .left {
+    color: #F7931E;
+}
+.banner-wrap .header-in .left h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+}
+.banner-wrap .header-in .left h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+}
+
+.banner-wrap .header-in .right{
+    vertical-align: top;
+}
+
+.banner-wrap .header-in .right h2 {
+    margin: 0;
+    padding: 0;
+    color: #D23E5F;
+    font-size: 78px;
+    padding-top: 0px;
+    padding-left: 25px;
+}
+
+.banner-wrap .banner img {
+    width: 100%;
+    height: 820px;
+}
+
+.banner-wrap .parent {
+    position: absolute;
+    top: 0;
+    z-index: -99;    
+}
+.special-container {
+    transform: rotate(-4.14deg);
+    left: -72.03px;
+}
+.ban-in {
+    position: relative;
+}
+/* banner div css ends */
+
+/* how it works css starts */
+
+.how-it-works {
+    background: #fff;
+    margin-bottom: 40px;
+}
+.heading {
+    text-align: center;
+}
+.how-it-works .heading h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 35px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: #233A5A;
+}
+.how-it-works .heading h3 span {
+    color: #F7931E;
+}
+
+.how-it-works .parent {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 30px;
+
+}
+.how-it-works .parent .item {
+    float: left;
+    text-align: center;
+}
+
+.how-it-works .parent .item .icon img {
+    height: 70px;
+}
+.how-it-works .parent .item .icon {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.how-it-works .parent .item .reason {
+    margin-top: 15px;
+}
+.how-it-works .parent .item .reason h3 {
+    font-size: 21px;
+    color: #233a5a;
+    font-weight: 600;
+    letter-spacing: -0.576517px;
+}
+.how-it-works .parent .item .reason p {
+    font-size: 20px;
+    color: #233a5a;
+    font-style: normal;
+    font-weight: normal;
+    
+    line-height: 161.5%;
+}
+.how-it-works .action {
+    text-align: center;
+    padding-top: 30px;
+}
+
+/* how it works css ends */
+
+
+/* our menu div css starts */
+.our-menu {
+    background: #F6F6F6;
+    margin-bottom: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.our-menu .heading, .our-menu .description {
+    text-align: center;
+}
+.our-menu .heading h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 35px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: #233A5A;
+}
+.our-menu .heading h3 span {
+    color: #F7931E;
+}
+
+.our-menu .parent {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 50px;
+
+}
+.our-menu .parent .item {
+    text-align: center;
+}
+
+.our-menu .description p {
+   margin: 0;
+   padding: 0;
+   line-height: 1.47;   
+}
+
+.our-menu .parent .menu-item {
+    float: left;
+}
+
+.our-menu .parent .menu-item .desc h5{
+    color: #233A5A;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.our-menu .parent .menu-item .desc p {
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 147%;
+    text-align: center;
+    color: #233A5A;
+}
+
+.our-menu .parent .menu-item .item img {
+    width: 215px;
+    height: 215px;
+}
+
+.our-menu .action {
+    text-align: center;
+    padding-top: 30px;
+}
+/* our menu div css ends */
+
+/* Fresh and healthy div css starts */
+
+.fr-ha-co {
+    background: #fff;
+    margin-bottom: 40px;
+}
+.fr-ha-co .heading h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 35px;
+    color: #233A5A;
+}
+.fr-ha-co .heading h3 span {
+    color: #F7931E;
+}
+
+.fr-ha-co .parent {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 50px;
+
+}
+
+.fr-ha-co .parent {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 30px;
+
+}
+.fr-ha-co .parent .item {
+    float: left;
+    text-align: center;
+}
+
+.fr-ha-co .parent .item .icon img {
+    height: 70px;
+}
+.fr-ha-co .parent .item .icon {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.fr-ha-co .parent .item .reason {
+    margin-top: 15px;
+}
+.fr-ha-co .parent .item .reason h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 140%;
+    /* or 29px */
+
+    text-align: center;
+    letter-spacing: -0.576517px;
+    text-transform: uppercase;
+
+    color: #233A5A;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+.fr-ha-co .parent .item .reason p {
+    font-family: SF Pro Display;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1.2;
+    /* or 32px */
+
+    text-align: center;
+
+    color: #0F2340;
+    margin-top: 15px;
+    
+}
+.fr-ha-co .action {
+    text-align: center;
+    padding-top: 30px;
+}
+
+/* Fresh and healthy div css ends */
+
+/* faq css starts */
+
+.faq-wrap {
+    background: #F6F6F6;
+    margin-bottom: 40px;
+    padding-top: 40px;
+}
+.faq-wrap .heading {
+    text-align: center;
+}
+.faq-wrap .heading h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 35px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: #233A5A;
+}
+.faq-wrap .heading h3 span {
+    color: #F7931E;
+}
+
+.faq-wrap .parent {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.faq-wrap .parent .container-left, .faq-wrap .parent .container-right {
+    float: left;
+    width: 48%;
+    margin-right: 10px;
+}
+
+.faq-wrap .parent .question-wrapper {
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 22px;
+    color: #233A5A;
+}
+
+.faq-wrap .parent .question-wrapper .question {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.3;
+    color: #233A5A;
+    background-image: url('../images/down-arr.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.faq-wrap .parent .question-wrapper .answer {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 161.5%;
+    /* or 29px */
+    color: #0F2340;
+    padding-top: 20px;
+
+}
+
+/* faq css ends */
+
+/*why us css starts */
+
+.why-us {
+    margin-bottom: 40px;
+}
+.why-us .heading {
+    text-align: center;
+}
+.why-us .heading h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 35px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: #233A5A;
+}
+.why-us .heading h3 span {
+    color: #F7931E;
+}
+.why-us .parent {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.why-us .parent .item {
+    float: left;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.why-us .parent .item .icon {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+}
+
+.why-us .parent .item .icon img {
+    margin-top: 15px;
+}
+
+.why-us .parent .item .reason {
+    display: inline-block;
+    width: 67%;
+}
+
+.why-us .parent .item .reason h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 1.12;
+    /* or 29px */
+
+    text-align: center;
+    letter-spacing: -0.576517px;
+    text-transform: uppercase;
+
+    color: #233A5A;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+.why-us .parent .item .reason p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1.2;
+    /* or 32px */
+
+    text-align: center;
+
+    color: #0F2340;
+    margin-top: 15px;
+    
+}
+
+/* why us css ends */
+
+/* footer css starts */
+
+.footer-main-wrap {
+    background-color: #233862;
+    padding-top: 70px;
+}
+.footer-main-wrap .footer-in {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer-main-wrap .footer-in .f-logo img {
+    width: 253px;
+    height: 92px;
+}
+
+.footer-main-wrap .footer-in .f-logo, .footer-main-wrap .footer-in .f-social, .footer-main-wrap .footer-in .f-contact {
+    float: left;
+}
+
+.footer-main-wrap .footer-in .f-social h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.3;
+    /* identical to box height, or 21px */
+    color: #FFFFFF;
+}
+
+.footer-main-wrap .footer-in .f-social ul {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-main-wrap .footer-in .f-social ul li {
+    list-style: none;
+    float: left;
+    padding-right: 10px;
+}
+
+.footer-main-wrap .footer-in .f-contact h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.3;
+    /* identical to box height, or 21px */
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.footer-main-wrap .footer-in .f-contact p {
+    font-style: normal;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+
+.footer-out {
+    margin-top: 30px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.footer-out .sub-menu {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-out ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.footer-out ul li {
+    list-style: none;
+    float: left;
+    padding-right: 10px;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.footer-out ul li span {
+    background-color: #FFFFFF;
+    content: '';
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+    transform: rotate(40deg);
+    position: absolute;
+    top: 12px;
+    right: -3px;
+}
+
+
+
+.footer-out ul li a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+/* footer css ends */
+
+/* Copyright css starts */
+
+.copyright {
+    background-color: #1A2B4E;
+    color: #fff;
+    text-align: center;
+}
+.copyright p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+}
+/* Copyright css ends */
