@@ -369,6 +369,7 @@ header {
     /* or 29px */
     color: #0F2340;
     padding-top: 20px;
+    display: none;
 
 }
 
@@ -576,3 +577,9 @@ header {
     margin-bottom: 0;
 }
 /* Copyright css ends */
+
+.faq-wrap {
+    background-image: url('../images/bg-4.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
