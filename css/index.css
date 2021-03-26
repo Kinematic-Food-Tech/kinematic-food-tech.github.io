@@ -472,6 +472,11 @@ header {
     float: left;
 }
 
+.footer-main-wrap .footer-in .f-social {
+    margin: 0;
+    padding: 0;
+}
+
 .footer-main-wrap .footer-in .f-social h3 {
     font-style: normal;
     font-weight: 600;
@@ -582,4 +587,66 @@ header {
     background-image: url('../images/bg-4.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .faq-wrap {
+        background-size: 100% 40%;
+        background-position-y: 300px;
+    }
+    .faq-wrap .parent {
+        width: 80%;
+    }
+    .faq-wrap .parent .container-left, .faq-wrap .parent .container-right {
+        width: 100%;
+    }
+    .why-us .parent .item {
+        margin-bottom: 45px;
+    }
+    .why-us .parent .item .icon {
+        width: 100%;
+        display: block;
+        margin-bottom: 30px;
+    }
+    .why-us .parent .item .reason {
+        width: 100%;
+        display: block;
+    }
+    .f-social {
+        margin-top: 24px;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .f-social .links {
+        display: flex;
+        justify-content: center;
+    }
+    .f-contact {
+        text-align: center;
+
+    }
+    .footer-out .sub-menu {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .banner-wrap .header-in .left h3 {
+        font-size: 31px;
+    }
+    .banner-wrap .header-in .left h4 {
+        font-size: 17px;
+    }
+    .banner-wrap .header-in .right h2 {
+        font-size: 42px;
+    }
+    .header-in {
+        margin-top: 30px;
+    }
+    .banner-wrap .banner img, .banner-wrap {
+        height: 640px;
+    }
+    .banner-wrap .header-in .right h2 {
+        padding-left: 10px;
+    }
+
 }
