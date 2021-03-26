@@ -630,4 +630,23 @@ header {
         display: flex;
         justify-content: center;
     }
+    .banner-wrap .header-in .left h3 {
+        font-size: 31px;
+    }
+    .banner-wrap .header-in .left h4 {
+        font-size: 17px;
+    }
+    .banner-wrap .header-in .right h2 {
+        font-size: 42px;
+    }
+    .header-in {
+        margin-top: 30px;
+    }
+    .banner-wrap .banner img, .banner-wrap {
+        height: 640px;
+    }
+    .banner-wrap .header-in .right h2 {
+        padding-left: 10px;
+    }
+
 }
