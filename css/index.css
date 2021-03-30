@@ -218,8 +218,9 @@ header {
 }
 
 .our-menu .parent .menu-item .item img {
-    width: 215px;
-    height: 215px;
+    width: 100%;
+    height: auto;
+    max-width: 215px;
 }
 
 .our-menu .action {
@@ -396,7 +397,7 @@ header {
     color: #F7931E;
 }
 .why-us .parent {
-    width: 80%;
+    width: 82%;
     margin: 0 auto;
     padding-top: 50px;
 }
@@ -590,7 +591,7 @@ header {
     background-size: 100% 100%;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
     .faq-wrap {
         background-size: 100% 40%;
         background-position-y: 300px;
@@ -650,4 +651,13 @@ header {
         padding-left: 10px;
     }
 
+}
+
+@media only screen and (min-width:767px) and (max-width: 1000px) {
+    .why-us .parent {
+        width: 88%;
+    }
+    .faq-wrap .parent {
+        width: 80%;
+    }
 }
