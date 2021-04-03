@@ -88,6 +88,14 @@ footer {
     margin-right: 15px;
     width: 150px;
 }
+.f-input-medium {
+    font-size: 16px;
+    border-radius: 3px;
+    border: 1px solid #666;
+    padding: 6px 15px;
+    margin-right: 15px;
+    width: 200px;
+}
 
 .small-button {
     width: 40.2px;
@@ -145,3 +153,63 @@ footer {
 }
 
 /* login css ends */
+
+.sidebar {
+    float: left;
+    margin: 0;
+    padding: 0;
+    background: #2C3B41;
+    height: 100vh;
+}
+.dashboard-right {
+    float: left;
+}
+.dashboard-wrapper-in {
+    margin: 0;
+    padding: 0;
+}
+.user-wrapper {
+    background-color:#222D32;
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 3px;
+    font-size: 18px;
+    padding-left: 38px;
+}
+.sidebar ul {
+    margin: 0;
+}
+.sidebar ul li {
+    list-style-type: none;
+    list-style-image: none;
+    padding: 10px 0px;
+}
+.sidebar ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+}
+.add-users-wrap {
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.add-users-wrap .step h3 {
+    font-size: 18px;
+    padding: 15px;
+    padding-bottom: 10px;
+    color: #222D32;
+}
+.upload-wrap {
+    padding-left: 15px;
+}
+.add-user {
+    padding-left: 15px;
+}
+.add-rows {
+    text-decoration: underline !important;
+    color: #222D32;
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 15px;
+}
