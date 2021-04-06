@@ -1,23 +1,37 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./vendor/css/bootstrap.min.css" type="text/css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="./vendor/css/bootstrap.min.css"
+            type="text/css"
+        />
         <link rel="stylesheet" href="./css/index.css" type="text/css" />
-        <link rel="icon" href="./images/favicon.jpeg" type="image" sizes="16x16">
+        <link
+            rel="icon"
+            href="./images/favicon.jpeg"
+            type="image"
+            sizes="16x16"
+        />
         <script type="text/javascript" src="./vendor/js/jquery.js"></script>
         <script type="text/javascript" src="./vendor/js/popper.js"></script>
         <script type="text/javascript" src="./vendor/js/bootstrap.js"></script>
+        <script type="text/javascript" src="./js/dashboard.js"></script>
     </head>
     <body>
         <header>
             <div class="header-main-wrap">
                 <div class="header-left-wrap">
                     <div class="logo">
-                        <img class="img img-responsive" src="./images/logo.png" alt="logo" />
+                        <img
+                            class="img img-responsive"
+                            src="./images/logo.png"
+                            alt="logo"
+                        />
                     </div>
                 </div>
-                <div class="header-right-wrap ">
+                <div class="header-right-wrap">
                     <div class="sign-in">
                         <!-- <button class="small-button-transparent">Signin</button> -->
                     </div>
@@ -25,67 +39,117 @@
             </div>
         </header>
         <section>
-            <div class="dashboard-wrapper-in col-sm-12 col-md-12 col-lg-12 col-xs-12">
+            <div
+                class="dashboard-wrapper-in col-sm-12 col-md-12 col-lg-12 col-xs-12"
+            >
                 <div class="sidebar col-sm-2 col-md-2 col-lg-2 col-xs-12">
                     <div class="user-wrapper">
                         <p>Welcome Test User</p>
                     </div>
                     <ul class="items">
                         <li>
-                            <a href="#">Add Users</a>
+                            <a
+                                href="#"
+                                class="nav-menu-side active"
+                                name="addUser"
+                                >Add Users</a
+                            >
                         </li>
                         <li>
-                            <a href="#">Analytics</a>
+                            <a href="#" class="nav-menu-side" name="analytics"
+                                >Analytics</a
+                            >
                         </li>
                         <li>
-                            <a href="#">Ordering</a>
+                            <a href="#" class="nav-menu-side" name="ordering"
+                                >Ordering</a
+                            >
                         </li>
                         <li>
-                            <a href="#">Approve Users</a>
+                            <a
+                                href="#"
+                                class="nav-menu-side"
+                                name="approveUsers"
+                                >Approve Users</a
+                            >
                         </li>
                     </ul>
                 </div>
-                <div class="dashboard-right col-sm-10 col-md-10 col-xs-12 col-lg-10">
-                    <div class="dashboard-step-1 add-users-wrap">
+                <div
+                    class="dashboard-right col-sm-10 col-md-10 col-xs-12 col-lg-10"
+                >
+                    <div
+                        class="dashboard-step-1 d-s active-step add-users-wrap"
+                    >
                         <div class="step">
                             <h3>Bulk Upload CSV/Excel</h3>
                             <div class="upload-wrap">
-                                <input type="file" name="uploadFile" value="Upload" />
+                                <input
+                                    type="file"
+                                    name="uploadFile"
+                                    value="Upload"
+                                />
                             </div>
                         </div>
                         <div class="step">
                             <h3>Add User</h3>
                             <div class="add-user">
-                                <input type="text" name="Name" placeholder="Name" class="f-input-medium" value="" />
-                                <input type="email" name="Name" placeholder="Email" class="f-input-medium" value="" />
-                                <input type="text" name="Name" placeholder="Mobile" class="f-input-medium" value="" />
+                                <input
+                                    type="text"
+                                    name="Name"
+                                    placeholder="Name"
+                                    class="f-input-medium"
+                                    value=""
+                                />
+                                <input
+                                    type="email"
+                                    name="Name"
+                                    placeholder="Email"
+                                    class="f-input-medium"
+                                    value=""
+                                />
+                                <input
+                                    type="text"
+                                    name="Name"
+                                    placeholder="Mobile"
+                                    class="f-input-medium"
+                                    value=""
+                                />
                                 <button class="small-button">Go</button>
                             </div>
                             <a href="#" class="add-rows">Add more Rows</a>
                         </div>
                     </div>
-                    <div class="dashboard-step-2 analytics-wrap">
-
-                    </div>
-                    <div class="dashboard-step-3 ordering-wrap">
+                    <div class="dashboard-step-2 d-s analytics-wrap"></div>
+                    <div class="dashboard-step-3 d-s ordering-wrap">
                         <div class="header">
                             <h3>Ordering(Admin Flow)</h3>
                         </div>
                         <div class="order-wrap">
-                            <div class="tiles-wrap col-sm-12 col-md-12 col-lg-12 col-xs-12">
-                                <div class="tile col-sm-2 col-md-2 col-lg-2 col-xs-4">
+                            <div
+                                class="tiles-wrap col-sm-12 col-md-12 col-lg-12 col-xs-12"
+                            >
+                                <div
+                                    class="tile col-sm-2 col-md-2 col-lg-2 col-xs-4"
+                                >
                                     <h3>Office 1</h3>
                                     <p>bagmane tech park</p>
                                 </div>
-                                <div class="tile col-sm-2 col-md-2 col-lg-2 col-xs-4 ">
+                                <div
+                                    class="tile col-sm-2 col-md-2 col-lg-2 col-xs-4"
+                                >
                                     <h3>Office 1</h3>
                                     <p>bagmane tech park</p>
                                 </div>
-                                <div class="tile col-sm-2 col-md-2 col-lg-2 col-xs-4">
+                                <div
+                                    class="tile col-sm-2 col-md-2 col-lg-2 col-xs-4"
+                                >
                                     <h3>Office 1</h3>
                                     <p>bagmane tech park</p>
                                 </div>
-                                <div class="tile col-sm-2 col-md-2 col-lg-2 col-xs-4">
+                                <div
+                                    class="tile col-sm-2 col-md-2 col-lg-2 col-xs-4"
+                                >
                                     <h3>Office 1</h3>
                                     <p>bagmane tech park</p>
                                 </div>
@@ -95,32 +159,72 @@
                         <div class="upcoming-orders">
                             <h3>Upcoming Orders</h3>
                             <div class="order-wrap">
-                                <div class="order col-sm-12 col-md-12 col-lg-12 col-xs-12">
-                                    <div class="top col-sm-12 col-md-12 col-lg-12 col-xs-12 ">
-                                        <div class="f-l dish-name col-sm-3 col-md-3 col-lg-3 col-xs-3">North Indian Veg</div>
-                                        <div class="f-l quantity col-sm-3 col-md-3 col-lg-3 col-xs-3">20 Meals</div>
-                                        <div class="f-l action-wrap col-sm-5 col-md-5 col-lg-5 col-xs-6">
-                                            <button class="small-button">Edit</button>
-                                            <button class="small-button">Delete</button>
+                                <div
+                                    class="order col-sm-12 col-md-12 col-lg-12 col-xs-12"
+                                >
+                                    <div
+                                        class="top col-sm-12 col-md-12 col-lg-12 col-xs-12"
+                                    >
+                                        <div
+                                            class="f-l dish-name col-sm-3 col-md-3 col-lg-3 col-xs-3"
+                                        >
+                                            North Indian Veg
+                                        </div>
+                                        <div
+                                            class="f-l quantity col-sm-3 col-md-3 col-lg-3 col-xs-3"
+                                        >
+                                            20 Meals
+                                        </div>
+                                        <div
+                                            class="f-l action-wrap col-sm-5 col-md-5 col-lg-5 col-xs-6"
+                                        >
+                                            <button class="small-button">
+                                                Edit
+                                            </button>
+                                            <button class="small-button">
+                                                Delete
+                                            </button>
                                         </div>
                                         <div class="clr"></div>
                                     </div>
-                                    <div class="down col-sm-4 col-md-4 col-lg-4 col-xs-12">
+                                    <div
+                                        class="down col-sm-4 col-md-4 col-lg-4 col-xs-12"
+                                    >
                                         <p>20/3/2021 - Lunch</p>
                                     </div>
                                     <div class="clr"></div>
                                 </div>
-                                <div class="order order col-sm-12 col-md-12 col-lg-12 col-xs-12">
-                                    <div class="top col-sm-12 col-md-12 col-lg-12 col-xs-12 ">
-                                        <div class="f-l dish-name col-sm-3 col-md-3 col-lg-3 col-xs-3">North Indian Veg</div>
-                                        <div class="f-l quantity col-sm-3 col-md-3 col-lg-3 col-xs-3">20 Meals</div>
-                                        <div class="f-l action-wrap col-sm-5 col-md-5 col-lg-5 col-xs-6">
-                                            <button class="small-button">Edit</button>
-                                            <button class="small-button">Delete</button>
+                                <div
+                                    class="order order col-sm-12 col-md-12 col-lg-12 col-xs-12"
+                                >
+                                    <div
+                                        class="top col-sm-12 col-md-12 col-lg-12 col-xs-12"
+                                    >
+                                        <div
+                                            class="f-l dish-name col-sm-3 col-md-3 col-lg-3 col-xs-3"
+                                        >
+                                            North Indian Veg
+                                        </div>
+                                        <div
+                                            class="f-l quantity col-sm-3 col-md-3 col-lg-3 col-xs-3"
+                                        >
+                                            20 Meals
+                                        </div>
+                                        <div
+                                            class="f-l action-wrap col-sm-5 col-md-5 col-lg-5 col-xs-6"
+                                        >
+                                            <button class="small-button">
+                                                Edit
+                                            </button>
+                                            <button class="small-button">
+                                                Delete
+                                            </button>
                                         </div>
                                         <div class="clr"></div>
                                     </div>
-                                    <div class="down col-sm-4 col-md-4 col-lg-4 col-xs-12">
+                                    <div
+                                        class="down col-sm-4 col-md-4 col-lg-4 col-xs-12"
+                                    >
                                         <p>20/3/2021 - Lunch</p>
                                     </div>
                                     <div class="clr"></div>
@@ -132,15 +236,31 @@
                             <div class="new-order-act">
                                 <button class="med-button">New Order</button>
                             </div>
-                            <div class="new-order-wrap col-sm-12 col-md-12 col-lg-12 col-xs-12">
-                                <div class="date f-l col-sm-2 col-md-2 col-lg-2 col-xs-3">
+                            <div
+                                class="new-order-wrap col-sm-12 col-md-12 col-lg-12 col-xs-12"
+                            >
+                                <div
+                                    class="date f-l col-sm-2 col-md-2 col-lg-2 col-xs-3"
+                                >
                                     <input type="date" />
                                 </div>
-                                <div class="plan f-l col-sm-4 col-md-4 col-lg-4 col-xs-6">
-                                    <input type="text" class="f-input-small" placeholder="Plan"/>
-                                    <input type="text" class="f-input-small" placeholder="Quantity"/>
+                                <div
+                                    class="plan f-l col-sm-4 col-md-4 col-lg-4 col-xs-6"
+                                >
+                                    <input
+                                        type="text"
+                                        class="f-input-small"
+                                        placeholder="Plan"
+                                    />
+                                    <input
+                                        type="text"
+                                        class="f-input-small"
+                                        placeholder="Quantity"
+                                    />
                                 </div>
-                                <div class="office-wrap f-l col-sm-2 col-md-2 col-lg-2 col-xs-3">
+                                <div
+                                    class="office-wrap f-l col-sm-2 col-md-2 col-lg-2 col-xs-3"
+                                >
                                     <select class="office-wrap small-select">
                                         <option>BTM</option>
                                         <option>BTM</option>
@@ -148,20 +268,40 @@
                                         <option>BTM</option>
                                     </select>
                                 </div>
-                                <div class="action f-l col-sm-2 col-md-2 col-lg-2 col-xs-3">
-                                    <button class="small-button">Add to Order</button>
+                                <div
+                                    class="action f-l col-sm-2 col-md-2 col-lg-2 col-xs-3"
+                                >
+                                    <button class="small-button">
+                                        Add to Order
+                                    </button>
                                 </div>
                                 <div class="clr"></div>
                             </div>
-                            <div class="new-order-wrap col-sm-12 col-md-12 col-lg-12 col-xs-12">
-                                <div class="date f-l col-sm-2 col-md-2 col-lg-2 col-xs-3">
+                            <div
+                                class="new-order-wrap col-sm-12 col-md-12 col-lg-12 col-xs-12"
+                            >
+                                <div
+                                    class="date f-l col-sm-2 col-md-2 col-lg-2 col-xs-3"
+                                >
                                     <input type="date" />
                                 </div>
-                                <div class="plan f-l col-sm-4 col-md-4 col-lg-4 col-xs-6">
-                                    <input type="text" class="f-input-small" placeholder="Plan"/>
-                                    <input type="text" class="f-input-small" placeholder="Quantity"/>
+                                <div
+                                    class="plan f-l col-sm-4 col-md-4 col-lg-4 col-xs-6"
+                                >
+                                    <input
+                                        type="text"
+                                        class="f-input-small"
+                                        placeholder="Plan"
+                                    />
+                                    <input
+                                        type="text"
+                                        class="f-input-small"
+                                        placeholder="Quantity"
+                                    />
                                 </div>
-                                <div class="office-wrap f-l col-sm-2 col-md-2 col-lg-2 col-xs-3">
+                                <div
+                                    class="office-wrap f-l col-sm-2 col-md-2 col-lg-2 col-xs-3"
+                                >
                                     <select class="office-wrap small-select">
                                         <option>BTM</option>
                                         <option>BTM</option>
@@ -169,20 +309,40 @@
                                         <option>BTM</option>
                                     </select>
                                 </div>
-                                <div class="action f-l col-sm-2 col-md-2 col-lg-2 col-xs-3">
-                                    <button class="small-button">Add to Order</button>
+                                <div
+                                    class="action f-l col-sm-2 col-md-2 col-lg-2 col-xs-3"
+                                >
+                                    <button class="small-button">
+                                        Add to Order
+                                    </button>
                                 </div>
                                 <div class="clr"></div>
                             </div>
-                            <div class="new-order-wrap col-sm-12 col-md-12 col-lg-12 col-xs-12">
-                                <div class="date f-l col-sm-2 col-md-2 col-lg-2 col-xs-3">
+                            <div
+                                class="new-order-wrap col-sm-12 col-md-12 col-lg-12 col-xs-12"
+                            >
+                                <div
+                                    class="date f-l col-sm-2 col-md-2 col-lg-2 col-xs-3"
+                                >
                                     <input type="date" />
                                 </div>
-                                <div class="plan f-l col-sm-4 col-md-4 col-lg-4 col-xs-6">
-                                    <input type="text" class="f-input-small" placeholder="Plan"/>
-                                    <input type="text" class="f-input-small" placeholder="Quantity"/>
+                                <div
+                                    class="plan f-l col-sm-4 col-md-4 col-lg-4 col-xs-6"
+                                >
+                                    <input
+                                        type="text"
+                                        class="f-input-small"
+                                        placeholder="Plan"
+                                    />
+                                    <input
+                                        type="text"
+                                        class="f-input-small"
+                                        placeholder="Quantity"
+                                    />
                                 </div>
-                                <div class="office-wrap f-l col-sm-2 col-md-2 col-lg-2 col-xs-3">
+                                <div
+                                    class="office-wrap f-l col-sm-2 col-md-2 col-lg-2 col-xs-3"
+                                >
                                     <select class="office-wrap small-select">
                                         <option>BTM</option>
                                         <option>BTM</option>
@@ -190,55 +350,83 @@
                                         <option>BTM</option>
                                     </select>
                                 </div>
-                                <div class="action f-l col-sm-2 col-md-2 col-lg-2 col-xs-3">
-                                    <button class="small-button">Add to Order</button>
+                                <div
+                                    class="action f-l col-sm-2 col-md-2 col-lg-2 col-xs-3"
+                                >
+                                    <button class="small-button">
+                                        Add to Order
+                                    </button>
                                 </div>
                                 <div class="clr"></div>
                             </div>
                             <div class="clr"></div>
                         </div>
                     </div>
-                    <div class="dashboard-step-4 approve-users-wrap">
+                    <div class="dashboard-step-4 d-s approve-users-wrap">
                         <div class="header">
-                            <h3>Approve Users</h3>                            
+                            <h3>Approve Users</h3>
                         </div>
                         <div class="approve-wrap">
                             <div class="approve-header">
-                                <div class="item f-l col-sm-2 col-md-2 col-lg-2 col-xs-2">
+                                <div
+                                    class="item f-l col-sm-2 col-md-2 col-lg-2 col-xs-2"
+                                >
                                     Name
                                 </div>
-                                <div class="item f-l col-sm-2 col-md-2 col-lg-2 col-xs-2">
+                                <div
+                                    class="item f-l col-sm-2 col-md-2 col-lg-2 col-xs-2"
+                                >
                                     Email
                                 </div>
-                                <div class="item f-l col-sm-2 col-md-2 col-lg-2 col-xs-2">
+                                <div
+                                    class="item f-l col-sm-2 col-md-2 col-lg-2 col-xs-2"
+                                >
                                     Phone
                                 </div>
-                                <div class="item f-l col-sm-2 col-md-2 col-lg-2 col-xs-2">
+                                <div
+                                    class="item f-l col-sm-2 col-md-2 col-lg-2 col-xs-2"
+                                >
                                     Office
                                 </div>
-                                <div class="item f-l col-sm-2 col-md-2 col-lg-2 col-xs-1">
+                                <div
+                                    class="item f-l col-sm-2 col-md-2 col-lg-2 col-xs-1"
+                                >
                                     <input type="checkbox" />
                                 </div>
                                 <div class="clr"></div>
                             </div>
                             <div class="approve-item">
-                                <div class="item f-l col-sm-2 col-md-2 col-lg-2 col-xs-2">
+                                <div
+                                    class="item f-l col-sm-2 col-md-2 col-lg-2 col-xs-2"
+                                >
                                     Test
                                 </div>
-                                <div class="item f-l col-sm-2 col-md-2 col-lg-2 col-xs-2">
+                                <div
+                                    class="item f-l col-sm-2 col-md-2 col-lg-2 col-xs-2"
+                                >
                                     Test
                                 </div>
-                                <div class="item f-l col-sm-2 col-md-2 col-lg-2 col-xs-2">
+                                <div
+                                    class="item f-l col-sm-2 col-md-2 col-lg-2 col-xs-2"
+                                >
                                     Test
                                 </div>
-                                <div class="item f-l col-sm-2 col-md-2 col-lg-2 col-xs-2">
+                                <div
+                                    class="item f-l col-sm-2 col-md-2 col-lg-2 col-xs-2"
+                                >
                                     Test
                                 </div>
-                                <div class="item f-l col-sm-1 col-md-1 col-lg-1 col-xs-1">
+                                <div
+                                    class="item f-l col-sm-1 col-md-1 col-lg-1 col-xs-1"
+                                >
                                     <input type="checkbox" />
                                 </div>
-                                <div class="item f-l col-sm-2 col-md-2 col-lg-2 col-xs-3">
-                                    <button class="small-button">Approve</button>
+                                <div
+                                    class="item f-l col-sm-2 col-md-2 col-lg-2 col-xs-3"
+                                >
+                                    <button class="small-button">
+                                        Approve
+                                    </button>
                                 </div>
                                 <div class="clr"></div>
                             </div>
