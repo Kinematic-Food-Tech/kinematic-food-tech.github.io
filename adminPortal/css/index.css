@@ -216,15 +216,15 @@ footer {
 .upload-wrap {
     padding-left: 15px;
 }
-.add-user {
-    padding-left: 15px;
-}
+
 .add-rows {
     text-decoration: underline !important;
     color: #222d32;
     font-size: 18px;
     font-weight: 500;
     padding-left: 15px;
+    display: block;
+    margin-top: 20px;
 }
 
 /* dashboard step 3 */
@@ -238,6 +238,7 @@ footer {
 }
 .order-wrap .tiles-wrap {
     overflow-y: auto;
+    padding-left: 0;
 }
 .order-wrap .tiles-wrap .tile {
     float: left;
@@ -249,11 +250,11 @@ footer {
 .order-wrap .tiles-wrap .tile h3 {
     margin-top: 15px;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 14px;
 }
 .order-wrap .tiles-wrap .tile p {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 12px;
 }
 .f-l {
     float: left;
@@ -316,13 +317,7 @@ footer {
 .approve-users-wrap {
     padding-left: 20px;
 }
-.approve-users-wrap .approve-header .item {
-    font-weight: 500;
-    font-size: 18px;
-}
-.approve-users-wrap .approve-header {
-    margin-bottom: 15px;
-}
+
 .approve-users-wrap .action-wrap-app {
     width: 60%;
     margin: 20px auto;
@@ -431,4 +426,71 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .new-order-wrap {
     border-bottom: 1px solid #ddd;
     display: flex;
+}
+.approve-header,
+.approve-item {
+    display: flex;
+    width: 70%;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    font-weight: 500;
+}
+.approve-header .item,
+.approve-item .item {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 25px;
+    width: 20%;
+    border-right: 1px solid #ddd;
+}
+.approve-header .item-ch,
+.approve-item .item-ch {
+    width: 3%;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px;
+    border-right: 1px solid #ddd;
+    padding-right: 22px;
+}
+.approve-header .item-bt,
+.approve-item .item-bt {
+    width: 17%;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 25px;
+    border-right: 1px solid #ddd;
+}
+.approve-item .small-button {
+    width: 100%;
+    padding: 0;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.action-wrap-app .reject {
+    background: linear-gradient(90deg, #cc4001 0%, #cc4002 93.32%);
+}
+.add-user-header,
+.add-user {
+    display: flex;
+    width: 70%;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    font-weight: 500;
+}
+.add-user-header .item,
+.add-user .item {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 25px;
+    border-right: 1px solid #ddd;
+    width: 25%;
+}
+.add-user .item input {
+    width: 100%;
+    margin-right: 0;
+}
+
+.add-user .item button {
+    margin-bottom: 0;
 }
