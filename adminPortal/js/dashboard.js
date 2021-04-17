@@ -3,6 +3,9 @@ var dashboard = {
         $(".nav-menu-side").on("click", function (event) {
             dashboard.handleSteps(event);
         });
+        $(".login-mobile").on("click", function (event) {
+            dashboard.handleMobileLogin();
+        });
     },
     handleSteps: function (event) {
         var element = $(event.currentTarget)[0];
@@ -32,6 +35,9 @@ var dashboard = {
                 $(".dashboard-step-4").addClass("active-step");
                 break;
         }
+    },
+    handleMobileLogin: function () {
+        $("#otp-modal").modal("show");
     },
 };
 
