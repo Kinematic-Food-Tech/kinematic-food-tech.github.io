@@ -102,11 +102,11 @@ footer {
 }
 
 .small-button {
-    width: 40.2px;
-    height: 38.86px;
+    width: 36px;
+    height: 35px;
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 15px;
     line-height: 91%;
     text-align: center;
     letter-spacing: -0.576517px;
@@ -210,20 +210,21 @@ footer {
     font-size: 18px;
     padding: 15px;
     padding-bottom: 10px;
+    padding-left: 0;
     color: #222d32;
 }
 .upload-wrap {
     padding-left: 15px;
 }
-.add-user {
-    padding-left: 15px;
-}
+
 .add-rows {
     text-decoration: underline !important;
     color: #222d32;
     font-size: 18px;
     font-weight: 500;
     padding-left: 15px;
+    display: block;
+    margin-top: 20px;
 }
 
 /* dashboard step 3 */
@@ -237,6 +238,7 @@ footer {
 }
 .order-wrap .tiles-wrap {
     overflow-y: auto;
+    padding-left: 0;
 }
 .order-wrap .tiles-wrap .tile {
     float: left;
@@ -248,18 +250,19 @@ footer {
 .order-wrap .tiles-wrap .tile h3 {
     margin-top: 15px;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 14px;
 }
 .order-wrap .tiles-wrap .tile p {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 12px;
 }
 .f-l {
     float: left;
 }
 .dish-name,
 .quantity,
-.down {
+.down,
+.action-wrap {
     font-size: 18px;
     font-weight: 500;
     text-align: left;
@@ -278,23 +281,30 @@ footer {
 .down {
     font-size: 16px;
 }
-.new-order-act {
-    padding-left: 20px;
-}
+
 .new-order-act button {
-    width: 200px;
+    width: 130px;
+    height: 40px;
 }
 .new-order-wrap .date input {
     width: 100%;
     height: 38px;
+}
+.new-order-wrap input,
+.new-order-wrap select {
+    margin-top: 20px;
+}
+.new-order-wrap button {
+    margin-top: 10px;
 }
 .new-order-wrap .small-button,
 .approve-item .small-button {
     width: auto;
     padding: 0px 10px;
 }
-.new-order-wrap .plan .f-input-small {
-    width: 45%;
+.new-order-wrap .plan .f-input-small,
+.new-order-wrap .quantity .f-input-small {
+    width: 100%;
     margin-right: 2%;
 }
 .new-order-wrap select {
@@ -307,13 +317,7 @@ footer {
 .approve-users-wrap {
     padding-left: 20px;
 }
-.approve-users-wrap .approve-header .item {
-    font-weight: 500;
-    font-size: 18px;
-}
-.approve-users-wrap .approve-header {
-    margin-bottom: 15px;
-}
+
 .approve-users-wrap .action-wrap-app {
     width: 60%;
     margin: 20px auto;
@@ -344,4 +348,149 @@ footer {
 .d-s {
     overflow-x: auto;
     max-height: 80vh;
+}
+.otp-wrap {
+    padding-left: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+.logo img {
+    height: 30px;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: transparent;
+    bottom: 0;
+    color: transparent;
+    cursor: pointer;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto;
+}
+.order-wrap .order,
+.new-order-wrap {
+    border: 1px solid #ddd;
+    width: 70%;
+}
+.order-wrap .header {
+    border-bottom: 1px solid #ddd;
+}
+.order-wrap .order .top {
+    display: flex;
+}
+.order .dish-name {
+    width: 30%;
+}
+.order .dish-name,
+.order .quantity,
+.order .action-wrap {
+    width: 30%;
+    padding: 12px 25px;
+}
+.order .quantity {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+.order .f-l {
+    font-size: 14px;
+    font-weight: 500;
+}
+.order .f-l p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+.order .dish-name {
+    width: 30%;
+}
+.date,
+.plan,
+.quantity,
+.office-wrap,
+.action {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 25px;
+    width: 20%;
+    border-right: 1px solid #ddd;
+}
+.new-order-wrap .small-button {
+    width: 100%;
+    height: 50px;
+    line-height: 20px;
+}
+.new-order-wrap {
+    border-bottom: 1px solid #ddd;
+    display: flex;
+}
+.approve-header,
+.approve-item {
+    display: flex;
+    width: 70%;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    font-weight: 500;
+}
+.approve-header .item,
+.approve-item .item {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 25px;
+    width: 20%;
+    border-right: 1px solid #ddd;
+}
+.approve-header .item-ch,
+.approve-item .item-ch {
+    width: 3%;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 10px;
+    border-right: 1px solid #ddd;
+    padding-right: 22px;
+}
+.approve-header .item-bt,
+.approve-item .item-bt {
+    width: 17%;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 25px;
+    border-right: 1px solid #ddd;
+}
+.approve-item .small-button {
+    width: 100%;
+    padding: 0;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.action-wrap-app .reject {
+    background: linear-gradient(90deg, #cc4001 0%, #cc4002 93.32%);
+}
+.add-user-header,
+.add-user {
+    display: flex;
+    width: 70%;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    font-weight: 500;
+}
+.add-user-header .item,
+.add-user .item {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 25px;
+    border-right: 1px solid #ddd;
+    width: 25%;
+}
+.add-user .item input {
+    width: 100%;
+    margin-right: 0;
+}
+
+.add-user .item button {
+    margin-bottom: 0;
 }
