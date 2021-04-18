@@ -1,4 +1,5 @@
 var dashboard = {
+    edit: false,
     init: function () {
         $(".nav-menu-side").on("click", function (event) {
             dashboard.handleSteps(event);
@@ -11,6 +12,12 @@ var dashboard = {
         });
         $(".add-user .item .small-button").on("click", function (event) {
             dashboard.saveUserToDB(event);
+        });
+        $(".edit-order-meals").on("click", function (event) {
+            dashboard.editOrderMeals(event);
+        });
+        $(".delete-order-meals").on("click", function (event) {
+            dashboard.deleteOrderMeals(event);
         });
     },
     handleSteps: function (event) {
@@ -91,6 +98,40 @@ var dashboard = {
 
         // use this data to do ajax call
         console.log("userData", userData);
+    },
+    removeReadOnly: function (inputArray) {
+        for (var i = 0; i < inputArray.length; i++) {
+            $(inputArray[i]).removeClass("show-only");
+            $(inputArray[i]).removeAttr("readonly");
+        }
+    },
+    addReadOnly: function (inputArray) {
+        for (var i = 0; i < inputArray.length; i++) {
+            $(inputArray[i]).addClass("show-only");
+            $(inputArray[i]).attr("readonly", true);
+        }
+    },
+    editOrderMeals: function (event) {
+        var element = $(event.currentTarget)[0];
+        const input = $(element).parent().parent().find("input");
+        if (this.edit === false) {
+            this.removeReadOnly(input);
+            this.edit = true;
+        } else {
+            this.edit = false;
+            this.addReadOnly(input);
+        }
+    },
+    deleteOrderMeals: function (event) {
+        var element = $(event.currentTarget)[0];
+        const parent = $(element).parent().parent();
+        const input = $(element).parent().parent().find("input");
+        const mealOrder = {
+            mealName: $(input[0]).val(),
+            mealQuantity: $(input[1]).val(),
+        };
+        parent.remove();
+        // make delete call
     },
 };
 

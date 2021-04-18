@@ -494,3 +494,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .add-user .item button {
     margin-bottom: 0;
 }
+.show-only {
+    border: none;
+}
