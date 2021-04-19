@@ -19,6 +19,12 @@ var dashboard = {
         $(".delete-order-meals").on("click", function (event) {
             dashboard.deleteOrderMeals(event);
         });
+        $(".new-order-act button").on("click", function (event) {
+            dashboard.addNewOrders(event);
+        });
+        $(".new-order-wrap .action button").on("click", function (event) {
+            dashboard.saveAdditionalOrders(event);
+        });
     },
     handleSteps: function (event) {
         var element = $(event.currentTarget)[0];
@@ -132,6 +138,59 @@ var dashboard = {
         };
         parent.remove();
         // make delete call
+    },
+    addNewOrders: function (event) {
+        const element = $(event.currentTarget)[0];
+
+        const addRows =
+            '<div class="new-order-wrap">' +
+            '                                <div class="date f-l">' +
+            '                                    <input type="date" />' +
+            "                                </div>" +
+            '                                <div class="plan f-l">' +
+            "                                    <input" +
+            '                                        type="text"' +
+            '                                        class="f-input-small"' +
+            '                                        placeholder="Plan"' +
+            "                                    />" +
+            "                                </div>" +
+            '                                <div class="quantity f-l">' +
+            "                                    <input" +
+            '                                        type="text"' +
+            '                                        class="f-input-small"' +
+            '                                        placeholder="Quantity"' +
+            "                                    />" +
+            "                                </div>" +
+            '                                <div class="office-wrap f-l">' +
+            '                                    <select class="small-select">' +
+            "                                        <option>BTM</option>" +
+            "                                        <option>BTM</option>" +
+            "                                        <option>BTM</option>" +
+            "                                        <option>BTM</option>" +
+            "                                    </select>" +
+            "                                </div>" +
+            '                                <div class="action f-l">' +
+            '                                    <button class="small-button">' +
+            "                                        Add to Order" +
+            "                                    </button>" +
+            "                                </div>" +
+            '                                <div class="clr"></div>' +
+            "                            </div>";
+
+        $(".new-order").append(addRows);
+    },
+    saveAdditionalOrders: function (event) {
+        var element = $(event.currentTarget)[0];
+        const parent = $(element).parent().parent();
+        const input = $(element).parent().parent().find("input");
+        const addOrder = {
+            date: $(input[0]).val(),
+            plan: $(input[1]).val(),
+            quantity: $(input[2]).val(),
+            office: $(element).parent().parent().find("select").val(),
+        };
+        console.log(addOrder);
+        //make api call to save this order
     },
 };
 
