@@ -269,7 +269,8 @@ footer {
 }
 .order,
 .top,
-.new-order-wrap {
+.new-order-wrap,
+.new-order-header {
     padding: 0;
     margin: 0;
 }
@@ -371,7 +372,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     width: auto;
 }
 .order-wrap .order,
-.new-order-wrap {
+.new-order-wrap,
+.new-order-header {
     border: 1px solid #ddd;
     width: 70%;
 }
@@ -493,4 +495,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .add-user .item button {
     margin-bottom: 0;
+}
+.show-only {
+    border: none;
 }
