@@ -33,6 +33,12 @@ var dashboard = {
                 .not(this)
                 .prop("checked", this.checked);
         });
+        $(".approve-all-users").on("click", function (event) {
+            dashboard.approveAllUsers(event);
+        });
+        $(".approve-all-users").on("click", function (event) {
+            dashboard.rejectAllUsers(event);
+        });
     },
     handleSteps: function (event) {
         var element = $(event.currentTarget)[0];
@@ -210,6 +216,25 @@ var dashboard = {
             // push this data to api that will come from a data attribute from front end from the button
             // inside data attribute need the user object which then needs to be pushed to api
         }
+    },
+    getUserCollection: function (userData) {
+        let userObjectCollection = [];
+        for (let i = 0; i < userData.length; i++) {
+            userObjectCollection.push(
+                $(userData[i]).find("button").data("user")
+            );
+        }
+        return userObjectCollection;
+    },
+    approveAllUsers: function (event) {
+        let userObjectCollection = this.getUserCollection($(".approve-item"));
+        console.log(userObjectCollection);
+        // use this object to push in php
+    },
+    rejectAllUsers: function (event) {
+        let userObjectCollection = this.getUserCollection($(".approve-item"));
+        console.log(userObjectCollection);
+        // use this object to push in php
     },
 };
 
