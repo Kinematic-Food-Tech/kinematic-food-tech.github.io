@@ -28,6 +28,11 @@ var dashboard = {
         $(".approve-user-button").on("click", function (event) {
             dashboard.approveUserOne(event);
         });
+        $(".approve-header input").on("change", function (event) {
+            $(".approve-item input:checkbox")
+                .not(this)
+                .prop("checked", this.checked);
+        });
     },
     handleSteps: function (event) {
         var element = $(event.currentTarget)[0];
