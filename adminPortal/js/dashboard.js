@@ -25,6 +25,20 @@ var dashboard = {
         $(".new-order-wrap .action button").on("click", function (event) {
             dashboard.saveAdditionalOrders(event);
         });
+        $(".approve-user-button").on("click", function (event) {
+            dashboard.approveUserOne(event);
+        });
+        $(".approve-header input").on("change", function (event) {
+            $(".approve-item input:checkbox")
+                .not(this)
+                .prop("checked", this.checked);
+        });
+        $(".approve-all-users").on("click", function (event) {
+            dashboard.approveAllUsers(event);
+        });
+        $(".approve-all-users").on("click", function (event) {
+            dashboard.rejectAllUsers(event);
+        });
     },
     handleSteps: function (event) {
         var element = $(event.currentTarget)[0];
@@ -191,6 +205,36 @@ var dashboard = {
         };
         console.log(addOrder);
         //make api call to save this order
+    },
+    approveUserOne: function (event) {
+        var element = $(event.currentTarget)[0];
+        const parent = $(element).parent().parent();
+        console.log(parent.find("input")[0]);
+        if (parent.find("input")[0].checked) {
+            let data = $(element).data("user");
+            console.log(data);
+            // push this data to api that will come from a data attribute from front end from the button
+            // inside data attribute need the user object which then needs to be pushed to api
+        }
+    },
+    getUserCollection: function (userData) {
+        let userObjectCollection = [];
+        for (let i = 0; i < userData.length; i++) {
+            userObjectCollection.push(
+                $(userData[i]).find("button").data("user")
+            );
+        }
+        return userObjectCollection;
+    },
+    approveAllUsers: function (event) {
+        let userObjectCollection = this.getUserCollection($(".approve-item"));
+        console.log(userObjectCollection);
+        // use this object to push in php
+    },
+    rejectAllUsers: function (event) {
+        let userObjectCollection = this.getUserCollection($(".approve-item"));
+        console.log(userObjectCollection);
+        // use this object to push in php
     },
 };
 
