@@ -530,3 +530,46 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     margin-top: 0;
     padding-top: 0;
 }
+.chart-container {
+    height: 500px !important;
+    width: 500px !important;
+    margin-left: 30px;
+}
+.analytics-main-wrap {
+    width: 70%;
+    border: 1px solid #ddd;
+}
+.invoice-item {
+    width: 100%;
+    border: 1px solid #ddd;
+    display: flex;
+}
+.invoice-item .time-frame {
+    width: 40%;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 25px;
+    border-right: 1px solid #ddd;
+}
+.invoice-item .time-frame a {
+    text-decoration: underline;
+    color: #000;
+}
+.invoice-item .meal-count {
+    width: 30%;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 25px;
+    border-right: 1px solid #ddd;
+}
+.invoice-item .action {
+    width: 30%;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 25px;
+    border-right: 1px solid #ddd;
+}
+.invoice-item .action button {
+    width: auto;
+    margin-bottom: 0;
+}
