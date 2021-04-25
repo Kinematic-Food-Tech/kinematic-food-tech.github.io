@@ -17,6 +17,12 @@
         <script type="text/javascript" src="./vendor/js/jquery.js"></script>
         <script type="text/javascript" src="./vendor/js/popper.js"></script>
         <script type="text/javascript" src="./vendor/js/bootstrap.js"></script>
+        <script type="text/javascript" src="./vendor/js/chart.min.js"></script>
+        <script type="text/javascript" src="./vendor/js/chart.esm.js"></script>
+        <script
+            type="text/javascript"
+            src="./vendor/js/helpers.esm.min.js"
+        ></script>
         <script type="text/javascript" src="./js/dashboard.js"></script>
     </head>
     <body>
@@ -138,7 +144,31 @@
                             <a href="#" class="add-rows">Add more Rows</a>
                         </div>
                     </div>
-                    <div class="dashboard-step-2 d-s analytics-wrap"></div>
+                    <div class="dashboard-step-2 d-s analytics-wrap">
+                        <div class="analytics-main-wrap">
+                            <div class="chart-container">
+                                <canvas
+                                    id="billingChart"
+                                    width="400"
+                                    height="400"
+                                ></canvas>
+                            </div>
+                            <div class="invoice-links-wrapper">
+                                <div class="invoice-item">
+                                    <div class="time-frame f-l">
+                                        <a href="#">March 1 - March 7</a>
+                                    </div>
+                                    <div class="meal-count f-l">10000</div>
+                                    <div class="action f-l">
+                                        <button class="small-button">
+                                            Download
+                                        </button>
+                                    </div>
+                                    <div class="clr"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="dashboard-step-3 d-s ordering-wrap">
                         <div class="header">
                             <h3>Ordering(Admin Flow)</h3>
