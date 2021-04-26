@@ -388,14 +388,18 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .order-wrap .order,
 .new-order-wrap,
 .new-order-header {
-    border: 1px solid #ddd;
+    border-bottom: 1.5px solid #bbb;
     width: 70%;
 }
 .order-wrap .header {
-    border-bottom: 1px solid #ddd;
+    background: #b9e3fb;
 }
-.order-wrap .order .top {
+.order-wrap .order .odd {
     display: flex;
+}
+.order-wrap .order .even {
+    display: flex;
+    background: #f4f4f4;
 }
 .order .dish-name {
     width: 30%;
@@ -407,8 +411,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     padding: 12px 25px;
 }
 .order .quantity {
-    border-left: 1px solid #ddd;
-    border-right: 1px solid #ddd;
 }
 .order .f-l {
     font-size: 14px;
@@ -432,7 +434,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     font-weight: 500;
     padding: 12px 25px;
     width: 20%;
-    border-right: 1px solid #ddd;
 }
 .new-order-wrap .small-button {
     width: 100%;
