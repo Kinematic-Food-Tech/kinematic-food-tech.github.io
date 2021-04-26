@@ -71,12 +71,14 @@ button.med-button {
     width:30px; 
     background:white; 
     border-radius:50%;
-    float: middle;
+    float: left;
 }
 
 .google_button_style_txt{
     float:middle;padding-top: 4px;
     padding-left: 5%;
+    float:left;
+    margin-left:10%;
 }
 
 .clr {
