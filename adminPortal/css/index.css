@@ -60,11 +60,23 @@ button.med-button {
     letter-spacing: -0.576517px;
     color: #ffffff;
     text-transform: uppercase;
-    background: linear-gradient(90deg, #1e8ff7 0%, #24b3f1 93.32%);
-    box-shadow: 0px 15px 25px rgba(28, 87, 174, 0.33);
+    background: linear-gradient(90deg, #4285f4 0%, #2098F6 93.32%);
+    box-shadow: 0px 5px 5px rgba(28, 87, 174, 0.43);
     border-radius: 5px;
     border: none !important;
     margin-bottom: 20px;
+}
+
+.google_button_style_img{
+    width:30px; 
+    background:white; 
+    border-radius:50%;
+    float: middle;
+}
+
+.google_button_style_txt{
+    float:middle;padding-top: 4px;
+    padding-left: 5%;
 }
 
 .clr {
@@ -112,8 +124,8 @@ footer {
     letter-spacing: -0.576517px;
     color: #ffffff;
     text-transform: uppercase;
-    background: linear-gradient(90deg, #1e8ff7 0%, #24b3f1 93.32%);
-    box-shadow: 0px 15px 25px rgb(28 87 174 / 33%);
+    background: linear-gradient(90deg, #4285f4 0%, #2098F6 93.32%);
+    box-shadow: 0px 5px 5px rgba(28, 87, 174, 0.43);
     border-radius: 5px;
     border: none !important;
     margin-bottom: 20px;
@@ -137,6 +149,8 @@ footer {
     border: 1px solid #ccc;
     padding: 20px;
     margin-right: 20px;
+    background:#eff1f3e6;
+    box-shadow: 0px 8px 10px rgba(28, 87, 174, 0.43);
 }
 .action,
 .separator {
