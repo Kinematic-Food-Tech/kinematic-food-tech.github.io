@@ -310,8 +310,10 @@ footer {
     height: 40px;
 }
 .new-order-wrap .date input {
-    width: 100%;
+    width: 130px;
     height: 38px;
+    padding: 0;
+    margin-left: -20px;
 }
 .new-order-wrap input,
 .new-order-wrap select {
@@ -381,7 +383,7 @@ footer {
 .logo img {
     height: 30px;
 }
-input[type="date"]::-webkit-calendar-picker-indicator {
+.add-date::-webkit-calendar-picker-indicator {
     background: transparent;
     bottom: 0;
     color: transparent;
