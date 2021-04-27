@@ -39,6 +39,9 @@ var dashboard = {
         $(".approve-all-users").on("click", function (event) {
             dashboard.rejectAllUsers(event);
         });
+        $(".order-wrap .tiles-wrap .tile").on("click", function (event) {
+            dashboard.fetchOrderByOffice(event);
+        });
     },
     handleSteps: function (event) {
         var element = $(event.currentTarget)[0];
@@ -281,6 +284,15 @@ var dashboard = {
                 },
             },
         });
+    },
+    fetchOrderByOffice: function (event) {
+        var name = $(event.currentTarget)[0].dataset.name;
+        $(".order-wrap .tiles-wrap .tile").removeClass("activeTile");
+        $(event.currentTarget).addClass("activeTile");
+        $(".order").addClass("hidden");
+        $("." + name)
+            .removeClass("hidden")
+            .addClass("active");
     },
 };
 
