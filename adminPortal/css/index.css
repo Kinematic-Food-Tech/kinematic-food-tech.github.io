@@ -3,7 +3,9 @@ body {
     padding: 0;
     overflow: hidden;
 }
-
+.hidden {
+    display: none;
+}
 /* header css start */
 
 header {
@@ -60,25 +62,26 @@ button.med-button {
     letter-spacing: -0.576517px;
     color: #ffffff;
     //text-transform: uppercase;
-    background: #3c8dbc;//linear-gradient(90deg, #4285f4 0%, #2098F6 93.32%);
+    background: #3c8dbc; //linear-gradient(90deg, #4285f4 0%, #2098F6 93.32%);
     //box-shadow: 0px 5px 5px rgba(28, 87, 174, 0.43);
     border-radius: 5px;
     border: none !important;
     margin-bottom: 20px;
 }
 
-.google_button_style_img{
-    width:30px; 
-    background:white; 
-    border-radius:50%;
+.google_button_style_img {
+    width: 30px;
+    background: white;
+    border-radius: 50%;
     float: left;
 }
 
-.google_button_style_txt{
-    float:middle;padding-top: 4px;
+.google_button_style_txt {
+    float: middle;
+    padding-top: 4px;
     padding-left: 5%;
-    float:left;
-    margin-left:10%;
+    float: left;
+    margin-left: 10%;
 }
 
 .clr {
@@ -126,7 +129,7 @@ footer {
     letter-spacing: -0.576517px;
     color: #ffffff;
     //text-transform: uppercase;
-    background: #3c8dbc;//linear-gradient(90deg, #4285f4 0%, #2098F6 93.32%);
+    background: #3c8dbc; //linear-gradient(90deg, #4285f4 0%, #2098F6 93.32%);
     //box-shadow: 0px 5px 5px rgba(28, 87, 174, 0.43);
     border-radius: 5px;
     border: none !important;
@@ -151,7 +154,7 @@ footer {
     border: 1px solid #ccc;
     padding: 20px;
     margin-right: 20px;
-    background:#eff1f3e6;
+    background: #eff1f3e6;
     box-shadow: 0px 8px 10px rgba(28, 87, 174, 0.43);
 }
 .action,
@@ -261,10 +264,12 @@ footer {
     border: 1px solid #ccc;
     margin-right: 20px;
     border-radius: 5px;
-    background: #f4f4f4;
+    background: #fafafa;
+    cursor: pointer;
+    height: 150px;
 }
 .order-wrap .tiles-wrap .tile h3 {
-    margin-top: 15px;
+    margin-top: 35%;
     font-weight: 500;
     font-size: 14px;
 }
@@ -284,6 +289,7 @@ footer {
     text-align: left;
 }
 .order,
+.order-header,
 .top,
 .new-order-wrap,
 .new-order-header {
@@ -304,8 +310,10 @@ footer {
     height: 40px;
 }
 .new-order-wrap .date input {
-    width: 100%;
+    width: 130px;
     height: 38px;
+    padding: 0;
+    margin-left: -20px;
 }
 .new-order-wrap input,
 .new-order-wrap select {
@@ -375,7 +383,7 @@ footer {
 .logo img {
     height: 30px;
 }
-input[type="date"]::-webkit-calendar-picker-indicator {
+.add-date::-webkit-calendar-picker-indicator {
     background: transparent;
     bottom: 0;
     color: transparent;
@@ -388,6 +396,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     width: auto;
 }
 .order-wrap .order,
+.order-wrap .order-header,
 .new-order-wrap,
 .new-order-header {
     border-bottom: 1.5px solid #bbb;
@@ -406,15 +415,17 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .order .dish-name {
     width: 30%;
 }
-.order .dish-name,
-.order .quantity,
-.order .action-wrap {
+
+.order-wrap .dish-name,
+.order-wrap .quantity,
+.order-wrap .action-wrap {
     width: 30%;
     padding: 12px 25px;
 }
 .order .quantity {
 }
-.order .f-l {
+.order .f-l,
+.order-header .f-l {
     font-size: 14px;
     font-weight: 500;
 }
@@ -487,7 +498,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     margin-bottom: 0;
 }
 .action-wrap-app .reject {
-    background: #dd4b39;//linear-gradient(90deg, #cc4001 0%, #cc4002 93.32%);
+    background: #dd4b39; //linear-gradient(90deg, #cc4001 0%, #cc4002 93.32%);
 }
 .success {
     background: #398439;
@@ -572,4 +583,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .invoice-item .action button {
     width: auto;
     margin-bottom: 0;
+}
+.add-user-header {
+    background-color: #b9e3fb;
+}
+.activeTile {
+    background-color: #b9e3fb !important;
+    opacity: 0.8;
 }
