@@ -42,6 +42,9 @@ var dashboard = {
         $(".order-wrap .tiles-wrap .tile").on("click", function (event) {
             dashboard.fetchOrderByOffice(event);
         });
+        $(".selected-value.mobile-only").on("click", function (event) {
+            $(".items.mobile-only").toggleClass("active");
+        });
     },
     handleSteps: function (event) {
         var element = $(event.currentTarget)[0];
@@ -49,27 +52,39 @@ var dashboard = {
             case "addUser":
                 $(".nav-menu-side").removeClass("active");
                 $(element).addClass("active");
+                $(".selected-value").text("Add Users");
                 $(".d-s").removeClass("active-step");
                 $(".dashboard-step-1").addClass("active-step");
+                $(".items.mobile-only").toggleClass("active");
+
                 break;
             case "analytics":
                 $(".nav-menu-side").removeClass("active");
                 $(element).addClass("active");
+                $(".selected-value").text("Analytics");
                 $(".d-s").removeClass("active-step");
                 $(".dashboard-step-2").addClass("active-step");
                 dashboard.makeChart();
+                $(".items.mobile-only").toggleClass("active");
+
                 break;
             case "ordering":
                 $(".nav-menu-side").removeClass("active");
                 $(element).addClass("active");
+                $(".selected-value").text("Ordering");
                 $(".d-s").removeClass("active-step");
                 $(".dashboard-step-3").addClass("active-step");
+                $(".items.mobile-only").toggleClass("active");
+
                 break;
             case "approveUsers":
                 $(".nav-menu-side").removeClass("active");
                 $(element).addClass("active");
+                $(".selected-value").text("Approve Users");
                 $(".d-s").removeClass("active-step");
                 $(".dashboard-step-4").addClass("active-step");
+                $(".items.mobile-only").toggleClass("active");
+
                 break;
         }
     },
