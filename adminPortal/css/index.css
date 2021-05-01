@@ -646,6 +646,14 @@ footer {
     .add-rows {
         margin-bottom: 100px;
     }
+    .analytics-main-wrap {
+        border: none;
+        width: 100%;
+    }
+    .invoice-links-wrapper {
+        margin-bottom: 100px;
+        margin-top: 30px;
+    }
 }
 @media only screen and (min-width: 767px) {
     .items.mobile-only {
