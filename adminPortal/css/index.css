@@ -591,3 +591,70 @@ footer {
     background-color: #b9e3fb !important;
     opacity: 0.8;
 }
+
+@media only screen and (max-width: 767px) {
+    .sidebar {
+        float: none;
+        height: auto;
+        position: relative;
+    }
+    .dashboard-right {
+        float: none;
+    }
+
+    .items.mobile-only {
+        display: none;
+    }
+    .items.desktop-only {
+        display: none;
+    }
+    .items.mobile-only.active {
+        display: block;
+        position: absolute;
+        width: 100%;
+        z-index: 99;
+        background: #222d32;
+        margin-top: 0;
+    }
+    .selected-value.mobile-only {
+        font-size: 18px;
+        color: #fff;
+        padding: 12px 40px;
+        font-weight: 500;
+    }
+    .add-user-header,
+    .add-user {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .add-user-header,
+    .add-user {
+        display: block;
+        width: 85%;
+    }
+    .add-user .item button {
+        width: 100%;
+    }
+    .add-user-header .item,
+    .add-user .item {
+        float: none;
+        width: 100%;
+    }
+    .add-user {
+        margin-top: 20px;
+    }
+    .add-rows {
+        margin-bottom: 100px;
+    }
+}
+@media only screen and (min-width: 767px) {
+    .items.mobile-only {
+        display: none;
+    }
+    .items.desktop-only {
+        display: block;
+    }
+    .selected-value.mobile-only {
+        display: none;
+    }
+}
