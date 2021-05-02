@@ -654,6 +654,79 @@ footer {
         margin-bottom: 100px;
         margin-top: 30px;
     }
+    .approve-header,
+    .approve-item {
+        display: block;
+        width: 100%;
+    }
+    .approve-header .item,
+    .approve-item .item {
+        padding-left: 0;
+    }
+    .approve-header .item,
+    .approve-item .item {
+        padding-left: 0;
+        float: none;
+        width: 100%;
+        border: none;
+    }
+    .approve-header .item-ch,
+    .approve-item .item-ch {
+        width: 100%;
+        border: none;
+        text-align: center;
+    }
+    .approve-header .item-bt,
+    .approve-item .item-bt {
+        width: 100%;
+        border: none;
+        text-align: center;
+    }
+    .order-wrap .order,
+    .order-wrap .order-header,
+    .new-order-wrap,
+    .new-order-header {
+        width: 100%;
+    }
+    .order-wrap .dish-name,
+    .order-wrap .quantity,
+    .order-wrap .action-wrap {
+        width: 100%;
+        float: none;
+    }
+    .order-wrap .order .odd,
+    .order-wrap .order .even {
+        display: block;
+    }
+    .upcoming-orders .action-wrap button {
+        width: 40%;
+    }
+    .date,
+    .plan,
+    .quantity,
+    .office-wrap,
+    .action {
+        width: 100%;
+        float: none;
+        text-align: left;
+    }
+    .new-order-wrap {
+        display: block;
+    }
+    .new-order-wrap .date input {
+        width: 100%;
+        margin-left: 0;
+    }
+    .new-order {
+        margin-bottom: 50px;
+    }
+    .order-wrap .tiles-wrap .tile {
+        height: 50px;
+        margin-bottom: 20px;
+    }
+    .order-wrap .tiles-wrap .tile h3 {
+        margin-top: 5px;
+    }
 }
 @media only screen and (min-width: 767px) {
     .items.mobile-only {
