@@ -234,6 +234,18 @@ footer {
 }
 .upload-wrap {
     padding-left: 15px;
+    height: 100px;
+    border: 1px solid #ddd;
+}
+.upload-wrap input {
+    padding-top: 15px;
+}
+.upload-wrap p {
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 40px;
+    text-align: left;
+    padding-left: 30px;
 }
 
 .add-rows {
@@ -506,6 +518,9 @@ footer {
 .failure {
     background: #dd4b39;
 }
+.add-user-header {
+    display: block;
+}
 .add-user-header,
 .add-user {
     display: flex;
@@ -591,6 +606,9 @@ footer {
     background-color: #b9e3fb !important;
     opacity: 0.8;
 }
+.add-user .item label {
+    display: none;
+}
 
 @media only screen and (max-width: 767px) {
     .sidebar {
@@ -621,16 +639,26 @@ footer {
         color: #fff;
         padding: 12px 40px;
         font-weight: 500;
+        position: relative;
     }
-    .add-user-header,
-    .add-user {
-        margin-left: auto;
-        margin-right: auto;
+    .selected-value.mobile-only .hamburger {
+        float: right;
+        height: 30px;
+        width: 40px;
     }
+
+    .selected-value.mobile-only .hamburger span {
+        background-color: #ddd;
+        display: block;
+        height: 5px;
+        margin-top: 4px;
+        border-radius: 5px;
+    }
+
     .add-user-header,
     .add-user {
         display: block;
-        width: 85%;
+        width: 95%;
     }
     .add-user .item button {
         width: 100%;
@@ -639,6 +667,8 @@ footer {
     .add-user .item {
         float: none;
         width: 100%;
+        padding: 0;
+        border-bottom: 1px solid #ddd;
     }
     .add-user {
         margin-top: 20px;
@@ -726,6 +756,20 @@ footer {
     }
     .order-wrap .tiles-wrap .tile h3 {
         margin-top: 5px;
+    }
+    .add-user-header {
+        display: none;
+    }
+    .add-user .item input {
+        width: 70%;
+        margin-left: 8px;
+    }
+    .add-user .item label {
+        display: inline-block;
+        width: 25%;
+        padding: 15px 10px;
+        background: #b9e3fb;
+        margin-bottom: 0;
     }
 }
 @media only screen and (min-width: 767px) {

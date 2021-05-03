@@ -95,6 +95,7 @@ var dashboard = {
         const element = $(event.currentTarget)[0];
         let addRows = '<div class="add-user">';
         addRows += '<div class="item f-l">';
+        addRows += "<label>Name</label>";
         addRows += "<input ";
         addRows += ' type="text"';
         addRows += ' name="Name"';
@@ -104,6 +105,7 @@ var dashboard = {
         addRows += " />";
         addRows += "</div>";
         addRows += '<div class="item f-l">';
+        addRows += "<label>Email</label>";
         addRows += "<input";
         addRows += ' type="email"';
         addRows += ' name="Name"';
@@ -113,6 +115,7 @@ var dashboard = {
         addRows += "/>";
         addRows += "</div>";
         addRows += '<div class="item f-l">';
+        addRows += "<label>Mobile</label>";
         addRows += "<input";
         addRows += ' type="text"';
         addRows += ' name="Name"';
