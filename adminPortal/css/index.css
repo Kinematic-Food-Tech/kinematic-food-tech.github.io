@@ -641,6 +641,9 @@ footer {
         font-weight: 500;
         position: relative;
     }
+    .selected-value.mobile-only .value {
+        float: left;
+    }
     .selected-value.mobile-only .hamburger {
         float: right;
         height: 30px;

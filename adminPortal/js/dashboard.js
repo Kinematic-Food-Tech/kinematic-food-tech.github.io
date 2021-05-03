@@ -52,7 +52,7 @@ var dashboard = {
             case "addUser":
                 $(".nav-menu-side").removeClass("active");
                 $(element).addClass("active");
-                $(".selected-value").text("Add Users");
+                $(".selected-value .value").text("Add Users");
                 $(".d-s").removeClass("active-step");
                 $(".dashboard-step-1").addClass("active-step");
                 $(".items.mobile-only").toggleClass("active");
@@ -61,7 +61,7 @@ var dashboard = {
             case "analytics":
                 $(".nav-menu-side").removeClass("active");
                 $(element).addClass("active");
-                $(".selected-value").text("Analytics");
+                $(".selected-value .value").text("Analytics");
                 $(".d-s").removeClass("active-step");
                 $(".dashboard-step-2").addClass("active-step");
                 dashboard.makeChart();
@@ -71,7 +71,7 @@ var dashboard = {
             case "ordering":
                 $(".nav-menu-side").removeClass("active");
                 $(element).addClass("active");
-                $(".selected-value").text("Ordering");
+                $(".selected-value .value").text("Ordering");
                 $(".d-s").removeClass("active-step");
                 $(".dashboard-step-3").addClass("active-step");
                 $(".items.mobile-only").toggleClass("active");
@@ -80,7 +80,7 @@ var dashboard = {
             case "approveUsers":
                 $(".nav-menu-side").removeClass("active");
                 $(element).addClass("active");
-                $(".selected-value").text("Approve Users");
+                $(".selected-value .value").text("Approve Users");
                 $(".d-s").removeClass("active-step");
                 $(".dashboard-step-4").addClass("active-step");
                 $(".items.mobile-only").toggleClass("active");
