@@ -45,6 +45,7 @@ var dashboard = {
         $(".selected-value.mobile-only").on("click", function (event) {
             $(".items.mobile-only").toggleClass("active");
         });
+        $(".datepicker").datepicker();
     },
     handleSteps: function (event) {
         var element = $(event.currentTarget)[0];
@@ -182,7 +183,7 @@ var dashboard = {
             '<div class="new-order-wrap">' +
             '                                <div class="date f-l">' +
             "<label>Date</label>" +
-            '                                    <input type="date" />' +
+            '                                    <input type="text" class="datepicker" />' +
             "                                </div>" +
             '                                <div class="plan f-l">' +
             "<label>Plan</label>" +
