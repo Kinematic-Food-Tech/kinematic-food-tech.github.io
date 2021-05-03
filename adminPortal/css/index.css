@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "Glyphicons Halflings";
+    src: url("../fonts/glyphicons-halflings-regular.ttf") format("truetype");
+}
 body {
     margin: 0;
     padding: 0;
@@ -733,15 +737,17 @@ footer {
     .order-wrap .dish-name,
     .order-wrap .quantity,
     .order-wrap .action-wrap {
-        width: 100%;
-        float: none;
+        width: 32%;
+        float: left;
     }
     .order-wrap .order .odd,
     .order-wrap .order .even {
         display: block;
     }
     .upcoming-orders .action-wrap button {
-        width: 40%;
+        width: auto;
+        display: inline-block;
+        margin-right: 0;
     }
     .date,
     .plan,
@@ -815,10 +821,7 @@ footer {
         margin-bottom: 100px;
         width: 100%;
     }
-    .order-header,
-    .new-order-header {
-        display: none;
-    }
+
     .new-order-wrap .plan .f-input-small,
     .new-order-wrap .quantity .f-input-small {
         width: 68%;
@@ -838,25 +841,14 @@ footer {
     .new-order-wrap select {
         margin-top: 0;
     }
-    .order-wrap .dish-name,
-    .order-wrap .quantity {
-        position: relative;
+    .order-wrap input,
+    .new-order input {
+        padding: 5px;
+        width: 100%;
+        font-size: 14px;
     }
-    .order-wrap .dish-name input,
-    .order-wrap .quantity input {
-        position: absolute;
-    }
-    .order-wrap .dish-name p {
-        position: absolute;
-        left: 31%;
-        top: 67%;
-    }
-    .order-wrap .dish-name,
-    .order-wrap .quantity {
-        padding: 0;
-    }
-    .order-wrap .quantity input {
-        top: 10px;
+    .order .dish-name {
+        padding: 5px;
     }
 }
 @media only screen and (min-width: 767px) {
@@ -869,4 +861,21 @@ footer {
     .selected-value.mobile-only {
         display: none;
     }
+}
+.glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: "Glyphicons Halflings";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.glyphicon-edit:before {
+    content: "\e065";
+}
+.glyphicon-trash:before {
+    content: "\e020";
 }
