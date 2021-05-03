@@ -181,9 +181,11 @@ var dashboard = {
         const addRows =
             '<div class="new-order-wrap">' +
             '                                <div class="date f-l">' +
+            "<label>Date</label>" +
             '                                    <input type="date" />' +
             "                                </div>" +
             '                                <div class="plan f-l">' +
+            "<label>Plan</label>" +
             "                                    <input" +
             '                                        type="text"' +
             '                                        class="f-input-small"' +
@@ -191,6 +193,7 @@ var dashboard = {
             "                                    />" +
             "                                </div>" +
             '                                <div class="quantity f-l">' +
+            "<label>Quantity</label>" +
             "                                    <input" +
             '                                        type="text"' +
             '                                        class="f-input-small"' +
@@ -198,6 +201,7 @@ var dashboard = {
             "                                    />" +
             "                                </div>" +
             '                                <div class="office-wrap f-l">' +
+            "<label>Location</label>" +
             '                                    <select class="small-select">' +
             "                                        <option>BTM</option>" +
             "                                        <option>BTM</option>" +

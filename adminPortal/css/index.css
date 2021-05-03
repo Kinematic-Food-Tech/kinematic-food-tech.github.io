@@ -607,7 +607,9 @@ footer {
 }
 .add-user .item label,
 .approve-item .item label,
-.approve-item .item-ch label {
+.approve-item .item-ch label,
+.order-wrap label,
+.new-order label {
     display: none;
 }
 
@@ -746,10 +748,11 @@ footer {
     }
     .new-order-wrap {
         display: block;
+        border: 1px solid #ddd;
     }
     .new-order-wrap .date input {
-        width: 100%;
-        margin-left: 0;
+        width: 68%;
+        margin-left: 10px;
     }
     .new-order {
         margin-bottom: 50px;
@@ -757,20 +760,27 @@ footer {
     .order-wrap .tiles-wrap .tile {
         height: 50px;
         margin-bottom: 20px;
+        width: 40%;
+        height: 80px;
     }
     .order-wrap .tiles-wrap .tile h3 {
-        margin-top: 5px;
+        margin-top: 15px;
     }
     .add-user-header {
         display: none;
     }
-    .add-user .item input {
+    .add-user .item input,
+    .order-wrap input,
+    .new-order-wrap input,
+    .new-order-wrap select {
         width: 70%;
         margin-left: 8px;
     }
     .add-user .item label,
     .approve-item .item label,
-    .approve-item .item-ch label {
+    .approve-item .item-ch label,
+    .order-wrap label,
+    .new-order-wrap label {
         display: inline-block;
         width: 25%;
         padding: 15px 10px;
@@ -798,6 +808,49 @@ footer {
     .approve-users-wrap .action-wrap-app {
         margin-bottom: 100px;
         width: 100%;
+    }
+    .order-header,
+    .new-order-header {
+        display: none;
+    }
+    .new-order-wrap .plan .f-input-small,
+    .new-order-wrap .quantity .f-input-small {
+        width: 68%;
+    }
+    .new-order-wrap select {
+        width: 68%;
+    }
+    .new-order-wrap .date,
+    .new-order-wrap .plan,
+    .new-order-wrap .quantity,
+    .new-order-wrap .office-wrap,
+    .new-order-wrap .action {
+        padding: 0;
+        border-bottom: 1px solid #ddd;
+    }
+    .new-order-wrap input,
+    .new-order-wrap select {
+        margin-top: 0;
+    }
+    .order-wrap .dish-name,
+    .order-wrap .quantity {
+        position: relative;
+    }
+    .order-wrap .dish-name input,
+    .order-wrap .quantity input {
+        position: absolute;
+    }
+    .order-wrap .dish-name p {
+        position: absolute;
+        left: 31%;
+        top: 67%;
+    }
+    .order-wrap .dish-name,
+    .order-wrap .quantity {
+        padding: 0;
+    }
+    .order-wrap .quantity input {
+        top: 10px;
     }
 }
 @media only screen and (min-width: 767px) {
