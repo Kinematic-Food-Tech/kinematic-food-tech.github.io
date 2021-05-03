@@ -7,6 +7,11 @@
             href="./vendor/css/bootstrap.min.css"
             type="text/css"
         />
+        <link
+            rel="stylesheet"
+            href="./vendor/css/jqueryUi.css"
+            type="text/css"
+        />
         <link rel="stylesheet" href="./css/index.css" type="text/css" />
         <link
             rel="icon"
@@ -19,6 +24,7 @@
         <script type="text/javascript" src="./vendor/js/bootstrap.js"></script>
         <script type="text/javascript" src="./vendor/js/chart.min.js"></script>
         <script type="text/javascript" src="./vendor/js/chart.esm.js"></script>
+        <script type="text/javascript" src="./vendor/js/jqueryUi.js"></script>
         <script
             type="text/javascript"
             src="./vendor/js/helpers.esm.min.js"
@@ -52,7 +58,15 @@
                     <div class="user-wrapper">
                         <p>Welcome Test User</p>
                     </div>
-                    <div class="selected-value mobile-only">Add Users</div>
+                    <div class="selected-value mobile-only">
+                        <div class="value">Add Users</div>
+                        <div class="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="clr"></div>
+                    </div>
                     <ul class="items mobile-only">
                         <li>
                             <a
@@ -124,6 +138,7 @@
                                     name="uploadFile"
                                     value="Upload"
                                 />
+                                <p>Drag and drop file to Upload</p>
                             </div>
                         </div>
                         <div class="step">
@@ -138,6 +153,7 @@
                                 </div>
                                 <div class="add-user">
                                     <div class="item f-l">
+                                        <label>Name</label>
                                         <input
                                             type="text"
                                             name="user-name"
@@ -147,6 +163,7 @@
                                         />
                                     </div>
                                     <div class="item f-l">
+                                        <label>Email</label>
                                         <input
                                             type="email"
                                             name="user-email"
@@ -156,6 +173,7 @@
                                         />
                                     </div>
                                     <div class="item f-l">
+                                        <label>Mobile</label>
                                         <input
                                             type="text"
                                             name="user-mobile"
@@ -253,6 +271,7 @@
                                 <div class="order tile1">
                                     <div class="odd">
                                         <div class="f-l dish-name">
+                                            <label>Meal Name</label>
                                             <input
                                                 type="text"
                                                 class="f-input-small show-only"
@@ -262,6 +281,7 @@
                                             <p>20/3/2021 - Lunch</p>
                                         </div>
                                         <div class="f-l quantity">
+                                            <label>Quantity</label>
                                             <input
                                                 type="text"
                                                 class="f-input-small show-only"
@@ -289,6 +309,7 @@
                                 <div class="order tile2">
                                     <div class="even">
                                         <div class="f-l dish-name">
+                                            <label>Meal Name</label>
                                             <input
                                                 type="text"
                                                 class="f-input-small show-only"
@@ -298,6 +319,7 @@
                                             <p>20/3/2021 - Lunch</p>
                                         </div>
                                         <div class="f-l quantity">
+                                            <label>Quantity</label>
                                             <input
                                                 type="text"
                                                 class="f-input-small show-only"
@@ -338,9 +360,12 @@
                             </div>
                             <div class="new-order-wrap">
                                 <div class="date f-l">
-                                    <input type="date" />
+                                    <label>Date</label>
+                                    <input type="text" class="datepicker" />
                                 </div>
                                 <div class="plan f-l">
+                                    <label>Plan</label>
+
                                     <input
                                         type="text"
                                         class="f-input-small"
@@ -348,6 +373,8 @@
                                     />
                                 </div>
                                 <div class="quantity f-l">
+                                    <label>Quantity</label>
+
                                     <input
                                         type="text"
                                         class="f-input-small"
@@ -355,6 +382,8 @@
                                     />
                                 </div>
                                 <div class="office-wrap f-l">
+                                    <label>Location</label>
+
                                     <select class="small-select">
                                         <option>BTM</option>
                                         <option>BTM</option>
@@ -390,12 +419,21 @@
                                 <div class="clr"></div>
                             </div>
                             <div class="approve-item">
-                                <div class="item f-l">Test</div>
-                                <div class="item f-l">Test</div>
-                                <div class="item f-l">Test</div>
-                                <div class="item f-l">Test</div>
+                                <div class="item f-l">
+                                    <label>Name</label>Test
+                                </div>
+                                <div class="item f-l">
+                                    <label>Email</label>Test
+                                </div>
+                                <div class="item f-l">
+                                    <label>Phone</label>Test
+                                </div>
+                                <div class="item f-l">
+                                    <label>Office</label>Test
+                                </div>
                                 <div class="item-ch f-l">
-                                    <input type="checkbox" />
+                                    <label>Approve</label
+                                    ><input type="checkbox" />
                                 </div>
                                 <div class="item-bt f-l">
                                     <button

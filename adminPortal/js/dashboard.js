@@ -45,6 +45,7 @@ var dashboard = {
         $(".selected-value.mobile-only").on("click", function (event) {
             $(".items.mobile-only").toggleClass("active");
         });
+        $(".datepicker").datepicker();
     },
     handleSteps: function (event) {
         var element = $(event.currentTarget)[0];
@@ -52,7 +53,7 @@ var dashboard = {
             case "addUser":
                 $(".nav-menu-side").removeClass("active");
                 $(element).addClass("active");
-                $(".selected-value").text("Add Users");
+                $(".selected-value .value").text("Add Users");
                 $(".d-s").removeClass("active-step");
                 $(".dashboard-step-1").addClass("active-step");
                 $(".items.mobile-only").toggleClass("active");
@@ -61,7 +62,7 @@ var dashboard = {
             case "analytics":
                 $(".nav-menu-side").removeClass("active");
                 $(element).addClass("active");
-                $(".selected-value").text("Analytics");
+                $(".selected-value .value").text("Analytics");
                 $(".d-s").removeClass("active-step");
                 $(".dashboard-step-2").addClass("active-step");
                 dashboard.makeChart();
@@ -71,7 +72,7 @@ var dashboard = {
             case "ordering":
                 $(".nav-menu-side").removeClass("active");
                 $(element).addClass("active");
-                $(".selected-value").text("Ordering");
+                $(".selected-value .value").text("Ordering");
                 $(".d-s").removeClass("active-step");
                 $(".dashboard-step-3").addClass("active-step");
                 $(".items.mobile-only").toggleClass("active");
@@ -80,7 +81,7 @@ var dashboard = {
             case "approveUsers":
                 $(".nav-menu-side").removeClass("active");
                 $(element).addClass("active");
-                $(".selected-value").text("Approve Users");
+                $(".selected-value .value").text("Approve Users");
                 $(".d-s").removeClass("active-step");
                 $(".dashboard-step-4").addClass("active-step");
                 $(".items.mobile-only").toggleClass("active");
@@ -95,6 +96,7 @@ var dashboard = {
         const element = $(event.currentTarget)[0];
         let addRows = '<div class="add-user">';
         addRows += '<div class="item f-l">';
+        addRows += "<label>Name</label>";
         addRows += "<input ";
         addRows += ' type="text"';
         addRows += ' name="Name"';
@@ -104,6 +106,7 @@ var dashboard = {
         addRows += " />";
         addRows += "</div>";
         addRows += '<div class="item f-l">';
+        addRows += "<label>Email</label>";
         addRows += "<input";
         addRows += ' type="email"';
         addRows += ' name="Name"';
@@ -113,6 +116,7 @@ var dashboard = {
         addRows += "/>";
         addRows += "</div>";
         addRows += '<div class="item f-l">';
+        addRows += "<label>Mobile</label>";
         addRows += "<input";
         addRows += ' type="text"';
         addRows += ' name="Name"';
@@ -178,9 +182,11 @@ var dashboard = {
         const addRows =
             '<div class="new-order-wrap">' +
             '                                <div class="date f-l">' +
-            '                                    <input type="date" />' +
+            "<label>Date</label>" +
+            '                                    <input type="text" class="datepicker" />' +
             "                                </div>" +
             '                                <div class="plan f-l">' +
+            "<label>Plan</label>" +
             "                                    <input" +
             '                                        type="text"' +
             '                                        class="f-input-small"' +
@@ -188,6 +194,7 @@ var dashboard = {
             "                                    />" +
             "                                </div>" +
             '                                <div class="quantity f-l">' +
+            "<label>Quantity</label>" +
             "                                    <input" +
             '                                        type="text"' +
             '                                        class="f-input-small"' +
@@ -195,6 +202,7 @@ var dashboard = {
             "                                    />" +
             "                                </div>" +
             '                                <div class="office-wrap f-l">' +
+            "<label>Location</label>" +
             '                                    <select class="small-select">' +
             "                                        <option>BTM</option>" +
             "                                        <option>BTM</option>" +
