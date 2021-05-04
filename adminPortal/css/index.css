@@ -623,6 +623,28 @@ footer {
     background-repeat: no-repeat;
     background-position: 97%;
 }
+.analytics-tiles-wrap {
+    width: 100%;
+    margin-top: 30px;
+}
+.analytics-tiles-wrap .tile-an {
+    width: 30%;
+    margin-right: 15px;
+    border: 1px solid #ddd;
+    margin-left: 10px;
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+.analytics-tiles-wrap .tile-an h3 {
+    font-size: 18px;
+    padding: 18px 17px;
+}
+.analytics-tiles-wrap .tile-an p {
+    text-align: right;
+    padding-right: 20px;
+    font-size: 12px;
+    font-weight: 500;
+}
 
 @media only screen and (max-width: 767px) {
     .sidebar {
@@ -860,6 +882,9 @@ footer {
         margin: 0;
         padding: 0;
         height: 35px;
+    }
+    .analytics-tiles-wrap .tile-an {
+        width: 40%;
     }
 }
 @media only screen and (min-width: 767px) {
