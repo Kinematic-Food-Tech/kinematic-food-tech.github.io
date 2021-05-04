@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "Glyphicons Halflings";
+    src: url("../fonts/glyphicons-halflings-regular.ttf") format("truetype");
+}
 body {
     margin: 0;
     padding: 0;
@@ -61,9 +65,9 @@ button.med-button {
     text-align: center;
     letter-spacing: -0.576517px;
     color: #ffffff;
-    //text-transform: uppercase;
-    background: #3c8dbc; //linear-gradient(90deg, #4285f4 0%, #2098F6 93.32%);
-    //box-shadow: 0px 5px 5px rgba(28, 87, 174, 0.43);
+    text-transform: uppercase;
+    background: #3c8dbc linear-gradient(90deg, #4285f4 0%, #2098f6 93.32%);
+    box-shadow: 0px 5px 5px rgba(28, 87, 174, 0.43);
     border-radius: 5px;
     border: none !important;
     margin-bottom: 20px;
@@ -269,15 +273,16 @@ footer {
 .order-wrap .tiles-wrap {
     overflow-y: auto;
     padding-left: 0;
+    white-space: nowrap;
 }
 .order-wrap .tiles-wrap .tile {
-    float: left;
     border: 1px solid #ccc;
     margin-right: 20px;
     border-radius: 5px;
     background: #fafafa;
     cursor: pointer;
     height: 150px;
+    display: inline-block;
 }
 .order-wrap .tiles-wrap .tile h3 {
     margin-top: 35%;
@@ -733,23 +738,26 @@ footer {
     .order-wrap .dish-name,
     .order-wrap .quantity,
     .order-wrap .action-wrap {
-        width: 100%;
-        float: none;
+        width: 32%;
+        float: left;
     }
     .order-wrap .order .odd,
     .order-wrap .order .even {
         display: block;
     }
     .upcoming-orders .action-wrap button {
-        width: 40%;
+        width: auto;
+        display: inline-block;
+        margin-right: 0;
+    }
+    .new-order-header .action {
+        display: none;
     }
     .date,
     .plan,
     .quantity,
-    .office-wrap,
-    .action {
-        width: 100%;
-        float: none;
+    .office-wrap {
+        width: 22%;
         text-align: left;
     }
     .new-order-wrap {
@@ -757,11 +765,12 @@ footer {
         border: 1px solid #ddd;
     }
     .new-order-wrap .date input {
-        width: 68%;
+        width: 90%;
         margin-left: 10px;
+        height: 33px;
     }
     .new-order {
-        margin-bottom: 50px;
+        margin-bottom: 70px;
     }
     .order-wrap .tiles-wrap .tile {
         height: 50px;
@@ -815,16 +824,13 @@ footer {
         margin-bottom: 100px;
         width: 100%;
     }
-    .order-header,
-    .new-order-header {
-        display: none;
-    }
+
     .new-order-wrap .plan .f-input-small,
     .new-order-wrap .quantity .f-input-small {
-        width: 68%;
+        width: 90%;
     }
     .new-order-wrap select {
-        width: 68%;
+        width: 90%;
     }
     .new-order-wrap .date,
     .new-order-wrap .plan,
@@ -834,29 +840,26 @@ footer {
         padding: 0;
         border-bottom: 1px solid #ddd;
     }
+    .new-order-wrap .action {
+        width: 10%;
+    }
     .new-order-wrap input,
     .new-order-wrap select {
         margin-top: 0;
     }
-    .order-wrap .dish-name,
-    .order-wrap .quantity {
-        position: relative;
+    .order-wrap input,
+    .new-order input {
+        padding: 5px;
+        width: 100%;
+        font-size: 14px;
     }
-    .order-wrap .dish-name input,
-    .order-wrap .quantity input {
-        position: absolute;
+    .order .dish-name {
+        padding: 5px;
     }
-    .order-wrap .dish-name p {
-        position: absolute;
-        left: 31%;
-        top: 67%;
-    }
-    .order-wrap .dish-name,
-    .order-wrap .quantity {
+    .new-order-wrap .small-button {
+        margin: 0;
         padding: 0;
-    }
-    .order-wrap .quantity input {
-        top: 10px;
+        height: 35px;
     }
 }
 @media only screen and (min-width: 767px) {
@@ -869,4 +872,24 @@ footer {
     .selected-value.mobile-only {
         display: none;
     }
+}
+.glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: "Glyphicons Halflings";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.glyphicon-edit:before {
+    content: "\e065";
+}
+.glyphicon-trash:before {
+    content: "\e020";
+}
+.glyphicon-plus:before {
+    content: "\002b";
 }
