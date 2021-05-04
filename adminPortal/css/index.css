@@ -65,9 +65,9 @@ button.med-button {
     text-align: center;
     letter-spacing: -0.576517px;
     color: #ffffff;
-    //text-transform: uppercase;
-    background: #3c8dbc; //linear-gradient(90deg, #4285f4 0%, #2098F6 93.32%);
-    //box-shadow: 0px 5px 5px rgba(28, 87, 174, 0.43);
+    text-transform: uppercase;
+    background: #3c8dbc linear-gradient(90deg, #4285f4 0%, #2098f6 93.32%);
+    box-shadow: 0px 5px 5px rgba(28, 87, 174, 0.43);
     border-radius: 5px;
     border: none !important;
     margin-bottom: 20px;
@@ -273,15 +273,16 @@ footer {
 .order-wrap .tiles-wrap {
     overflow-y: auto;
     padding-left: 0;
+    white-space: nowrap;
 }
 .order-wrap .tiles-wrap .tile {
-    float: left;
     border: 1px solid #ccc;
     margin-right: 20px;
     border-radius: 5px;
     background: #fafafa;
     cursor: pointer;
     height: 150px;
+    display: inline-block;
 }
 .order-wrap .tiles-wrap .tile h3 {
     margin-top: 35%;
@@ -749,13 +750,14 @@ footer {
         display: inline-block;
         margin-right: 0;
     }
+    .new-order-header .action {
+        display: none;
+    }
     .date,
     .plan,
     .quantity,
-    .office-wrap,
-    .action {
-        width: 100%;
-        float: none;
+    .office-wrap {
+        width: 22%;
         text-align: left;
     }
     .new-order-wrap {
@@ -763,11 +765,12 @@ footer {
         border: 1px solid #ddd;
     }
     .new-order-wrap .date input {
-        width: 68%;
+        width: 90%;
         margin-left: 10px;
+        height: 33px;
     }
     .new-order {
-        margin-bottom: 50px;
+        margin-bottom: 70px;
     }
     .order-wrap .tiles-wrap .tile {
         height: 50px;
@@ -824,10 +827,10 @@ footer {
 
     .new-order-wrap .plan .f-input-small,
     .new-order-wrap .quantity .f-input-small {
-        width: 68%;
+        width: 90%;
     }
     .new-order-wrap select {
-        width: 68%;
+        width: 90%;
     }
     .new-order-wrap .date,
     .new-order-wrap .plan,
@@ -836,6 +839,9 @@ footer {
     .new-order-wrap .action {
         padding: 0;
         border-bottom: 1px solid #ddd;
+    }
+    .new-order-wrap .action {
+        width: 10%;
     }
     .new-order-wrap input,
     .new-order-wrap select {
@@ -849,6 +855,11 @@ footer {
     }
     .order .dish-name {
         padding: 5px;
+    }
+    .new-order-wrap .small-button {
+        margin: 0;
+        padding: 0;
+        height: 35px;
     }
 }
 @media only screen and (min-width: 767px) {
@@ -878,4 +889,7 @@ footer {
 }
 .glyphicon-trash:before {
     content: "\e020";
+}
+.glyphicon-plus:before {
+    content: "\002b";
 }
