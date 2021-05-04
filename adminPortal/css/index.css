@@ -712,22 +712,23 @@ footer {
     }
     .approve-header .item,
     .approve-item .item {
-        padding-left: 0;
-        float: none;
-        width: 100%;
+        padding-left: 5px;
+        width: 19.5%;
         border: none;
     }
     .approve-header .item-ch,
     .approve-item .item-ch {
-        width: 100%;
+        width: 10%;
         border: none;
         text-align: center;
     }
     .approve-header .item-bt,
     .approve-item .item-bt {
-        width: 100%;
+        width: 10%;
         border: none;
         text-align: center;
+        height: auto;
+        padding: 10px 0;
     }
     .order-wrap .order,
     .order-wrap .order-header,
@@ -803,15 +804,14 @@ footer {
         margin-bottom: 0;
     }
     .approve-header {
-        display: none;
+        background: #b9e3fb;
     }
     .approve-item .item,
     .approve-item .item-ch {
-        border-bottom: 1px solid #ddd;
-        padding-top: 0;
-        padding-bottom: 0;
         text-align: left;
-        padding-left: 0;
+        padding-left: 5px;
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
     .approve-item .item label,
     .approve-item .item-ch label {
@@ -892,4 +892,7 @@ footer {
 }
 .glyphicon-plus:before {
     content: "\002b";
+}
+.glyphicon-ok:before {
+    content: "\e013";
 }
