@@ -28,10 +28,20 @@ var dashboard = {
         $(".approve-user-button").on("click", function (event) {
             dashboard.approveUserOne(event);
         });
-        $(".approve-header input").on("change", function (event) {
+        $(".approve-item input").on("change", function (event) {
             $(".approve-item input:checkbox")
                 .not(this)
                 .prop("checked", this.checked);
+            var enableActions = false;
+            var element = $(".approve-item .item-ch input");
+            for (var i = 0; i < element.length; i++) {
+                if ($(element[i]).prop("checked")) {
+                    enableActions = true;
+                }
+            }
+            enableActions === true
+                ? $(".action-wrap-app").removeClass("hidden")
+                : $(".action-wrap-app").addClass("hidden");
         });
         $(".approve-all-users").on("click", function (event) {
             dashboard.approveAllUsers(event);
