@@ -239,6 +239,7 @@ footer {
 .upload-wrap {
     padding-left: 15px;
     border: 1px solid #ddd;
+    width: 25%;
 }
 .upload-wrap input {
     padding-top: 15px;
@@ -269,7 +270,6 @@ footer {
     width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
-    border: 1px solid #ddd;
 }
 .order-wrap .tiles-wrap {
     overflow-y: auto;
@@ -887,12 +887,27 @@ footer {
     }
     .analytics-tiles-wrap .tile-an {
         width: 40%;
+        height: 100px;
+        position: relative;
+    }
+    .analytics-tiles-wrap .tile-an p {
+        position: absolute;
+        bottom: 10px;
+        margin: 0;
+        right: 10px;
+        padding: 0;
     }
     .new-order-container {
         border: 1px solid #ddd;
         padding: 5px;
         white-space: nowrap;
         overflow: auto;
+    }
+    .add-rows {
+        display: none;
+    }
+    .upload-wrap {
+        width: 60%;
     }
 }
 @media only screen and (min-width: 767px) {
@@ -928,4 +943,26 @@ footer {
 }
 .glyphicon-ok:before {
     content: "\e013";
+}
+.invoice-header {
+    background-color: #b9e3fb;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.approve-header {
+    background-color: #b9e3fb;
+}
+.approve-item:nth-child(even),
+.order-wrap .order:nth-child(even),
+.new-order-wrap:nth-child(even),
+.invoice-item:nth-child(even),
+.add-user .item:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.approve-item:nth-child(odd),
+.order-wrap .order:nth-child(odd),
+.new-order-wrap:nth-child(odd),
+.add-user .item:nth-child(odd) {
+    background-color: #fafafa;
 }
