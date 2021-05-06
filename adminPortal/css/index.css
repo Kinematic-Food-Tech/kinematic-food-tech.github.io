@@ -964,6 +964,6 @@ footer {
 .approve-item:nth-child(odd),
 .order-wrap .order:nth-child(odd),
 .new-order-wrap:nth-child(odd),
-.add-user .item:nth-child(odd) {
+.add-user:nth-child(odd) {
     background-color: #fafafa;
 }
