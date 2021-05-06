@@ -269,6 +269,7 @@ footer {
     width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
+    border: 1px solid #ddd;
 }
 .order-wrap .tiles-wrap {
     overflow-y: auto;
@@ -450,6 +451,7 @@ footer {
     padding: 0;
     font-size: 14px;
     font-weight: 500;
+    padding-left: 15px;
 }
 .order .dish-name {
     width: 30%;
@@ -885,6 +887,12 @@ footer {
     }
     .analytics-tiles-wrap .tile-an {
         width: 40%;
+    }
+    .new-order-container {
+        border: 1px solid #ddd;
+        padding: 5px;
+        white-space: nowrap;
+        overflow: auto;
     }
 }
 @media only screen and (min-width: 767px) {
