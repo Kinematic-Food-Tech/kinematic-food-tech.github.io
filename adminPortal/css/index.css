@@ -240,6 +240,8 @@ footer {
     padding-left: 15px;
     border: 1px solid #ddd;
     width: 25%;
+    position: relative;
+    min-height: 130px;
 }
 .upload-wrap input {
     padding-top: 15px;
@@ -253,9 +255,11 @@ footer {
 .upload-wrap p {
     font-size: 12px;
     font-weight: 500;
-    margin-top: 40px;
     text-align: left;
-    padding-left: 30px;
+    right: 10px;
+    bottom: 10px;
+    position: absolute;
+    margin: 0;
 }
 
 .add-rows {

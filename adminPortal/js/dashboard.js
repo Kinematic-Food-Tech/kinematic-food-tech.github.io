@@ -33,15 +33,22 @@ var dashboard = {
                 .not(this)
                 .prop("checked", this.checked);
             var enableActions = false;
+            var checkedCount = 0;
             var element = $(".approve-item .item-ch input");
             for (var i = 0; i < element.length; i++) {
                 if ($(element[i]).prop("checked")) {
                     enableActions = true;
+                    checkedCount++;
                 }
             }
             enableActions === true
                 ? $(".action-wrap-app").removeClass("hidden")
                 : $(".action-wrap-app").addClass("hidden");
+            if (checkedCount === element.length) {
+                $(".approve-header .item-ch input").prop("checked", true);
+            } else {
+                $(".approve-header .item-ch input").prop("checked", true);
+            }
         });
         $(".approve-all-users").on("click", function (event) {
             dashboard.approveAllUsers(event);
@@ -59,6 +66,12 @@ var dashboard = {
             dashboard.pushUsersFile($("#uploadFile"));
         });
         $(".datepicker").datepicker();
+        $(".approve-header .item-ch input").on("click", function () {
+            $(".approve-item .item-ch input").prop(
+                "checked",
+                $(this).prop("checked")
+            );
+        });
     },
     makeDragDropEvents: function () {},
     handleSteps: function (event) {
