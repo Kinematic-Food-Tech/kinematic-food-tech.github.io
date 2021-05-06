@@ -13,6 +13,7 @@
             type="text/css"
         />
         <link rel="stylesheet" href="./css/index.css" type="text/css" />
+        <link rel="stylesheet" href="./css/fileUpload.css" type="text/css" />
         <link
             rel="icon"
             href="./images/favicon.jpeg"
@@ -132,13 +133,19 @@
                     >
                         <div class="step">
                             <h3>Bulk Upload CSV/Excel</h3>
-                            <div class="upload-wrap">
-                                <input
-                                    type="file"
-                                    name="uploadFile"
-                                    value="Upload"
-                                />
-                                <p>Drag and drop file to Upload</p>
+                            <div id="drop-area" class="upload-wrap">
+                                <form class="my-form">
+                                    <input
+                                        type="file"
+                                        id="fileElem"
+                                        multiple
+                                        accept="image/*"
+                                        onchange="handleFiles(this.files)"
+                                    />
+                                    <label id="fileLabel"></label>
+                                    <p>Drag and Drop files</p>
+                                </form>
+                                <p></p>
                             </div>
                         </div>
                         <div class="step">
@@ -474,5 +481,6 @@
                 <p>Copyright © 2021 - 2022 Sprink</p>
             </div>
         </footer>
+        <script type="text/javascript" src="./js/fileUpload.js"></script>
     </body>
 </html>

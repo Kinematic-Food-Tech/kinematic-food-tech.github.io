@@ -55,8 +55,12 @@ var dashboard = {
         $(".selected-value.mobile-only").on("click", function (event) {
             $(".items.mobile-only").toggleClass("active");
         });
+        $("#uploadFile").on("change", function () {
+            dashboard.pushUsersFile($("#uploadFile"));
+        });
         $(".datepicker").datepicker();
     },
+    makeDragDropEvents: function () {},
     handleSteps: function (event) {
         var element = $(event.currentTarget)[0];
         switch (element.name) {
@@ -328,6 +332,10 @@ var dashboard = {
         $("." + name)
             .removeClass("hidden")
             .addClass("active");
+    },
+    pushUsersFile: function (data) {
+        var data = data;
+        console.log("data", data);
     },
 };
 

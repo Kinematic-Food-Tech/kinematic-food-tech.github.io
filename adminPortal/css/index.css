@@ -243,6 +243,12 @@ footer {
 }
 .upload-wrap input {
     padding-top: 15px;
+    color: transparent;
+}
+.upload-wrap label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 10px;
 }
 .upload-wrap p {
     font-size: 12px;
