@@ -240,16 +240,26 @@ footer {
     padding-left: 15px;
     border: 1px solid #ddd;
     width: 25%;
+    position: relative;
+    min-height: 130px;
 }
 .upload-wrap input {
     padding-top: 15px;
+    color: transparent;
+}
+.upload-wrap label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 10px;
 }
 .upload-wrap p {
     font-size: 12px;
     font-weight: 500;
-    margin-top: 40px;
     text-align: left;
-    padding-left: 30px;
+    right: 10px;
+    bottom: 10px;
+    position: absolute;
+    margin: 0;
 }
 
 .add-rows {
@@ -908,7 +918,25 @@ footer {
         display: none;
     }
     .upload-wrap {
-        width: 60%;
+        width: 80%;
+    }
+    .new-order-header .date,
+    .new-order-wrap .date,
+    .new-order-header .plan,
+    .new-order-wrap .plan,
+    .new-order-header .quantity,
+    .new-order-wrap .quantity,
+    .new-order-header .office-wrap,
+    .new-order-wrap .office-wrap {
+        float: none !important;
+        display: inline-block;
+        width: 30% !important;
+    }
+    .new-order-header .action,
+    .new-order-wrap .action {
+        float: none !important;
+        display: inline-block;
+        width: 15% !important;
     }
 }
 @media only screen and (min-width: 767px) {
@@ -966,4 +994,24 @@ footer {
 .new-order-wrap:nth-child(odd),
 .add-user:nth-child(odd) {
     background-color: #fafafa;
+}
+.color-one {
+    background-color: #3c8391;
+    color: #fff;
+}
+.color-two {
+    background-color: #217c3d;
+    color: #fff;
+}
+.color-three {
+    background-color: #956a2f;
+    color: #fff;
+}
+.color-four {
+    background-color: #a0565d;
+    color: #fff;
+}
+.color-five {
+    background-color: #299c79;
+    color: #fff;
 }

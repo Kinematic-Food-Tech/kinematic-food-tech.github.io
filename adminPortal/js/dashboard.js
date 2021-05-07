@@ -33,15 +33,22 @@ var dashboard = {
                 .not(this)
                 .prop("checked", this.checked);
             var enableActions = false;
+            var checkedCount = 0;
             var element = $(".approve-item .item-ch input");
             for (var i = 0; i < element.length; i++) {
                 if ($(element[i]).prop("checked")) {
                     enableActions = true;
+                    checkedCount++;
                 }
             }
             enableActions === true
                 ? $(".action-wrap-app").removeClass("hidden")
                 : $(".action-wrap-app").addClass("hidden");
+            if (checkedCount === element.length) {
+                $(".approve-header .item-ch input").prop("checked", true);
+            } else {
+                $(".approve-header .item-ch input").prop("checked", true);
+            }
         });
         $(".approve-all-users").on("click", function (event) {
             dashboard.approveAllUsers(event);
@@ -55,8 +62,18 @@ var dashboard = {
         $(".selected-value.mobile-only").on("click", function (event) {
             $(".items.mobile-only").toggleClass("active");
         });
+        $("#uploadFile").on("change", function () {
+            dashboard.pushUsersFile($("#uploadFile"));
+        });
         $(".datepicker").datepicker();
+        $(".approve-header .item-ch input").on("click", function () {
+            $(".approve-item .item-ch input").prop(
+                "checked",
+                $(this).prop("checked")
+            );
+        });
     },
+    makeDragDropEvents: function () {},
     handleSteps: function (event) {
         var element = $(event.currentTarget)[0];
         switch (element.name) {
@@ -328,6 +345,10 @@ var dashboard = {
         $("." + name)
             .removeClass("hidden")
             .addClass("active");
+    },
+    pushUsersFile: function (data) {
+        var data = data;
+        console.log("data", data);
     },
 };
 
