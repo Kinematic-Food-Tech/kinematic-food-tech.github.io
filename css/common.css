@@ -1,12 +1,12 @@
 .small-button-transparent {
     background: transparent;
-    color: #0F2340;
+    color: #0f2340;
     font-weight: normal;
     font-size: 14px;
     border: 1px solid rgba(0, 0, 0, 0.07);
     box-sizing: border-box;
     border-radius: 9px;
-    padding:6px 17px;
+    padding: 6px 17px;
 }
 
 .clr {
@@ -16,7 +16,7 @@ button {
     outline: 0;
 }
 a {
-    text-decoration:none !important
+    text-decoration: none !important;
 }
 *:focus {
     outline: 0 !important;
@@ -30,9 +30,9 @@ button.med-button {
     line-height: 91%;
     text-align: center;
     letter-spacing: -0.576517px;
-    color: #FFFFFF;
+    color: #ffffff;
     text-transform: uppercase;
-    background: linear-gradient(90deg, #1E8FF7 0%, #24B3F1 93.32%);
+    background: linear-gradient(90deg, #1e8ff7 0%, #24b3f1 93.32%);
     box-shadow: 0px 15px 25px rgba(28, 87, 174, 0.33);
     border-radius: 5px;
     border: none !important;
@@ -51,4 +51,13 @@ button.med-button {
     .desktop-only {
         display: none;
     }
+}
+.f-l {
+    float: left;
+}
+.clr {
+    clear: both;
+}
+.active {
+    display: block !important;
 }
