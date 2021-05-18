@@ -1,356 +1,109 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./vendor/css/bootstrap.min.css" type="text/css" />
-        <link rel="stylesheet" href="./css/index.css" type="text/css" />
-        <link rel="stylesheet" href="./css/common.css" type="text/css" />
-        <link rel="icon" href="./images/favicon.jpeg" type="image" sizes="16x16">
-        <script type="text/javascript" src="./vendor/js/jquery.js"></script>
-        <script type="text/javascript" src="./vendor/js/popper.js"></script>
-        <script type="text/javascript" src="./vendor/js/bootstrap.js"></script>
-        <script type="text/javascript" src="./js/homePage.js"></script>
-    </head>
-    <body>
-        <header>
-            <div class="header-main-wrap">
-                <div class="header-left-wrap">
-                    <div class="logo">
-                        <img class="img img-responsive" src="./images/logo.png" alt="logo" />
-                    </div>
-                </div>
-                <div class="header-right-wrap ">
-                    <div class="sign-in">
-                        <button class="small-button-transparent">Signin</button>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <div class="main-section">
-            <div class="ban-in">
-                <div class="banner-wrap">
-                    <div class="header-in">
-                        <div class="left">
-                            <h3>HEALTHY</h3>
-                            <h4>CHEF-PREPARED</h4>
-                        </div>
-                        <div class="right">
-                            <h2>MEALS</h2>
-                        </div>
-                    </div>
-                    <div class="parent">
-                        <div class="banner-in-wrap">
-                            <div class="banner">
-                                <img class="img img-responsive desktop-only" src="./images/banner.png" alt="banner" />
-                                <img class="img img-responsive mobile-only" src="./images/mobile-banner.jpg" alt="banner" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- <div class="special-container">
-                    <img src="./images/round-image.png" />
-                </div> -->
-            </div>
-            
-            <div class="how-it-works">
-                <div class="heading"><h3>How it <span>Works?</span></h3></div>
-                <div class="parent">
-                    <div class="item col-sm-4 col-md-4 col-lg-4 col-xs-12">
-                        <div class="icon">
-                            <img class="img img-responsive" src="./images/hw-1.png" alt="step-1" />
-                        </div>
-                        <div class="reason">
-                            <h3>TELL US WHAT YOU LIKE TO EAT</h3>
-                            <p>Tell us your food preference.
-                                We create a food plan for you.
-                                But, hey!</p>
-                        </div>
-                    </div>
-                    <div class="item col-sm-4 col-md-4 col-lg-4 col-xs-12">
-                        <div class="icon">
-                            <img class="img img-responsive" src="./images/hw-2.png" alt="step-1" />
-                        </div>
-                        <div class="reason">
-                            <h3>NEW CUISINE EVERYDAY</h3>
-                            <p>Our Executive Chef prepares new menu for you everyday.</p>
-                        </div>
-                    </div>
-                    <div class="item col-sm-4 col-md-4 col-lg-4 col-xs-12">
-                        <div class="icon">
-                            <img class="img img-responsive" src="./images/hw-3.png" alt="step-1" />
-                        </div>
-                        <div class="reason">
-                            <h3>FREE HYGEINIC DELIVERY</h3>
-                            <p>We deliver your food hot and fresh for free.</p>
-                        </div>
-                    </div>
-                    <div class="clr"></div>
-                </div>
-                <div class="action">
-                    <p>Ready? Check out our subscription plans</p>
-                    <div class="button-wrap">
-                        <button class="med-button">Get Started</button>
-                    </div>
-                    <p>Need more convincing? Well, read on!</p>
-                </div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Location coordinates for easier delivery</title>
+  </head>
+  <body>
+  	 	<table>
+	    	<tr>
+	    		<td colspan="2">
+	    			<img src="https://d3ljlx3hzhder.cloudfront.net/img/logo.png" width="100px">
+	    		</td>
+	    	</tr>
+	    	<tr>
+	    		<td colspan="2">
+    				<p>Please open this page on your mobile phone and keep your GPS on. Click "<b>Get My Coordinates</b>" button to get your map coordinates. <br><br>Enter your name and mobile number and click submit. This will help us reduce calls to you for deliveries.<br></p>
+    			</td>
+    		</tr>
+    		<tr>
+    			<td colspan="2">
+    				<button onclick="getLocation()">Get My Coordinates</button><br><br><Br>
+    				<p id="demo" style="display: none;"></p>
+    			</td>
+    		</tr>
+    	</table>
+    <form
+      action="https://script.google.com/macros/s/AKfycbztWnrvnfQ8_dzwH1YERbPWJu6-SR0XJ_5_8at1TqeNHFNRAtszZpUzIYqIAB2oXlFZ/exec"
+      method="get"
+    >
 
-            </div>
-            <div class="our-menu">
-                <div class="heading">
-                    <h3>Our <span>Menu</span></h3>
-                </div>
-                <div class="description">
-                    <p>Our menu changes everyday. Our Executive Chef selects a meal specifically for you given your food preference.</p>
-                    <p>You can check some of the dish we cooked for our beloved customers like you. Feel free to select the...</p>
-                </div>
-                <div class="parent col-sm-12 col-md-12 col-lg-12 col-xs-12">
-                    <div class="menu-item col-sm-3 col-xs-12 col-lg-3 col-md-3">
-                        <div class="item">
-                            <img class="img img-responsive" src="./images/food-item-1.png" alt="food-1" />
-                        </div>
-                        <div class="desc">
-                            <h5>Chicken Butter</h5>
-                            <p>2 Feb 2021</p>
-                        </div>
-                    </div>
-                    <div class="menu-item menu-item col-sm-3 col-xs-12 col-lg-3 col-md-3">
-                        <div class="item">
-                            <img class="img img-responsive" src="./images/food-item-2.png" alt="food-2" />
-                        </div>
-                        <div class="desc">
-                            <h5>Chicken Butter</h5>
-                            <p>2 Feb 2021</p>
-                        </div>
-                    </div>
-                    <div class="menu-item menu-item col-sm-3 col-xs-12 col-lg-3 col-md-3">
-                        <div class="item">
-                            <img class="img img-responsive" src="./images/food-item-3.png" alt="food-3" />
-                        </div>
-                        <div class="desc">
-                            <h5>Chicken Butter</h5>
-                            <p>2 Feb 2021</p>
-                        </div>
-                    </div>
-                    <div class="menu-item menu-item col-sm-3 col-xs-12 col-lg-3 col-md-3">
-                        <div class="item">
-                            <img class="img img-responsive" src="./images/food-item-4.png" alt="food-4" />
-                        </div>
-                        <div class="desc">
-                            <h5>Chicken Butter</h5>
-                            <p>2 Feb 2021</p>
-                        </div>
-                    </div>
-                    <div class="clr"></div>
-                </div>
-                <div class="action">
-                    <div class="button-wrap">
-                        <button class="med-button">See All Of This Week's Meals</button> 
-                    </div>
-                </div>
-            </div>
-            <div class="fr-ha-co">
-                <div class="heading">
-                    <h3>Fresh, Healthy, &</h3>
-                    <h3> Insanely <span>Convenient</span></h3>
-                </div>
-                <div class="parent">
-                    <div class="item col-sm-4 col-md-4 col-lg-4 col-xs-12">
-                        <div class="icon">
-                            <img src="./images/c1.png" class="img-responsive img" alt="step-1" />
-                        </div>
-                        <div class="reason">
-                            <h3>FRESH, NEVER FROZEN,</h3>
-                            <h3>COOKED EVERYDAY.</h3>
-                            <p>We only use fresh ingredients from our network of trusted partners.</p>
-                        </div>
-                    </div>
-                    <div class="item col-sm-4 col-md-4 col-lg-4 col-xs-12">
-                        <div class="icon">
-                            <img src="./images/c2.png" class="img-responsive img" alt="step-1" />
-                        </div>
-                        <div class="reason">
-                            <h3>EXECUTIVE</h3>
-                            <h3>CHEF-CURATED DISH</h3>
-                            <p>Our registered dietitians work hand-in-hand with our kitchen to ensure.</p>
-                        </div>
-                    </div>
-                    <div class="item col-sm-4 col-md-4 col-lg-4 col-xs-12">
-                        <div class="icon">
-                            <img src="./images/c3.png" class="img-responsive img" alt="step-1" />
-                        </div>
-                        <div class="reason">
-                            <h3>DESIGNED BY FOOD</h3>
-                            <h3>RESEARCHER</h3>
-                            <p>We only use fresh ingredients from our network of trusted partners.</p>
-                        </div>
-                    </div>
-                    <div class="clr"></div>
-                </div>
-                <div class="action">
-                    <p>Ready? Check out our subscription plans</p>
-                    <div class="button-wrap">
-                        <button class="med-button">Get Started</button>
-                    </div>
-                </div>
-            </div>
-            <div class="faq-wrap">
-                <div class="heading"><h3><span>FAQs</span></h3></div>
-                <div class="parent">
-                    <div class="container-left">
-                        <div class="question-wrapper ">
-                            <div class="question">
-                                Quick Fix
-                            </div>
-                            <div class="answer">
-                                At your busiest days, instead of spending hours deciding, cooking and cleaning, you could just subscribe for Sprink.At your busiest days, instead of spending hours deciding, cooking and cleaning, you could just subscribe for Sprink.
-                            </div>
-                        </div>
-                        <div class="question-wrapper ">
-                            <div class="question">
-                            Accounts & Subscription Related
-                            </div>
-                            <div class="answer">
-                                At your busiest days, instead of spending hours deciding, cooking and cleaning, you could just subscribe for Sprink.At your busiest days, instead of spending hours deciding, cooking and cleaning, you could just subscribe for Sprink.
-                            </div>
-                        </div>
-                        <div class="question-wrapper ">
-                            <div class="question">
-                                Delivery Area & Time
-                            </div>
-                            <div class="answer">
-                                At your busiest days, instead of spending hours deciding, cooking and cleaning, you could just subscribe for Sprink.At your busiest days, instead of spending hours deciding, cooking and cleaning, you could just subscribe for Sprink.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container-right">
-                        <div class="question-wrapper ">
-                            <div class="question">
-                                Wallets, Refunds & Cancellation
-                            </div>
-                            <div class="answer">
-                                At your busiest days, instead of spending hours deciding, cooking and cleaning, you could just subscribe for Sprink.At your busiest days, instead of spending hours deciding, cooking and cleaning, you could just subscribe for Sprink.
-                            </div>
-                        </div>
-                        <div class="question-wrapper ">
-                            <div class="question">
-                                Meal Plans, Pricing & Customization
-                            </div>
-                            <div class="answer">
-                                At your busiest days, instead of spending hours deciding, cooking and cleaning, you could just subscribe for Sprink.At your busiest days, instead of spending hours deciding, cooking and cleaning, you could just subscribe for Sprink.
-                            </div>
-                        </div>
-                        <div class="question-wrapper ">
-                            <div class="question">
-                                Meal Plans, Pricing & Customization
-                            </div>
-                            <div class="answer">
-                                At your busiest days, instead of spending hours deciding, cooking and cleaning, you could just subscribe for Sprink.At your busiest days, instead of spending hours deciding, cooking and cleaning, you could just subscribe for Sprink.
-                            </div>
-                        </div>
-                        <div class="clr"></div>
-                    </div>
-                    <div class="clr"></div>
-                </div>
-            </div>
-            <div class="why-us">
-                <div class="heading"><h3><span>Why us</span></h3></div>
-                <div class="parent">
-                    <div class="item col-sm-6 col-md-6 col-lg-6 col-xs-12">
-                        <div class="icon">
-                            <img src="./images/why-us-1.png" class="img img-responsive" alt="better" />
-                        </div>
-                        <div class="reason">
-                            <h3>IT IS BETTER THAN COOKING</h3>
-                            <p>At your busiest days, instead of spending hours deciding, cooking and cleaning, you could just subscribe for Sprink.</p>
-                        </div>
-                    </div>
-                    <div class="item col-sm-6 col-md-6 col-lg-6 col-xs-12">
-                        <div class="icon">
-                            <img src="./images/why-us-2.png" class="img img-responsive" alt="better" />
-                        </div>
-                        <div class="reason">
-                            <h3>WE HAVE VARIETY</h3>
-                            <p>Convenience doesn’t mean you have to eat same menu day after day. Our daily changing menu from variety of Indian.</p>
-                        </div>
-                    </div>
-                    <div class="item col-sm-6 col-md-6 col-lg-6 col-xs-12">
-                        <div class="icon">
-                            <img src="./images/why-us-3.png" class="img img-responsive" alt="better" />
-                        </div>
-                        <div class="reason">
-                            <h3>FLEXIBLE SUBSCRIPTION</h3>
-                            <p>The ease of our services doesn’t come at the cost of making your expenses heavy. Our meals are kept affordable.</p>
-                        </div>
-                    </div>
-                    <div class="item col-sm-6 col-md-6 col-lg-6 col-xs-12">
-                        <div class="icon">
-                            <img src="./images/why-us-4.png" class="img img-responsive" alt="better" />
-                        </div>
-                        <div class="reason">
-                            <h3>WE ARE HYGIENE-OBSESSED</h3>
-                            <p>Every meal that comes to you goes through multiple levels of Hygiene checks that are mandated by our.</p>
-                        </div>
-                    </div>
-                    <div class="clr"></div>
-                </div> 
-            </div>
-        </div>
-        <footer>
-            <div class="footer-main-wrap">
-                <div class="footer-in">
-                    <div class="f-logo col-sm-6 col-md-6 col-lg-7 col-xs-12">
-                        <img src="./images/footer-logo.png" class="img-responsive img" alt="sprink" />
-                    </div>
-                    <div class="f-social col-sm-3 col-md-3 col-lg-2 col-xs-6">
-                        <h3>Follow Us</h3>
-                        <div class="links">
-                            <ul>
-                                <li>
-                                    <a href="#"><img src="./images/insta.png" class="img-responsive img" alt="Instagram" /></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="./images/s2.png" class="img-responsive img" alt="S2" /></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="./images/twitter.png" class="img-responsive img" alt="Twitter" /></a>
-                                </li>
-                                <li>
-                                    <a href="#"><img src="./images/youtube.png" class="img-responsive img" alt="Youtube" /></a>
-                                </li>
-                                <div class="clr"></div>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="f-contact col-sm-3 col-md-3 col-lg-3 col-xs-3">
-                        <h3>Contact Us</h3>
-                        <p>+98888 88888</p>
-                        <p>help@sprink.online</p>
-                    </div>
-                    <div class="clr"></div>
-                </div>
-                <div class="footer-out">
-                    <div class="sub-menu">
-                        <ul>
-                            <li>
-                                <a href="#">FAQs</a><span></span>
-                            </li>
-                            <li>
-                                <a href="#">Blog</a><span></span>
-                            </li>
-                            <li>
-                                <a href="#">Careers</a><span></span>
-                            </li>
-                            <li>
-                                <a href="#">Terms & Conditions</a>
-                            </li>
-                            <div class="clr"></div>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>Copyright © 2021 - 2022 Sprink</p>
-            </div>
-        </footer>
-    </body>
+	    <table>
+	    	<tr>
+	    		<td>
+	    			<label>Name</label>
+	    		</td>
+	    		<td>
+	    			<input type="text" name="Name" placeholder="Name" required />
+	    		</td>
+	    	</tr>				
+	    	<tr>
+	    		<td>
+	    			<label>Mobile</label>
+	    		</td>
+	    		<td>
+	    			<input type="text" name="Mobile" placeholder="Mobile" required />
+	    		</td>
+	    	</tr>				
+	    	<tr>
+	    		<td>
+	    			<label>Latitude</label>
+	    		</td>
+	    		<td>
+	    			<input
+			          type="text"
+			          name="Lat"
+			          placeholder="Latitude"
+			          id="latitude"
+			          required
+			        />
+	    		</td>
+	    	</tr>				
+	    	<tr>
+	    		<td>
+	    			<label>Longitude</label>
+	    		</td>
+	    		<td>
+	    			<input
+			          type="text"
+			          name="Long"
+			          placeholder="Longitude"
+			          id="longitude"
+			          required
+			        />
+	    		</td>
+	    	</tr>		
+	    	<tr>
+	    		<td colspan="2">
+	    			<button type="submit" id="submit-form">Submit</button>
+	    		</td>
+	    	</tr>
+	    </table>
+    </form>
+
+    <script>
+      var x = document.getElementById("demo");
+
+      function getLocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+          x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+      }
+
+      function showPosition(position) {
+        x.innerHTML =
+          "Latitude: " +
+          position.coords.latitude +
+          "<br>Longitude: " +
+          position.coords.longitude;
+
+        document.getElementById("latitude").value = position.coords.latitude;
+        document.getElementById("longitude").value = position.coords.longitude;
+      }
+    </script>
+  </body>
 </html>
