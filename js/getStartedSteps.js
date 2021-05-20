@@ -1,3 +1,8 @@
+let mealSubscriptionObject = {
+    mealSubscription: [],
+    skipNoneVegDays: [],
+    cuisineSelected: [],
+};
 let getStartedSteps = {
     init: function () {
         $(".step-par-actions .prev a").on("click", function () {
@@ -5,6 +10,30 @@ let getStartedSteps = {
         });
         $(".step-par-actions .next a").on("click", function () {
             getStartedSteps.moveSteps("next");
+        });
+        $(".step-btn-slide").on("click", function (event) {
+            getStartedSteps.buildMealSubscriptionInfo(event);
+        });
+        $(".step-btn-meal-subs").on("click", function (event) {
+            getStartedSteps.subscriptionOption(
+                event,
+                mealSubscriptionObject.mealSubscription,
+                "mealsubs"
+            );
+        });
+        $(".slide-skip-nv").on("click", function (event) {
+            getStartedSteps.subscriptionOption(
+                event,
+                mealSubscriptionObject.skipNoneVegDays,
+                "skipday"
+            );
+        });
+        $(".slide-cuisine").on("click", function (event) {
+            getStartedSteps.subscriptionOption(
+                event,
+                mealSubscriptionObject.cuisineSelected,
+                "cuisine"
+            );
         });
     },
     moveSteps: function (type) {
@@ -41,8 +70,36 @@ let getStartedSteps = {
         $(steps).removeClass("step-done");
         $(steps[0]).addClass("step-done");
         for (let i = 0; i < count; i++) {
-            console.log("here", steps[i]);
             $(steps[i + 1]).addClass("step-done");
+        }
+    },
+    buildMealSubscriptionInfo: function (event) {
+        let element = event.currentTarget;
+        let data = $(element).data("info");
+        console.log(data);
+        mealSubscription = Object.assign(mealSubscriptionObject, data);
+        console.log(mealSubscription);
+        if (data.potionSize) {
+            console.log("last step");
+            sessionStorage.setItem(
+                "mealSubsInfo",
+                JSON.stringify(mealSubscription)
+            );
+        }
+    },
+    subscriptionOption: function (event, arr, dataVar) {
+        let element = event.currentTarget;
+        let data = $(element).data(dataVar);
+        console.log("data", data);
+        console.log("arr", arr);
+        if (arr.includes(data)) {
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] === data) {
+                    data.splice(i, 1);
+                }
+            }
+        } else {
+            arr.push(data);
         }
     },
 };
