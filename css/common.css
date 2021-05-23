@@ -61,3 +61,8 @@ button.med-button {
 .active {
     display: block !important;
 }
+.hor-line {
+    border-top: 1px solid #c4c4c4;
+    width: 80%;
+    margin: 10% auto 3%;
+}
