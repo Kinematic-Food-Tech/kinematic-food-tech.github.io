@@ -440,7 +440,8 @@
 
 .subscription-container {
     width: 60%;
-    margin: 8% auto 0;
+    margin: 0 auto 0;
+    padding-top: 8%;
 }
 
 .subscription-container .subscription-tile {
@@ -526,6 +527,99 @@
     background: linear-gradient(90deg, #f24e38 0%, #fd7f0b 93.32%) !important;
     box-shadow: 0px 15px 25px rgba(28, 87, 174, 0.33) !important;
     border-radius: 5px;
+}
+
+.auth-container {
+    padding-top: 10%;
+}
+
+.auth-wrapper {
+    background: #fff;
+    width: 40%;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.auth-wrapper-inn {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+}
+.top-links {
+    margin-bottom: 30px;
+}
+.top-links ul {
+    margin: 0;
+    padding: 0;
+}
+.top-links ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+.top-links ul li a {
+    display: block;
+    font-size: 26px;
+    font-weight: normal;
+    color: #808080;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.auth-wrapper-inn .sign-up-wrap {
+    padding-top: 30px;
+}
+
+.auth-wrapper-inn .sign-up-wrap button {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    height: 50px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+    border: none;
+    text-align: initial;
+}
+
+.auth-wrapper-inn .sign-up-wrap button img {
+    width: 30px;
+    height: 30px;
+    margin-top: 2px;
+    margin-left: 8px;
+    margin-right: 10px;
+}
+.phone-sign-up img {
+    height: 30px !important;
+    width: 20px !important;
+    margin-top: 8px !important;
+}
+
+.phone-sign-in {
+    text-align: center;
+}
+.phone-sign-in button {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.otp-in {
+    margin-left: 15%;
+    margin-bottom: 30px;
+}
+
+.otp-in button {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.auth-container {
+    height: 130vh !important;
+}
+.otp-wrap p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .footer-main-wrap.steps {
