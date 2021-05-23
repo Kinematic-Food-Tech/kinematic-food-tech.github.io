@@ -89,10 +89,21 @@ button.med-button {
     border: 1px solid #c4c4c4;
     padding: 12px 25px;
 }
+.input-forty-percent {
+    width: 50%;
+    font-size: 16px;
+    border-radius: 3px;
+    border: 1px solid #c4c4c4;
+    padding: 12px 25px;
+}
 .input-single-length {
     width: 50px;
     font-size: 16px;
     border-radius: 3px;
     border: 1px solid #c4c4c4;
     padding: 10px;
+}
+p {
+    font-size: 16px;
+    font-weight: 500;
 }

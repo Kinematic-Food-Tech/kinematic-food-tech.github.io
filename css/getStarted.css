@@ -540,11 +540,28 @@
     margin-left: auto;
     margin-right: auto;
 }
+.register-container {
+    padding-top: 8%;
+}
+.register-wrap-par {
+    background: #fff;
+    width: 80%;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .auth-wrapper-inn {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 50px;
+}
+.register-wrapper {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 80px;
 }
 .top-links {
     margin-bottom: 30px;
@@ -620,6 +637,50 @@
     margin-top: 10px;
     font-size: 16px;
     font-weight: 500;
+}
+.register-wrapper .input-con label {
+    width: 15% !important;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+}
+.register-wrapper .input-con {
+    margin-bottom: 10px;
+}
+.register-wrapper .input-con input {
+    width: 80% !important;
+    display: inline-block;
+    padding: 8px 25px;
+}
+.register-wrapper .input-con p {
+}
+.register-wrapper .input-con .error {
+    display: none;
+}
+.register-wrapper .head {
+    color: #000;
+    margin-bottom: 50px;
+}
+.register-wrapper .head p {
+    color: #333;
+}
+
+.register-wrapper .divider.add {
+    width: 15%;
+}
+.register-wrapper .divider.in {
+    width: 80%;
+}
+
+.register-wrapper .divider.in input {
+    width: 47% !important;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.register-wrapper .form-action {
+    text-align: center;
+    padding-top: 30px;
 }
 
 .footer-main-wrap.steps {
