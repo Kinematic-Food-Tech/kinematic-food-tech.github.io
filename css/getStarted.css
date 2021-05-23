@@ -652,8 +652,7 @@
     display: inline-block;
     padding: 8px 25px;
 }
-.register-wrapper .input-con p {
-}
+
 .register-wrapper .input-con .error {
     display: none;
 }
@@ -683,6 +682,49 @@
     padding-top: 30px;
 }
 
+.payment-wrapper {
+    width: 65%;
+    padding: 30px;
+    position: relative;
+}
+.payment-in {
+    background: #fff9ee;
+}
+.payment-in .back-profile {
+    text-align: center;
+}
+.payment-in .back-profile button {
+    background: #acd56d;
+}
+.payments-container {
+    height: 150vh !important;
+}
+.payments-container .close {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid #c4c4c4;
+    float: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 99;
+    background: #fff;
+    padding-left: 8px;
+    padding-top: 4px;
+}
+
+.payment-success-img {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 10%;
+}
+.payment-success-img img {
+    width: 100%;
+    height: auto;
+}
 .footer-main-wrap.steps {
     box-shadow: 0px 6.80462px 34.0231px rgba(0, 0, 0, 0.1);
     bottom: 0;
