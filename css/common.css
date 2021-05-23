@@ -30,6 +30,7 @@
 }
 button {
     outline: 0;
+    border: none;
 }
 a {
     text-decoration: none !important;
@@ -50,6 +51,21 @@ button.med-button {
     text-transform: uppercase;
     background: linear-gradient(90deg, #1e8ff7 0%, #24b3f1 93.32%);
     box-shadow: 0px 15px 25px rgba(28, 87, 174, 0.33);
+    border-radius: 5px;
+    border: none !important;
+    margin-bottom: 20px;
+}
+button.med-button-transparent {
+    width: 308.2px;
+    height: 48.86px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 91%;
+    text-align: center;
+    letter-spacing: -0.576517px;
+    color: #ffffff;
+    text-transform: uppercase;
     border-radius: 5px;
     border: none !important;
     margin-bottom: 20px;

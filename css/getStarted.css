@@ -176,7 +176,8 @@
 
 /* food summary page css */
 
-.food-summary-container {
+.food-summary-container,
+.order-container {
     width: 80%;
     margin: 5% auto 0;
     box-shadow: 0px 6.80462px 34.0231px rgba(0, 0, 0, 0.1);
@@ -724,6 +725,214 @@
 .payment-success-img img {
     width: 100%;
     height: auto;
+}
+
+/* order summary page css starts */
+.order-container {
+    padding-top: 50px;
+}
+.order-container .page-nav,
+.order-container .page-order-st,
+.order-container .page-order-subs,
+.order-container .page-delivery,
+.order-container .page-comp-action {
+    width: 80%;
+    margin: 0 auto;
+}
+.order-container .page-nav {
+    font-size: 20px;
+    color: #ccc;
+}
+.order-container .page-nav a {
+    text-decoration: none !important;
+}
+.order-container .page-nav a.current-page {
+    color: #000;
+    letter-spacing: 0.3px;
+}
+.order-container .page-nav a.next-page {
+    color: #ccc;
+    letter-spacing: 0.3px;
+}
+.order-container .page-order-st .head {
+    text-align: left;
+}
+.order-container .page-order-st .head h3 {
+    margin-top: 30px;
+    color: #d23e5f;
+}
+.order-container .page-order-st .head h4 {
+    margin-top: 35px;
+}
+.order-container .order-wrapper .page-order-subs {
+    margin-top: 40px;
+}
+.order-container .order-wrapper .page-order-subs .page-order-bl {
+    width: 85%;
+    border: 1px solid #b7b3b5;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.page-order-subs .page-order-bl .food-img {
+    width: 20%;
+}
+.page-order-subs .page-order-bl .food-img .food-time {
+    border-radius: 7px;
+    height: 130px;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page-order-subs .page-order-bl .food-img .food-time img {
+    height: 110px;
+    width: 110px;
+}
+.page-order-subs .page-order-bl .food-details {
+    width: 60%;
+}
+.page-order-subs .page-order-bl .food-details .sel-start a {
+    font-size: 18px;
+    color: #d23e5f;
+    text-decoration: none !important;
+    font-weight: 500;
+}
+.page-order-subs .page-order-bl .food-details .sel-start a img {
+    width: 20px;
+    height: 20px;
+}
+.page-order-subs .page-order-bl .food-ac {
+    width: 15%;
+}
+.page-order-subs .page-order-bl .food-ac button {
+    background-color: #ff1517;
+    padding: 7px 20px;
+    color: #fff;
+    border: none;
+    margin-top: 40px;
+}
+.page-order-subs .total-wr {
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    width: 90%;
+    margin-top: 50px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.page-delivery .head {
+    text-align: left;
+    margin-bottom: 70px;
+}
+.page-delivery .head h3 {
+    color: #d23e5f;
+}
+.page-delivery .address-cont .def-add {
+    width: 100%;
+    border-bottom: 1px solid #c4c4c4;
+    padding-bottom: 30px;
+    margin-bottom: 60px;
+}
+.page-delivery .address-cont .def-add .address {
+    width: 40%;
+}
+.page-delivery .address-cont .def-add .address h3 {
+    font-size: 20px;
+}
+.page-delivery .address-cont .def-add .address-ac {
+    width: 58%;
+    text-align: right;
+}
+.page-delivery .address-cont .def-add .address-ac button {
+    margin-top: 30px;
+}
+.subs-ad-bl .subs-ad .address {
+    width: 50%;
+}
+.subs-ad-bl .subs-ad .add-new-addr {
+    width: 45%;
+    margin-top: 20px;
+}
+.subs-ad-bl .subs-ad .address h3 {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+.subs-ad-bl .subs-ad .address h4 {
+    font-size: 20px;
+}
+.subs-ad-bl .subs-ad .address h5 {
+    font-size: 18px;
+    margin-bottom: 0;
+    margin-top: 30px;
+}
+.subs-ad-bl .subs-ad .address p {
+    font-size: 16px;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+}
+.subs-ad-bl .subs-ad .address .actions .deliver button {
+    background-color: #ffdb71;
+    font-size: 14px;
+    padding: 8px 35px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.subs-ad-bl .subs-ad .address .actions .addr-actions button {
+    background-color: #eaeaea;
+    font-size: 14px;
+    padding: 8px 35px;
+}
+.subs-ad-bl .subs-ad .add-new-addr .top a {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    display: block;
+}
+.subs-ad-bl .subs-ad .add-new-addr input {
+    border: 1px solid #c4c4c4;
+    width: 75%;
+    padding: 7px 10px;
+    margin-bottom: 10px;
+    color: #666;
+}
+.subs-ad-bl .subs-ad .add-new-addr select {
+    border: 1px solid #c4c4c4;
+    width: 27%;
+    padding: 7px 10px;
+    margin-bottom: 10px;
+    color: #666;
+    margin-left: 10px;
+}
+.subs-ad-bl .subs-ad .add-new-addr .input-item button {
+    border: 1px solid #c4c4c4;
+    width: 35%;
+    padding: 7px 10px;
+    margin-bottom: 10px;
+    color: #666;
+    margin-left: 10px;
+}
+.subs-ad-bl .subs-ad .add-new-addr .addr-action {
+    padding-top: 20px;
+}
+.subs-ad-bl .subs-ad .add-new-addr .addr-action button {
+    height: 35px;
+    text-transform: revert;
+}
+.order-wrapper .page-comp-action {
+    margin-top: 12%;
+    text-align: center;
+    margin-bottom: 5%;
+    padding-bottom: 40px;
+}
+.order-wrapper .page-comp-action button {
+    background-color: #d23e5f;
+    font-size: 18px;
+    text-transform: revert;
+    height: 40px;
 }
 .footer-main-wrap.steps {
     box-shadow: 0px 6.80462px 34.0231px rgba(0, 0, 0, 0.1);

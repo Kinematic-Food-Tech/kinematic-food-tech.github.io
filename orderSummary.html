@@ -15,6 +15,9 @@
             type="image"
             sizes="16x16"
         />
+        <link rel="stylesheet" href="./css/getStarted.css" type="text/css" />
+        <link rel="stylesheet" href="./css/common.css" type="text/css" />
+        <link rel="stylesheet" href="./css/backgroundImage.css" type="text/css" />
         <script type="text/javascript" src="./vendor/js/jquery.js"></script>
         <script type="text/javascript" src="./vendor/js/popper.js"></script>
         <script type="text/javascript" src="./vendor/js/bootstrap.js"></script>
@@ -38,63 +41,70 @@
             <div class="order-container">
                 <div class="order-wrapper">
                     <div class="page-nav">
-                        <a href="#">Order Details && Delivery Address</a>
-                        <a href="#">Payment & Check Out</a>
+                        <a href="#" class="current-page">Order Details & Delivery Address</a>
+                        >>
+                        <a href="#" class="next-page">Payment & Check Out</a>
                     </div>
                     <div class="page-order-st">
                         <div class="head">
                             <h3>Order Details</h3>
-                            <p>Your Subscriptions</p>
+                            <h4>Your Subscriptions</h4>
                         </div>
                     </div>
                     <div class="page-order-subs">
                         <div class="page-order-bl">
-                            <div class="food-img">
-                                <img src="" alt="food-image" class="img img-responsive" />
+                            <div class="food-img f-l">
+                                <div class="breakfast-tile food-time">
+                                    <img src="./images/breakfast-image.png" alt="food-image" class="img img-responsive" />
+                                </div>
                             </div>
-                            <div class="food-details">
+                            <div class="food-details f-l">
                                 <h4>Breakfast</h4>
                                 <div class="pr-wp">
                                     <p>Subscription for 30 days | INR 2000</p>
                                 </div>
                                 <div class="sel-start">
-                                    Select a start date
-                                    <a href="#"></a>
+                                    <a href="#">Select a start date <img src="./images/edit-icon.png" /></a>
                                 </div>
                             </div>
-                            <div class="food-ac">
+                            <div class="food-ac f-l">
                                 <button>Remove</button>
                             </div>
+                            <div class="clr"></div>
                         </div>
                         <div class="total-wr">
                             Total 6000
                         </div>
                     </div>
+                    <div class="hor-line"></div>
                     <div class="page-delivery">
                         <div class="head">
                             <h3>Delivery Address</h3>
                         </div>
                         <div class="address-cont">
                             <div class="def-add">
-                                <div class="address">
-                                    <div class="addr-type">Home</div>
+                                <div class="address f-l">
+                                    <div class="addr-type">
+                                        <h3>Home</h3>
+                                    </div>
                                     <p>
                                         18, Riveria Heights, Koramangala, 6th Block,
                                     </p>
                                     <p>
                                         Bangalore, Karnataka - 560012</p>
                                 </div>
-                                <div class="address-ac">
-                                    <button>Set as default address</button>
+                                <div class="address-ac f-l">
+                                    <button class="med-button">Set as default address</button>
                                 </div>
+                                <div class="clr"></div>
                             </div>
                             <div class="subs-ad-bl">
                                 <div class="subs-ad">
-                                    <div class="address">
-                                        <div class="subs-type">Breakfast</div>
-                                        <div class="subs-del">Delivering to Home</div>
-                                        <div class="addr-type">Home</div>
-                                        <div class="del-to">Chaitali Das</div>
+                                    <div class="address f-l">
+                                        <div class="subs-type"><h3>Breakfast</h3></div>
+                                        <div class="subs-del"><h4>Delivering to Home</h4></div>
+                                        <div class="addr-type"><h4>Home</h4></div>
+                                        <div class="del-to"><h5>Chaitali Das</h5></div>
                                         <p>18, Riveria Heights</p>
                                         <p>Koramangala, 6th Block</p>
                                         <p>Bangalore</p>
@@ -109,9 +119,11 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="add-new-addr">
+                                    <div class="add-new-addr f-l">
                                         <div class="top">
-                                            + Add new address
+                                            <a href="#">
+                                                + Add new address
+                                            </a>
                                         </div>
                                         <div class="new-addr">
                                             <div class="input-item">
@@ -133,19 +145,22 @@
                                                         <option value="home">Home</option>
                                                         <option value="office">Office</option>
                                                     </select>
+                                                    <button>Locate Me</button>
                                                 </div>
                                             </div>
                                             <div class="addr-action">
-                                                <button>Add Address</button>
+                                                <button class="med-button">Add Address</button>
                                             </div>
                                         </div>
+                                        <div class="clr"></div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="clr"></div>
                         </div>
                     </div>
                     <div class="page-comp-action">
-                        <button>Next</button>
+                        <button class="med-button-transparent">Next</button>
                     </div>
                 </div>
             </div>
