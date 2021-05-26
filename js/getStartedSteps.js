@@ -56,6 +56,19 @@ let getStartedSteps = {
                     getStartedSteps.moveStepsInFooter(activeIndex);
                 }
                 break;
+            case "veg":
+                $(slides).removeClass("active");
+                activeIndex = activeIndex + 4;
+                $(slides[activeIndex]).addClass("active");
+                getStartedSteps.moveStepsInFooter(activeIndex);
+                break;
+            case "notSkipNonVeg":
+                $(slides).removeClass("active");
+                activeIndex = activeIndex + 2;
+                $(slides[activeIndex]).addClass("active");
+                getStartedSteps.moveStepsInFooter(activeIndex);
+                break;
+                break;
         }
     },
     getActiveIndex: function (data) {
@@ -76,15 +89,22 @@ let getStartedSteps = {
     buildMealSubscriptionInfo: function (event) {
         let element = event.currentTarget;
         let data = $(element).data("info");
-        console.log(data);
         mealSubscription = Object.assign(mealSubscriptionObject, data);
-        console.log(mealSubscription);
+
+        if (data["mealCategory"] && data["mealCategory"] === "veg") {
+            getStartedSteps.moveSteps("veg");
+        } else if (data["skipNonVeg"] && data["skipNonVeg"] == "no") {
+            getStartedSteps.moveSteps("notSkipNonVeg");
+        } else {
+            getStartedSteps.moveSteps("next");
+        }
+
         if (data.potionSize) {
-            console.log("last step");
             sessionStorage.setItem(
                 "mealSubsInfo",
                 JSON.stringify(mealSubscription)
             );
+            window.location.href = "food-summary.html";
         }
     },
     subscriptionOption: function (event, arr, dataVar) {
