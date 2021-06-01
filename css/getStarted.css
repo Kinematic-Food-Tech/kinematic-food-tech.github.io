@@ -863,16 +863,21 @@
 .subs-ad-bl .subs-ad .address h4 {
     font-size: 20px;
 }
-.subs-ad-bl .subs-ad .address h5 {
+.subs-ad-bl .subs-ad .address h5,
+.addr-header .addr-type h3 {
     font-size: 18px;
     margin-bottom: 0;
     margin-top: 30px;
 }
-.subs-ad-bl .subs-ad .address p {
+.subs-ad-bl .subs-ad .address p,
+.addr-header .delivery-sub {
     font-size: 16px;
     font-weight: normal;
     padding: 0;
     margin: 0;
+}
+.addr-header .delivery-sub span {
+    color: #d23e5f;
 }
 .subs-ad-bl .subs-ad .address .actions .deliver button {
     background-color: #ffdb71;
@@ -892,22 +897,17 @@
     margin-bottom: 15px;
     display: block;
 }
-.subs-ad-bl .subs-ad .add-new-addr input {
+#address-modal input {
     border: 1px solid #c4c4c4;
-    width: 75%;
+    width: 85%;
     padding: 7px 10px;
     margin-bottom: 10px;
     color: #666;
 }
-.subs-ad-bl .subs-ad .add-new-addr select {
-    border: 1px solid #c4c4c4;
-    width: 27%;
-    padding: 7px 10px;
-    margin-bottom: 10px;
-    color: #666;
-    margin-left: 10px;
+#address-modal .modal-body {
+    text-align: center;
 }
-.subs-ad-bl .subs-ad .add-new-addr .input-item button {
+#address-modal select {
     border: 1px solid #c4c4c4;
     width: 35%;
     padding: 7px 10px;
@@ -915,10 +915,18 @@
     color: #666;
     margin-left: 10px;
 }
-.subs-ad-bl .subs-ad .add-new-addr .addr-action {
+#address-modal .input-item button {
+    border: 1px solid #c4c4c4;
+    width: 38.5%;
+    padding: 7px 10px;
+    margin-bottom: 10px;
+    color: #666;
+    margin-left: 10px;
+}
+#address-modal .addr-action {
     padding-top: 20px;
 }
-.subs-ad-bl .subs-ad .add-new-addr .addr-action button {
+#address-modal .addr-action button {
     height: 35px;
     text-transform: revert;
 }
@@ -1009,4 +1017,34 @@
 }
 .footer-main-wrap.steps .footer-steps-wrap .step.step-done {
     background-color: #93278f;
+}
+/* Modal CSS */
+
+/* .calendar-modal,
+.address-modal {
+    display: none;
+} */
+#calendar-modal h5,
+#address-modal h5,
+.subs-type h3 {
+    color: #d23e5f;
+}
+.control-actions-address a {
+    color: #000 !important;
+    text-decoration: none;
+}
+.address-cont .subs-ad-bl .del-to {
+    width: 55%;
+}
+.address-cont .subs-ad-bl .del-to,
+.address-cont .subs-ad-bl .delivery-sub {
+    position: relative;
+}
+.address-cont .subs-ad-bl .delivery-sub {
+    padding-right: 50px;
+}
+.control-actions-address {
+    position: absolute;
+    right: 0;
+    top: 0;
 }

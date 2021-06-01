@@ -7,6 +7,8 @@
             href="./vendor/css/bootstrap.min.css"
             type="text/css"
         />
+        <link rel="stylesheet" href="./vendor/css/calendar.css" type="text/css" />
+
         <link rel="stylesheet" href="./css/index.css" type="text/css" />
         <link rel="stylesheet" href="./css/common.css" type="text/css" />
         <link
@@ -21,7 +23,10 @@
         <script type="text/javascript" src="./vendor/js/jquery.js"></script>
         <script type="text/javascript" src="./vendor/js/popper.js"></script>
         <script type="text/javascript" src="./vendor/js/bootstrap.js"></script>
+        <script type="text/javascript" src="./vendor/js/moment-locale.js"></script>
+        <script type="text/javascript" src="./vendor/js/calendar.js"></script>
         <script type="text/javascript" src="./js/homePage.js"></script>
+        <script type="text/javascript" src="./js/orderSummary.js"></script>
     </head>
     <body>
         <header>
@@ -64,7 +69,7 @@
                                     <p>Subscription for 30 days | INR 2000</p>
                                 </div>
                                 <div class="sel-start">
-                                    <a href="#">Select a start date <img src="./images/edit-icon.png" /></a>
+                                    <a href="javascript:void(0);" class="select-start-date" data-mealtype="Breakfast">Select a start date <img src="./images/edit-icon.png" /></a>
                                 </div>
                             </div>
                             <div class="food-ac f-l">
@@ -101,10 +106,15 @@
                             <div class="subs-ad-bl">
                                 <div class="subs-ad">
                                     <div class="address f-l">
-                                        <div class="subs-type"><h3>Breakfast</h3></div>
-                                        <div class="subs-del"><h4>Delivering to Home</h4></div>
-                                        <div class="addr-type"><h4>Home</h4></div>
-                                        <div class="del-to"><h5>Chaitali Das</h5></div>
+                                        <div class="subs-type"><h3>Delivery Address</h3></div>
+                                        
+                                        <div class="del-to">
+                                            <h5>Home</h5>
+                                            <div class="control-actions-address">
+                                                <a href="javascript:void(0);" data-name="edit" class="glyphicon glyphicon-pencil"></a>
+                                                <a href="javascript:void(0);" data-name="delete" class="glyphicon glyphicon-trash"></a>
+                                            </div>
+                                        </div>
                                         <p>18, Riveria Heights</p>
                                         <p>Koramangala, 6th Block</p>
                                         <p>Bangalore</p>
@@ -113,46 +123,62 @@
                                             <div class="deliver">
                                                 <button>Deliver to this address</button>
                                             </div>
-                                            <div class="addr-actions">
+                                            <!-- <div class="addr-actions">
                                                 <button>Edit</button>
                                                 <button>Delete</button>
+                                            </div> -->
+                                        </div>
+                                        <div class="add-new-addr">
+                                            <div class="top">
+                                                <a href="javascript:void(0);" class="add-new-addr-link">
+                                                    + Add new address
+                                                </a>
                                             </div>
+                                            
+                                            <div class="clr"></div>
                                         </div>
                                     </div>
-                                    <div class="add-new-addr f-l">
-                                        <div class="top">
-                                            <a href="#">
-                                                + Add new address
-                                            </a>
-                                        </div>
-                                        <div class="new-addr">
-                                            <div class="input-item">
-                                                <input type="text" placeholder="Flat/House No" />
+                                    <div class="list-addr f-l">
+                                        <div class="addr-header">
+                                            <div class="addr-type">
+                                                <h3>Home</h3>
                                             </div>
-                                            <div class="input-item">
-                                                <input type="text" placeholder="Locality" />
-                                            </div>
-                                            <div class="input-item">
-                                                <input type="text" placeholder="Building Name" />
-                                            </div>
-                                            <div class="input-item">
-                                                <input type="text" placeholder="PinCode" />
-                                            </div>
-                                            <div class="input-item">
-                                                <div class="tag">
-                                                    <label>Tag</label>
-                                                    <select name="" id="">
-                                                        <option value="home">Home</option>
-                                                        <option value="office">Office</option>
-                                                    </select>
-                                                    <button>Locate Me</button>
+                                            <div class="delivery-sub">
+                                                Delivering to <span>Home</span>
+                                                <div class="control-actions-address">
+                                                    <a href="javascript:void(0);" data-name="edit" class="glyphicon glyphicon-pencil"></a>
+                                                    <a href="javascript:void(0);" data-name="delete" class="glyphicon glyphicon-trash"></a>
                                                 </div>
                                             </div>
-                                            <div class="addr-action">
-                                                <button class="med-button">Add Address</button>
+                                        </div>
+                                        <div class="addr-header">
+                                            <div class="addr-type">
+                                                <h3>Lunch</h3>
+                                            </div>
+                                            <div class="delivery-sub">
+                                                Delivering to <span>Home</span>
+                                                <div class="control-actions-address">
+                                                    <div class="control-actions-address">
+                                                        <a href="javascript:void(0);" data-name="edit" class="glyphicon glyphicon-pencil"></a>
+                                                        <a href="javascript:void(0);" data-name="delete" class="glyphicon glyphicon-trash"></a>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="clr"></div>
+                                        <div class="addr-header">
+                                            <div class="addr-type">
+                                                <h3>Dinner</h3>
+                                            </div>
+                                            <div class="delivery-sub">
+                                                Delivering to <span>Home</span>
+                                                <div class="control-actions-address">
+                                                    <div class="control-actions-address">
+                                                        <a href="javascript:void(0);" data-name="edit" class="glyphicon glyphicon-pencil"></a>
+                                                        <a href="javascript:void(0);" data-name="delete" class="glyphicon glyphicon-trash"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -165,6 +191,72 @@
                 </div>
             </div>
         </section>
+        <div class="modal" tabindex="-1" role="dialog" id="calendar-modal">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Select new Date</h5>
+                        <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                        >
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="calendar-wrap" id="calendar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" tabindex="-1" role="dialog" id="address-modal">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Select new Date</h5>
+                        <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                        >
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="new-addr">
+                            <div class="input-item">
+                                <input type="text" placeholder="Flat/House No" />
+                            </div>
+                            <div class="input-item">
+                                <input type="text" placeholder="Locality" />
+                            </div>
+                            <div class="input-item">
+                                <input type="text" placeholder="Building Name" />
+                            </div>
+                            <div class="input-item">
+                                <input type="text" placeholder="PinCode" />
+                            </div>
+                            <div class="input-item">
+                                <div class="tag">
+                                    <label>Tag</label>
+                                    <select name="" id="">
+                                        <option value="home">Home</option>
+                                        <option value="office">Office</option>
+                                    </select>
+                                    <button>Locate Me</button>
+                                </div>
+                            </div>
+                            <div class="addr-action">
+                                <button class="med-button">Add Address</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <footer>
             <div class="footer-main-wrap">
                 <div class="footer-in">

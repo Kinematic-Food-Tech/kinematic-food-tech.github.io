@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "Glyphicons Halflings";
+    src: url("../fonts/glyphicons-halflings-regular.ttf") format("truetype");
+}
 .small-button-transparent {
     background: transparent;
     color: #0f2340;
@@ -145,4 +149,21 @@ p {
 }
 .t-r {
     text-align: right;
+}
+.glyphicon {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: "Glyphicons Halflings";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.glyphicon-trash:before {
+    content: "\e020";
+}
+.glyphicon-pencil:before {
+    content: "\270f";
 }
