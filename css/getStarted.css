@@ -1029,3 +1029,22 @@
 .subs-type h3 {
     color: #d23e5f;
 }
+.control-actions-address a {
+    color: #000 !important;
+    text-decoration: none;
+}
+.address-cont .subs-ad-bl .del-to {
+    width: 55%;
+}
+.address-cont .subs-ad-bl .del-to,
+.address-cont .subs-ad-bl .delivery-sub {
+    position: relative;
+}
+.address-cont .subs-ad-bl .delivery-sub {
+    padding-right: 50px;
+}
+.control-actions-address {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
