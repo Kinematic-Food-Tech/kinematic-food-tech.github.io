@@ -25,6 +25,14 @@ var orderSummary = {
                 $("#address-modal").modal("show");
             }, 100);
         });
+        $(".control-actions-address a.glyphicon-pencil").on(
+            "click",
+            function (event) {
+                setTimeout(() => {
+                    $("#address-modal").modal("show");
+                }, 100);
+            }
+        );
     },
     pushStartDate: function (ev) {
         let startDate = ev.currentSelected;
