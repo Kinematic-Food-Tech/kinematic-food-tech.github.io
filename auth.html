@@ -21,6 +21,7 @@
         <script type="text/javascript" src="./vendor/js/popper.js"></script>
         <script type="text/javascript" src="./vendor/js/bootstrap.js"></script>
         <script type="text/javascript" src="./js/homePage.js"></script>
+        <script type="text/javascript" src="./js/auth.js"></script>
     </head>
     <body>
         <header>
@@ -60,20 +61,23 @@
                         </div>
                         <div class="phone-sign-in">
                             <div class="item">
-                                <input type="text" class="input-hundred-percent" placeholder="Enter your phone number" />
-                                <button class="small-button">Verify</button>
+                                <input type="text" class="input-hundred-percent phone-input" placeholder="Enter your phone number" required/>
+                                <p class="error hidden">Please enter a valid phone number</p>
+                                <button class="small-button verify-phone">Verify</button>
                             </div>
                         </div>
                     </div>
-                    <div class="otp-in">
-                        <div class="otp-wrap f-l">
-                            <input type="text" class="input-single-length" maxlength="1" />
-                            <input type="text" class="input-single-length" maxlength="1" />
-                            <input type="text" class="input-single-length" maxlength="1" />
-                            <input type="text" class="input-single-length" maxlength="1" />
-                            <input type="text" class="input-single-length" maxlength="1" />
-                            <input type="text" class="input-single-length" maxlength="1" />
+                    <div class="otp-in hidden">
+                        <div class="otp-wrap digit-group f-l">
+                            <input type="text" class="input-single-length" id="digit-1" name="digit-1" data-next="digit-2" maxlength="1" />
+                            <input type="text" class="input-single-length" id="digit-2" name="digit-2" data-next="digit-3" data-previous="digit-1" maxlength="1"/>
+                            <input type="text" class="input-single-length" id="digit-3" name="digit-3" data-next="digit-4" data-previous="digit-2" maxlength="1"/>
+                            <input type="text" class="input-single-length" id="digit-4" name="digit-4" data-next="digit-5" data-previous="digit-3" maxlength="1"/>
+                            <input type="text" class="input-single-length" id="digit-5" name="digit-5" data-next="digit-6" data-previous="digit-4" maxlength="1"/>
+                            <input type="text" class="input-single-length" id="digit-6" name="digit-6" data-previous="digit-5" maxlength="1"/>
+                            
                             <p>Enter your OTP</p>
+                            
                         </div>
                         <div class="action f-l">
                             <button class="small-button">Resend</button>
