@@ -44,6 +44,7 @@ var auth = {
     validateOTP: function (otp) {
         console.log(otp);
         //make call to verify otp
+        //service call to push otp
     },
     verifyPhone: function () {
         let phoneNumber = $(".phone-input").val();
