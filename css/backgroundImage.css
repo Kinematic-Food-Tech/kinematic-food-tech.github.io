@@ -174,3 +174,8 @@
     background-size: cover;
     height: auto;
 }
+.get-started-body {
+    background-image: url("../images/bg-gs-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
