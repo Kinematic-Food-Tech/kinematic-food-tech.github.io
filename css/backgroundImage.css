@@ -146,7 +146,6 @@
 .lunch-tile {
     background-color: #fdb853;
 }
-.subscription-cont-par,
 .auth-container {
     background-image: url("../images/bg-gs-1.png");
     background-repeat: no-repeat;
@@ -186,5 +185,5 @@
 .subscription-body {
     background-image: url("../images/bg-gs-1.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% auto;
 }
