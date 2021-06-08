@@ -146,7 +146,6 @@
 .lunch-tile {
     background-color: #fdb853;
 }
-.subscription-cont-par,
 .auth-container {
     background-image: url("../images/bg-gs-1.png");
     background-repeat: no-repeat;
@@ -173,4 +172,18 @@
     width: 100%;
     background-size: cover;
     height: auto;
+}
+.get-started-body {
+    background-image: url("../images/bg-gs-2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.get-started-steps-body,
+.order-summary-body,
+.food-summary-body,
+.payment-body,
+.subscription-body {
+    background-image: url("../images/bg-gs-1.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
 }
