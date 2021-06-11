@@ -105,11 +105,18 @@ header {
 .heading {
     text-align: center;
 }
+.how-it-works .heading {
+    background-image: url(../images/star-one.png);
+    background-repeat: no-repeat;
+    background-position: 49% 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 .how-it-works .heading h3 {
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 35px;
-    padding-top: 7px;
+    font-size: 31px;
+    padding-top: 12px;
     padding-bottom: 7px;
     color: #233a5a;
 }
