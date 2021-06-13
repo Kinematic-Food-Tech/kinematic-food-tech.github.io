@@ -537,7 +537,12 @@
 }
 
 .auth-container {
-    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 110vh !important;
 }
 
 .auth-wrapper {
@@ -637,9 +642,6 @@
     margin-left: 10px;
 }
 
-.auth-container {
-    height: 130vh !important;
-}
 .otp-wrap p {
     margin-top: 10px;
     font-size: 16px;
@@ -726,11 +728,12 @@
 .payment-success-img {
     width: 60%;
     margin: 0 auto;
-    padding-top: 10%;
+    padding-top: 5%;
+    width: fit-content;
 }
 .payment-success-img img {
-    width: 100%;
-    height: auto;
+    width: 350px;
+    height: 260px;
 }
 
 /* order summary page css starts */
@@ -1053,4 +1056,17 @@
     position: absolute;
     right: 0;
     top: 0;
+}
+.auth-wrapper .payment.head {
+    padding-top: 15px;
+}
+.auth-wrapper .payment .filler {
+    margin: 15px;
+}
+.auth-container .close {
+    position: absolute;
+    float: none;
+    opacity: 0.5;
+    top: 5px;
+    right: 15px;
 }
