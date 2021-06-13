@@ -93,6 +93,7 @@ header {
 }
 .ban-in {
     position: relative;
+    z-index: 99;
 }
 /* banner div css ends */
 
@@ -100,7 +101,13 @@ header {
 
 .how-it-works {
     background: #fff;
-    margin-bottom: 40px;
+    padding-bottom: 75px;
+    background-image: url(../images/bg-1-mask-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 200px;
+    margin-top: -180px;
+    z-index: -99;
 }
 .heading {
     text-align: center;
@@ -111,6 +118,20 @@ header {
     background-position: 49% 10px;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+.our-menu .heading {
+    background-image: url(../images/our-menu-mask.png);
+    background-repeat: no-repeat;
+    background-position: 49% 6px;
+    padding-top: 25px;
+    padding-bottom: 45px;
+}
+.fr-ha-co .heading {
+    background-image: url(../images/mask-three-f-h.png);
+    background-repeat: no-repeat;
+    background-position: 49% 6px;
+    padding-top: 35px;
+    padding-bottom: 45px;
 }
 .how-it-works .heading h3 {
     margin-top: 0;
@@ -169,7 +190,7 @@ header {
 .our-menu {
     background: #f6f6f6;
     margin-bottom: 40px;
-    padding-top: 50px;
+    padding-top: 30px;
     padding-bottom: 50px;
 }
 .our-menu .heading,
@@ -241,13 +262,15 @@ header {
 /* Fresh and healthy div css starts */
 
 .fr-ha-co {
-    background: #fff;
     margin-bottom: 40px;
+    background-image: url(../images/bg-1-mask-2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 .fr-ha-co .heading h3 {
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 35px;
+    font-size: 30px;
     color: #233a5a;
 }
 .fr-ha-co .heading h3 span {
@@ -360,6 +383,7 @@ header {
     background-color: #fff;
     padding: 22px;
     color: #233a5a;
+    position: relative;
 }
 
 .faq-wrap .parent .question-wrapper .question {
@@ -378,10 +402,16 @@ header {
     font-weight: normal;
     font-size: 18px;
     line-height: 161.5%;
-    /* or 29px */
     color: #0f2340;
     padding-top: 20px;
     display: none;
+    position: absolute;
+    z-index: 99;
+    background: #fff;
+    width: 100%;
+    left: 0;
+    padding-left: 20px;
+    padding-bottom: 20px;
 }
 
 /* faq css ends */
