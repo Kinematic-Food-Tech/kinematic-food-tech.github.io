@@ -279,7 +279,7 @@
     text-align: center;
     color: #fff;
     font-weight: 500;
-    width: 12%;
+    width: 12.5%;
     height: 107px;
 }
 .seven-days-preview .days-wrap-in .days-tile .date {
@@ -314,7 +314,11 @@
 }
 .change-preferences .meal-options .option {
     width: 25%;
-    padding-right: 15px;
+    padding: 5px;
+}
+.change-preferences .meal-options .option.active {
+    border: 1px solid #cc0004;
+    border-radius: 5px;
 }
 
 .change-preferences .meal-options .option .image-wr {
@@ -1077,4 +1081,29 @@
     opacity: 0.5;
     top: 5px;
     right: 15px;
+}
+.days-wrap {
+    position: relative;
+}
+.days-wrap .prev,
+.days-wrap .next {
+    top: 25px;
+    height: 40px;
+    width: 40px;
+    padding-left: 15px;
+    padding-top: 13px;
+}
+.days-wrap .prev a,
+.days-wrap .next a {
+    height: 15px;
+    width: 15px;
+}
+.days-wrap .next {
+    padding-left: 10px;
+}
+.days-wrap .prev {
+    left: 75px;
+}
+.op-current {
+    opacity: 0.5;
 }
