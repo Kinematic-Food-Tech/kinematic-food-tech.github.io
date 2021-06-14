@@ -202,14 +202,18 @@
 }
 .step-details-ch .step-icon .step-icon-in {
     position: absolute;
-    width: 160px;
-    height: 160px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     left: -36px;
-    top: -21px;
+    top: -10px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.step-details-ch .step-icon .step-icon-in img {
+    height: 110px;
+    width: 110px;
 }
 
 .step-details-ch .step-details {
@@ -223,11 +227,11 @@
 .step-details-ch .step-details .text {
     font-size: 18px;
     font-weight: 500;
-    width: 35%;
+    width: 30%;
     padding-left: 30px;
 }
 .step-details-ch .step-details .freq {
-    width: 65%;
+    width: 70%;
 }
 .step-details-ch .step-details .freq ul,
 .clasfi ul {
@@ -246,8 +250,12 @@
     display: block;
     margin-right: 7px;
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
-    padding: 6px 25px;
+    padding: 6px 15px;
     border-radius: 20px;
+    margin-top: 10px;
+}
+.clasfi ul li a {
+    margin-top: 0;
 }
 
 .seven-days-preview .head p {
@@ -537,7 +545,12 @@
 }
 
 .auth-container {
-    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 110vh !important;
 }
 
 .auth-wrapper {
@@ -637,9 +650,6 @@
     margin-left: 10px;
 }
 
-.auth-container {
-    height: 130vh !important;
-}
 .otp-wrap p {
     margin-top: 10px;
     font-size: 16px;
@@ -726,11 +736,12 @@
 .payment-success-img {
     width: 60%;
     margin: 0 auto;
-    padding-top: 10%;
+    padding-top: 5%;
+    width: fit-content;
 }
 .payment-success-img img {
-    width: 100%;
-    height: auto;
+    width: 350px;
+    height: 260px;
 }
 
 /* order summary page css starts */
@@ -1053,4 +1064,17 @@
     position: absolute;
     right: 0;
     top: 0;
+}
+.auth-wrapper .payment.head {
+    padding-top: 15px;
+}
+.auth-wrapper .payment .filler {
+    margin: 15px;
+}
+.auth-container .close {
+    position: absolute;
+    float: none;
+    opacity: 0.5;
+    top: 5px;
+    right: 15px;
 }
