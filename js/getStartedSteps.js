@@ -35,6 +35,9 @@ let getStartedSteps = {
                 "cuisine"
             );
         });
+        $(".step-in-action button").on("click", function (event) {
+            getStartedSteps.enableDisableCuisines(event);
+        });
     },
     moveSteps: function (type) {
         let slides = $(".menu-building-options");
@@ -68,6 +71,22 @@ let getStartedSteps = {
                 $(slides[activeIndex]).addClass("active");
                 getStartedSteps.moveStepsInFooter(activeIndex);
                 break;
+                break;
+        }
+    },
+    enableDisableCuisines: function (event) {
+        let element = event.currentTarget;
+        let data = $(element).data("type");
+        switch (data) {
+            case "expand":
+                $(".default-hidden").addClass("active");
+                $(element).addClass("hidden");
+                $(".step-in-action .compress").removeClass("hidden");
+                break;
+            case "compress":
+                $(".default-hidden").removeClass("active");
+                $(element).addClass("hidden");
+                $(".step-in-action .expand").removeClass("hidden");
                 break;
         }
     },

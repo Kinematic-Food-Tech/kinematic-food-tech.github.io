@@ -178,3 +178,11 @@ p {
 header {
     background-color: #fff;
 }
+.footer-main-wrap.fix {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.default-hidden {
+    display: none;
+}
