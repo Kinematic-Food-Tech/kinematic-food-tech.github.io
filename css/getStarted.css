@@ -554,7 +554,7 @@
     align-items: center;
     padding-top: 30px;
     padding-bottom: 30px;
-    height: 110vh !important;
+    height: 80vh !important;
 }
 
 .auth-wrapper {
@@ -586,7 +586,7 @@
     width: 50%;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 50px;
+    padding-top: 35px;
 }
 .register-wrapper {
     width: 60%;
@@ -594,7 +594,7 @@
     margin-right: auto;
 }
 .top-links {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .top-links ul {
     margin: 0;
@@ -615,7 +615,7 @@
 }
 
 .auth-wrapper-inn .sign-up-wrap {
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 .auth-wrapper-inn .sign-up-wrap button {
@@ -624,7 +624,7 @@
     font-weight: 500;
     height: 50px;
     border-radius: 5px;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     border: none;
     text-align: initial;
 }
