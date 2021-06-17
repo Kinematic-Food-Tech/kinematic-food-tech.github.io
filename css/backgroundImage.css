@@ -94,6 +94,12 @@
 .standard {
     background: url("../images/standard.png");
 }
+.step-in-action .expand {
+    background: url("../images/expand.png");
+}
+.step-in-action .compress {
+    background: url("../images/compress.png");
+}
 .extra {
     background: url("../images/extra.png");
 }

@@ -183,3 +183,6 @@ header {
     bottom: 0;
     width: 100%;
 }
+.default-hidden {
+    display: none;
+}
