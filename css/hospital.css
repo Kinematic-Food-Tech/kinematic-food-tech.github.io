@@ -1,0 +1,68 @@
+.hospital-home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    width: 100%;
+}
+.hospital-home-wrap {
+    padding-left: 20%;
+    padding-bottom: 100px;
+}
+.hospital-home-container .content-wrap {
+    color: #fff;
+    font-size: 24px;
+    padding-left: 3%;
+    margin-bottom: 40px;
+}
+.content-wrap p {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+.search-wrap .search-input {
+    background: #ffffff;
+    box-shadow: 2px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 20px;
+    padding: 12px 25px;
+    width: 95%;
+    border: none;
+}
+.search-wrap,
+.search-bar {
+    padding: 0;
+}
+.search-wrap {
+    position: relative;
+}
+.search-action .search-button {
+    padding: 13px 28px;
+    font-size: 18px;
+}
+.hosp-sugg-wrap {
+    position: absolute;
+    background: #fff;
+    width: 63.3%;
+    padding: 0;
+    top: 49px;
+    height: 200px;
+    overflow: auto;
+}
+.hosp-sugg-wrap .sugg {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 18px;
+    border-bottom: 1px solid #ccc;
+}
+
+.hosp-sugg-wrap::-webkit-scrollbar {
+    width: 10px;
+}
+
+.hosp-sugg-wrap::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.hosp-sugg-wrap::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    border-radius: 20px;
+}

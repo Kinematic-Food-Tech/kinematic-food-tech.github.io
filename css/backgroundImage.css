@@ -193,3 +193,8 @@
     background-repeat: no-repeat;
     background-size: 100% auto;
 }
+.hospital-home-container {
+    background-image: url("../images/hosp-home-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
