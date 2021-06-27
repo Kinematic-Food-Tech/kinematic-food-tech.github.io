@@ -220,3 +220,7 @@
     background-image: url("../images/location-icon.png");
     background-repeat: no-repeat;
 }
+.cart .ordered-item .item-detail-wrap .del-time {
+    background-image: url("../images/time-icon.png");
+    background-repeat: no-repeat;
+}
