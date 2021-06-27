@@ -216,3 +216,7 @@
     background-image: url("../images/bubble.png");
     background-repeat: no-repeat;
 }
+.del-to {
+    background-image: url("../images/location-icon.png");
+    background-repeat: no-repeat;
+}
