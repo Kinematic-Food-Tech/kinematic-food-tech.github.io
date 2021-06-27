@@ -458,12 +458,12 @@
     border-bottom-right-radius: 5px;
 }
 
-.food-summary-container .main-action {
+.main-action {
     text-align: center;
     margin-top: 80px;
 }
 
-.food-summary-container .main-action button {
+.main-action button {
     background: #d23e5f;
     text-transform: none;
     letter-spacing: 0.8px;
