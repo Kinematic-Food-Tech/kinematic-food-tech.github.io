@@ -14,6 +14,11 @@
         <link rel="stylesheet" href="../css/hospital.css" type="text/css" />
         <link rel="stylesheet" href="../css/hospital-menu.css" type="text/css" />
         <link
+            rel="stylesheet"
+            href="../vendor/css/jqueryUi.css"
+            type="text/css"
+        />
+        <link
             rel="icon"
             href="../images/favicon.jpeg"
             type="image"
@@ -22,6 +27,12 @@
         <script type="text/javascript" src="../vendor/js/jquery.js"></script>
         <script type="text/javascript" src="../vendor/js/popper.js"></script>
         <script type="text/javascript" src="../vendor/js/bootstrap.js"></script>
+        <script type="text/javascript" src="../vendor/js/jqueryUi.js"></script>
+        <script
+            type="text/javascript"
+            src="../vendor/js/helpers.esm.min.js"
+        ></script>
+        <script type="text/javascript" src="../js/main-menu.js"></script>
     </head>
     <body>
         <header>
@@ -59,13 +70,20 @@
                     </div>
                     <div class="search-wr col-sm-12 col-md-12 col-xs-12 col-lg-12">
                         <div class="f-l date-wr col-sm-4 col-md-4 col-xs-12">
-                            <input type="text" class="date" placeholder="Enter Date" />
+                            <input type="text" class="datepicker" placeholder="Enter Date" />
                         </div>
                         <div class="f-l curr-time-wr col-sm-4 col-md-4 col-xs-12">
-                            <input type="text" class="date" placeholder="Enter Time" />
+                            <input type="text" class="date curr-time-wr" placeholder="Enter Time" readonly />
                         </div>
                         <div class="f-l location-wr col-sm-4 col-md-4 col-xs-12">
-                            <input type="text" class="date" placeholder="Enter location" />
+                            <input list="hospitals" name="hospitals" class="hospital-location" placeholder="Enter Location"/>
+                            <datalist id="hospitals">
+                                <option value="Apollo, Bannerghatta Road">
+                                <option value="Gangotri Hospital, BTM">
+                                <option value="Fortis, Bannerghatta Road">
+                                <option value="Sakra, Marathahalli">
+                                <option value="Columbia Asia, Bellandur">
+                            </datalist>
                         </div>
                         <div class="clr"></div>
                     </div>

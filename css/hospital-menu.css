@@ -177,3 +177,12 @@
 .no-meal-wrap .order-success-in .content {
     padding-bottom: 50px;
 }
+.date-wr input,
+.curr-time-wr input,
+.location-wr input {
+    background-size: 23px;
+    border: none;
+    padding: 6px 30px;
+    background-position-y: 11px;
+    font-size: 20px;
+}

@@ -224,3 +224,15 @@
     background-image: url("../images/time-icon.png");
     background-repeat: no-repeat;
 }
+.date-wr input {
+    background-image: url("../images/calendar-icon.png");
+    background-repeat: no-repeat;
+}
+.curr-time-wr input {
+    background-image: url("../images/time-icon.png");
+    background-repeat: no-repeat;
+}
+.location-wr input {
+    background-image: url("../images/location-icon.png");
+    background-repeat: no-repeat;
+}
