@@ -66,3 +66,104 @@
     background-color: darkgrey;
     border-radius: 20px;
 }
+/* delivery page */
+
+section .del-to {
+    background-color: #dcfffd;
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-position-x: 7%;
+    background-position-y: 5px;
+}
+.cart.delivery .delivery-container {
+    background: linear-gradient(
+        180deg,
+        rgba(13, 170, 10, 0.24) 0%,
+        rgba(33, 189, 210, 0.36) 100%
+    );
+    padding: 60px;
+}
+.cart.delivery .delivery-wrapper {
+    background: #fff;
+    border-radius: 10px;
+}
+.cart.delivery .delivery-wrapper .head h3 {
+    color: #ea9342;
+}
+.cart.delivery .delivery-wrapper .head {
+    margin-bottom: 30px;
+}
+.cart.delivery .delivery-wrapper .input-con {
+    width: 50%;
+    margin: 0 auto;
+}
+.cart.delivery .delivery-wrapper .input-con p {
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.cart.delivery .delivery-wrapper input {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.cart .cart-wrapper {
+    padding: 30px;
+}
+.cart.delivery .delivery-wrapper .main-action {
+    margin-top: 40px;
+}
+.total-wrap.cart h4 {
+    font-size: 20px;
+}
+.cart .ordered-item {
+    border-top: 1px solid #f4f4f4;
+    border-bottom: 1px solid #f4f4f4;
+    margin-top: 10px;
+    padding-top: 20px;
+    position: relative;
+}
+.cart .ordered-item .item-wrapper img {
+    width: 150px;
+    height: 130px;
+}
+.cart .ordered-item .item-wrapper {
+    background-color: #c8d80e;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.cart .ordered-item .item-detail-wrap p {
+    margin-bottom: 5px;
+}
+.cart .ordered-item .item-detail-wrap .arriving-info p {
+    font-weight: normal;
+}
+.cart .ordered-item .item-detail-wrap .del-time {
+    color: #666;
+    padding-left: 30px;
+    background-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-position-y: 7px;
+}
+.cart .ordered-item .item-action-wrap {
+    text-align: right;
+}
+.item-action-wrap .del-icon a {
+    text-decoration: none !important;
+    color: #666 !important;
+    display: block;
+}
+.cart .ordered-item .item-action-wrap .clasfi {
+    position: absolute;
+    right: 15px;
+    top: 110px;
+}
+
+/* delivery page ends here */

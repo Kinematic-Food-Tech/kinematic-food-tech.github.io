@@ -198,3 +198,41 @@
     background-repeat: no-repeat;
     background-size: 100% auto;
 }
+.less-oil p {
+    background-image: url("../images/less-oily-img.png");
+}
+.fr-nat p {
+    background-image: url("../images/fresh-ing-img.png");
+}
+
+.hyg-safe p {
+    background-image: url("../images/hygeine-img.png");
+}
+.filter-by {
+    background-image: url("../images/filter-icon.png");
+    background-repeat: no-repeat;
+}
+.bubble {
+    background-image: url("../images/bubble.png");
+    background-repeat: no-repeat;
+}
+.del-to {
+    background-image: url("../images/location-icon.png");
+    background-repeat: no-repeat;
+}
+.cart .ordered-item .item-detail-wrap .del-time {
+    background-image: url("../images/time-icon.png");
+    background-repeat: no-repeat;
+}
+.date-wr input {
+    background-image: url("../images/calendar-icon.png");
+    background-repeat: no-repeat;
+}
+.curr-time-wr input {
+    background-image: url("../images/time-icon.png");
+    background-repeat: no-repeat;
+}
+.location-wr input {
+    background-image: url("../images/location-icon.png");
+    background-repeat: no-repeat;
+}

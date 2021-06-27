@@ -458,12 +458,12 @@
     border-bottom-right-radius: 5px;
 }
 
-.food-summary-container .main-action {
+.main-action {
     text-align: center;
     margin-top: 80px;
 }
 
-.food-summary-container .main-action button {
+.main-action button {
     background: #d23e5f;
     text-transform: none;
     letter-spacing: 0.8px;
@@ -569,7 +569,45 @@
     align-items: center;
     padding-top: 30px;
     padding-bottom: 30px;
-    height: 80vh !important;
+    height: 120vh !important;
+}
+.hospital-master-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 110vh !important;
+    background-color: #fcf4ff;
+}
+.hospital-master-container .order-success-wrap {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 3%;
+}
+.hospital-master-container .order-success-in {
+    border-radius: 20px;
+    background-color: #fcf4ff;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.hospital-master-container .order-success-in .head h3 {
+    color: #6f1190;
+    font-size: 30px;
+}
+.hospital-master-container .order-success-in img {
+    height: 210px;
+    width: 250px;
+    margin-top: 30px;
+}
+.hospital-master-container .order-success-in .head p {
+    color: #333;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
 }
 
 .auth-wrapper {
@@ -1096,13 +1134,15 @@
 .auth-wrapper .payment .filler {
     margin: 15px;
 }
-.auth-container .close {
+.auth-container .close,
+.hospital-master-container .close {
     position: absolute;
     float: none;
     opacity: 0.5;
     top: 5px;
     right: 15px;
 }
+
 .days-wrap {
     position: relative;
 }

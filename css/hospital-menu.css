@@ -1,0 +1,188 @@
+.main-menu-container {
+    height: auto;
+    width: 100%;
+    background: linear-gradient(
+        180deg,
+        rgba(13, 170, 10, 0.24) 0%,
+        rgba(33, 189, 210, 0.36) 100%
+    );
+}
+.main-menu-wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.main-menu-wrapper .head h3 {
+    color: #0daa0a;
+    font-size: 32px;
+    letter-spacing: 0.5px;
+}
+.bar-h p {
+    width: 50%;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    background-repeat: no-repeat;
+    background-size: 35px;
+    padding-left: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-position-y: 15px;
+}
+.fr-nat p {
+    width: 55%;
+}
+.prop-wrap {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.main-menu-wrapper .search-wr {
+    background: #fff;
+    border-radius: 5px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.menu-plans-container .desc {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: italic;
+}
+.menu-plans-wrapper {
+    background: #fff;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 25px;
+}
+.menu-plans-wrapper .header-cont h4 {
+    font-size: 20px;
+}
+.menu-plans-wrapper .header-cont h3 {
+    font-size: 25px;
+    color: #ea9342;
+    margin-top: 10px;
+}
+.menu-plans-wrapper .header-cont p {
+    font-size: 18px;
+    color: #ccc;
+}
+.filter-by {
+    background-position: right center;
+    background-size: 15px;
+    width: fit-content;
+    padding-right: 20px;
+}
+.input-slider,
+.filter-by {
+    font-size: 18px;
+    color: #ccc;
+}
+.menu-plans-wrapper .meal-cont {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.menu-plans-wrapper .meal-cont .meal-tile {
+    position: relative;
+}
+.menu-plans-wrapper .meal-cont .meal-detail {
+    margin-top: 20px;
+}
+.menu-plans-wrapper .meal-cont .meal-detail h4 {
+    font-size: 20px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.menu-plans-wrapper .meal-cont .meal-detail p {
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.menu-plans-wrapper .meal-cont .price-detail p {
+    color: #ccc;
+    margin-left: 10px;
+}
+.menu-plans-wrapper .meal-cont .clasfi {
+    margin-left: 35px;
+}
+
+.clasfi .quantity-wr .subs,
+.clasfi .quantity-wr .add {
+    background-color: #21bdd2;
+}
+.meal-tile .meal-image {
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    padding-top: 20px;
+    padding-left: 15px;
+    margin-left: 20px;
+}
+.meal-tile .meal-image img {
+    width: 150px;
+    height: 150px;
+}
+.meal-tile .meal-image.si-meal {
+    background-color: #c8d80e;
+}
+.meal-tile .meal-image.keto-meal {
+    background-color: #ea9342;
+}
+.meal-tile .meal-image.ni-non-veg {
+    background-color: #b362d0;
+}
+.sdw-ele {
+    box-shadow: 2px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 19px;
+    position: absolute;
+    width: 65%;
+    height: 310px;
+    top: 20%;
+    left: -10px;
+}
+.no-meal-wrap .order-success-in {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 100px;
+}
+.no-meal-wrap .order-success-in .content {
+    background: rgba(172, 242, 252, 0.36);
+    border-radius: 10px;
+
+    margin: 0 auto;
+}
+.no-meal-wrap .order-success-in .content .bubble {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-size: 100%;
+    margin-top: 50px;
+    height: 320px;
+    width: 350px;
+}
+.bubble .image-wr img {
+    width: 220px;
+    height: 200px;
+    margin-top: 55px;
+    margin-left: -15px;
+}
+.no-meal-wrap .order-success-in .content p {
+    color: #666;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.no-meal-wrap .order-success-in .content {
+    padding-bottom: 50px;
+}
+.date-wr input,
+.curr-time-wr input,
+.location-wr input {
+    background-size: 23px;
+    border: none;
+    padding: 6px 30px;
+    background-position-y: 11px;
+    font-size: 20px;
+}
