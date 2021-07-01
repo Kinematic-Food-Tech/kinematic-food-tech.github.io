@@ -1186,6 +1186,13 @@
     padding: 40px 45px;
     position: relative;
 }
+.payment-body {
+    background: linear-gradient(
+        180deg,
+        rgba(245, 228, 217, 0.25) 0%,
+        rgba(237, 235, 243, 0.25) 100%
+    );
+}
 .payment-success-container h4 {
     margin-top: 5px;
     margin-bottom: 5px;
