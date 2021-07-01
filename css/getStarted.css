@@ -763,8 +763,8 @@
 }
 
 .payment-wrapper {
-    width: 65%;
-    padding: 30px;
+    width: 100%;
+    padding: 50px 60px;
     position: relative;
 }
 .payment-in {
@@ -772,6 +772,8 @@
 }
 .payment-in .back-profile {
     text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 .payment-in .back-profile button {
     background: #acd56d;
@@ -799,12 +801,12 @@
 .payment-success-img {
     width: 60%;
     margin: 0 auto;
-    padding-top: 5%;
+    padding-top: 50px;
     width: fit-content;
 }
 .payment-success-img img {
-    width: 350px;
-    height: 260px;
+    width: 400px;
+    height: 280px;
 }
 
 /* order summary page css starts */
@@ -1134,6 +1136,10 @@
 .auth-wrapper .payment .filler {
     margin: 15px;
 }
+.payment.head h3 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 .auth-container .close,
 .hospital-master-container .close {
     position: absolute;
@@ -1167,4 +1173,36 @@
 }
 .op-current {
     opacity: 0.5;
+}
+.auth-height {
+    height: 80vh !important;
+}
+.payment-success-container {
+    background: linear-gradient(
+        180deg,
+        rgba(245, 228, 217, 0.25) 0%,
+        rgba(237, 235, 243, 0.25) 100%
+    ) !important;
+    padding: 40px 45px;
+    position: relative;
+}
+.payment-success-container h4 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.close {
+    position: absolute;
+    right: 2.55rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: 0.5;
+    top: 2rem;
+    border: 2px solid #666;
+    padding: 10px 12px;
+    border-radius: 50%;
+    background: #fff;
+    z-index: 99;
+    font-size: 18px;
 }
