@@ -1,0 +1,80 @@
+.online {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.active {
+  background-color: #93278f;
+  color: white !important;
+}
+.activ:hover {
+  background-color: #93278f;
+}
+.activ:hover a {
+  color: white !important;
+}
+a {
+  text-decoration: none !important;
+  color: black;
+}
+a:hover {
+  text-decoration: none !important;
+  color: black;
+}
+.main {
+  object-fit: contain;
+  background-image: url("../images/mainbg.png");
+  box-shadow: inset 4px 3px 8px 1px #969696;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.content {
+  border-radius: 20px !important;
+}
+.border {
+  border-bottom-width: 3px !important;
+}
+
+/* footer */
+footer {
+  background-color: #233862;
+  color: white;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+footer a:hover {
+  color: white;
+  text-decoration: none;
+}
+footer h5 {
+  font-weight: normal;
+}
+footer section .cryt {
+  background-color: #1a2b4e;
+}
+/* footer a i {
+  color: ;
+  border: 5px solid #f2f2f2;
+  border-radius: 50%;
+} */
+i.fad {
+  background: #f2f2f217;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+/* mobile */
+@media (max-width: 576px) {
+  .main {
+    object-fit: fill;
+    background-image: url("../images/mobbgimg.png");
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 95%;
+    box-shadow: inset 3px 2px 7px 1px #969696;
+  }
+}
