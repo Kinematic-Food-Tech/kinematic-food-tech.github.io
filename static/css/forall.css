@@ -1,0 +1,109 @@
+body {
+  object-fit: contain;
+  background-image: url("../images/T&Cs.png");
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+.bgsize {
+  background-size: contain;
+}
+.nav_img img {
+  object-fit: fill;
+  width: 100%;
+  max-height: 426.9px;
+}
+.head_img {
+  color: #233a5a;
+  height: 119.61px;
+  width: 100%;
+  background-image: url("../images/Group 13409.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+@media (max-width: 768px) {
+  .justify-content-md-center {
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+  }
+  body {
+    object-fit: contain;
+    background-image: url("../images/T&Cs.png");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
+.tc {
+  color: #233a5a;
+}
+.bw {
+  border-width: 3px !important;
+  border-radius: 1rem !important;
+  border-top-width: 1.5px !important;
+}
+.bwe {
+  border-width: 3px !important;
+  border-radius: 0rem !important;
+  border-top-width: 1.5px !important;
+}
+.limg {
+  border: 0 solid black;
+  border-radius: 20px !important;
+  background-color: white;
+}
+img.limg {
+  object-fit: cover;
+  overflow: hidden;
+
+  max-width: 206px !important;
+  height: 206px !important;
+}
+footer {
+  background-color: #233862;
+  color: white;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+footer a:hover {
+  color: white;
+  text-decoration: none;
+}
+footer h5 {
+  font-weight: normal;
+}
+footer section .cryt {
+  background-color: #1a2b4e;
+}
+/* footer a i {
+  color: ;
+  border: 5px solid #f2f2f2;
+  border-radius: 50%;
+} */
+i.fad {
+  background: #f2f2f217;
+  padding: 10px;
+  border-radius: 50%;
+}
+.box span {
+  height: 6rem;
+  overflow: hidden;
+}
+.box-show span {
+  height: auto;
+  overflow: hidden;
+}
+.box ol {
+  height: 6rem;
+  overflow: hidden;
+}
+.box-show ol {
+  height: auto;
+  overflow: hidden;
+}
