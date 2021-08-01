@@ -8,18 +8,19 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="./css/profile.css">
+<link rel="stylesheet" href="./fonts/FontsFree-Net-SFProDisplay-Regular.ttf">
     <title>Hello Ritesh</title>
   </head>
   <body>
-    <nav class="navbar border-sm pb-sm-4 mb-0 navbar-light bg-white d-flex justify-content-betwee  ">
-      <a class="navbar-brand d-sm-none col" href="#">
+    <nav class="navbar border pb-sm-4 mb-0 navbar-light bg-white d-flex justify-content-betwee  ">
+      <a class="navbar-brand d-sm-none px-0 pl-4 m-0  col" href="#">
         <img src="./images/mobhome.png"  alt="">
       </a>
       <a class="navbar-brand pl-md-4 mx-md-0 mx-auto pb-sm-3 col " href="#">
         <img src="./images/sprink_logo_png 1.png"  alt="">
       </a>
-      <a class="navbar-brand d-sm-none col p-0 m-0 text-right" href="#">
-        <img class="p-0  rounded-circle col-4  border  " src="https://images.vexels.com/media/users/3/129616/isolated/preview/fb517f8913bd99cd48ef00facb4a67c0-businessman-avatar-silhouette-by-vexels.png">
+      <a class="navbar-brand d-sm-none col px-0 pr-4 m-0 text-right" href="#">
+        <img class="p-0  rounded-circle col-3  border  " src="https://images.vexels.com/media/users/3/129616/isolated/preview/fb517f8913bd99cd48ef00facb4a67c0-businessman-avatar-silhouette-by-vexels.png">
       </a>
     </nav>
     <div class="row">
@@ -37,8 +38,8 @@
           <a class="nav-link pl-4 ml-2" href="#collapseExample" data-toggle="collapse">My Profile</a>
           <ul type="none" class="mt-0 p-0 pl-1" id="collapseExample">
             
-            <li class=" nav-link active text-center  "><a class=" nav-item active mr-xl-5 pr-xl-3 d-xl-flex justify-content-center"  href="#">Personal Details</a></li>
-            <li class="nav-link activ  text-center  "><a class="mr-xl-4 pr-xl-4 nav-item d-xl-flex justify-content-center"  href="#">Manage Addresses</a></li>
+            <li class=" nav-link active text-center  "><a class=" nav-item active mr-xl-5 pr-xl-3 d-xl-flex justify-content-center"  href="./profile.html">Personal Details</a></li>
+            <li class="nav-link activ  text-center  "><a class="mr-xl-4 pr-xl-4 nav-item d-xl-flex justify-content-center"  href="./manageadd.html">Manage Addresses</a></li>
             <li class="nav-link activ  text-center  "><a class=" mr-xl-3 pr-xl-1 nav-item d-xl-flex justify-content-center"  href="#">Deliveries & Packaging</a></li>
             <li class="nav-link activ  text-center "><a class="mr-xl-5 pr-xl-3 pl-xl-1 nav-item d-xl-flex justify-content-center"  href="#">Food Preferences</a></li>
             <li class="nav-link activ  text-center "><a class="mr-xl-3 pr-xl-3 nav-item d-xl-flex justify-content-center"  href="#">Manage Subscription</a></li>
@@ -64,58 +65,62 @@
           <a class="nav-link" href="#">Sign Out</a>
         </li>
       </ul>
-      <div class=" col main ">
-       <div class="mx-xl-5 p-xl-5 py-5">
-        <div class="mx-lg-5 px-lg-5">
-          <div class="content bg-white mx-5 px-4  border rounded">
-            <form>
-              <h5 class=" ml-md-4 pl-md-3 py-4 my-3 text-center" style="font-weight: normal;">Profile</h5>
-              <div class="form-group row">
-                <label for="inputname" class=" col-2 pl-lg-5 pr-xl-4 col-form-label"><div class=" ml-md-2 my-1">Name</div></label>
-                <div class=" col-10 pl-4 pr-5">
-                  <input type="text" class="rounded-sm-0 border form-control " id="name" placeholder="Ritesh" required>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="inputPassword" class=" col-2 pl-lg-5 pr-lg-0 col-form-label "><div class=" ml-md-2 my-1">Email</div></label>
-                <div class="col-10 pl-4 pr-5">
-                  <input type="email" class="rounded-sm-0 border  form-control" id="email" placeholder="Ritesh @gmail.com" required>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="inputPassword" class=" col-2 pl-lg-5 pr-xl-0 col-form-label"><div class=" ml-md-2 my-1">Phone</div></label>
-                <div class="col-10 pl-4 pr-5">
-                  <input type="text" class="rounded-sm-0 border  form-control" id="phone" placeholder="9876543210" required>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="inputPassword" class="col-2 pl-lg-5 pr-xl-0 col-form-label "><div class=" ml-md-2 my-1">Address</div></label>
-                <div class="col-10 pl-4 pr-5">
-                  <textarea type="number" class="rounded-sm-0 border  form-control" id="phone" rows="5" placeholder="No 20,  Bangalore" required></textarea>
-                </div>
-              </div>
-              <div class="form-group row d-flex justify-content-center  pt-4">
-                <button type="submit" onclick="alert('Saved Successfully!')" class="text-center 
-                btn btn-primary my-3 py-2 px-5">Save</button>
-              </div>
-              
-            </form>
-          </div>
-        </div>
+      <div class="col mainc px-0 ">  <div class="main pb-sm-0 pb-5 p-xl-5 py-4 mb-0">
+    
+     <div class="pb-sm-4">
+      <div class="px-xl-5 mx-xl-5">
+        <div class="mx-lg-5 px-lg-5 pb-sm-0 pb-0 mb-sm-5 mb-0">
+          <div class="content bg-white mx-5 px-5  border rounded">
+           <form>
+             <h5 class=" ml-lg-4 pl-lg-3 py-4 my-3 mx-sm-0 mx-5" ><div class="mx-sm-0 mx-5 px-sm-0 px-5">Profile</div></h5>
+             <div class="form-group row">
+               <label for="inputname" class=" col-2 pl-lg-5 pl-md-3 pr-xl-4 col-form-label"><div class=" ml-md-2 my-1">Name</div></label>
+               <div class=" col-10 pl-4 pr-5">
+                 <input type="text" class="rounded-0 border form-control " id="name" placeholder="Ritesh" required>
+               </div>
+             </div>
+             <div class="form-group row">
+               <label for="inputPassword" class=" col-2 pl-lg-5 pl-md-3 pr-lg-0 col-form-label "><div class=" ml-md-2 my-1">Email</div></label>
+               <div class="col-10 pl-4 pr-5">
+                 <input type="email" class="rounded-0 border  form-control" id="email" placeholder="Ritesh @gmail.com" required>
+               </div>
+             </div> 
+             <div class="form-group row">
+               <label for="inputPassword" class=" col-2 pl-lg-5 pl-md-3 pr-xl-0 col-form-label"><div class=" ml-md-2 my-1">Phone</div></label>
+               <div class="col-10 pl-4 pr-5">
+                 <input type="text" class="rounded-0 border  form-control" id="phone" placeholder="9876543210" required>
+               </div>
+             </div>
+             <div class="form-group row">
+               <label for="inputPassword" class="col-2 pl-lg-5 pr-xl-0 col-form-label "><div class=" ml-md-2 my-1">Address</div></label>
+               <div class="col-10 pl-4 pr-5">
+                 <textarea type="number" class="rounded-0 border  form-control" id="phone" rows="5" placeholder="No 20,  Bangalore" required></textarea>
+               </div>
+             </div>
+             <div class="form-group row d-flex justify-content-center  pt-4">
+               <button type="submit" onclick="alert('Saved Successfully!')" class="text-center 
+               btn btn-primary my-4 py-sm-2 px-5">Save</button>
+             </div>
+             
+           </form>
+         </div>
        </div>
       </div>
+     </div>
+      </div>
     </div>
-    <footer class=" pt-5">
+    </div>
+    <footer class=" pt-5 ">
       <section>
         <div class="">
           <div class="row ">
-            <div class="col pr-5  text-center"><a href="" class="pr-5"><img class="pr-5" src="./images/sprinkfooter.png" alt=""></a></div>
+            <div class="col pr-sm-5  text-center"><a href="" class="pr-sm-5"><img class="pr-sm-5" src="./images/sprinkfooter.png" alt=""></a></div>
            
             <div class="col-lg">
             <div class=""> <div class="row  ">
     
-              <div class="col  pt-4 mt-3 pr-5 mr-5">
-          <div class="">      <div class="row justify-content-end pr-5 mr-5"><div class="">Follow US</div></div>
+              <div class="col pt-4 mt-3 pr-sm-5 mr-sm-5">
+          <div class="">      <div class="row justify-content-end pr-sm-5 mr-5"><div class="">Follow US</div></div>
           <div class="row justify-content-end pt-3 pb-5"><div class="">
             <a href=""><i class="fab fa-instagram  fad"></i> </a>
             <a href=""><i class="fa fad fa-dribbble mx-2"></i></a>
@@ -123,9 +128,9 @@
             <a href=""><i class="fa fad fa-youtube-play mx-2" aria-hidden="true"></i> </a></div></div>
           </div>
               </div>
-              <div class="col pt-4  ">
-                <div class="row ">Contact US</div>
-                <div class="row pt-3 pb-5">
+              <div class="col pt-4   ">
+                <div class="row pl-sm-0 pl-5 ">Contact US</div>
+                <div class="row pt-3 pb-5 pl-sm-0 pl-4">
       
                   <div class="">+91 96114-81517
                     <br>
@@ -137,7 +142,7 @@
           </div>
           <div class="row  ">
             <div class="container">
-            <div class="row justify-content-center align-items-center ">
+            <div class="row justify-content-center align-items-center px-4">
               <h5><a href="../static/faq.html">FAQs </a> <h1 class="pb-3 mb-3 mx-2"> .</h1>  </h5> 
               <h5> <a href="../static/privacy.html">Privacy</a> <h1 class="pb-3 mb-3 mx-2"> .</h1>  </h5> 
                <h5><a href="../static/career.html">Careers</a> <h1 class="pb-3 mb-3 mx-2"> .</h1> </h5> 
