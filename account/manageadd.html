@@ -7,17 +7,25 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<link rel="stylesheet" href="./css/profile.css">
-    <title>Hello, world!</title>
+
+<link rel="stylesheet" href="./css/manageadd.css">
+<link rel="stylesheet" href="./fonts/FontsFree-Net-SFProDisplay-Regular.ttf">
+    <title>Hello Ritesh</title>
   </head>
   <body>
-    <nav class="navbar border pb-4 mb-0 navbar-light bg-white">
-      <a class="navbar-brand pl-4 pb-3" href="#">
+    <nav class="navbar border pb-sm-4 mb-0 navbar-light bg-white d-flex justify-content-betwee  ">
+      <a class="navbar-brand d-sm-none px-0 pl-4 m-0  col" href="#">
+        <img src="./images/mobhome.png"  alt="">
+      </a>
+      <a class="navbar-brand pl-md-4 mx-md-0 mx-auto pb-sm-3 col " href="#">
         <img src="./images/sprink_logo_png 1.png"  alt="">
+      </a>
+      <a class="navbar-brand d-sm-none col px-0 pr-4 m-0 text-right" href="#">
+        <img class="p-0  rounded-circle col-3  border  " src="https://images.vexels.com/media/users/3/129616/isolated/preview/fb517f8913bd99cd48ef00facb4a67c0-businessman-avatar-silhouette-by-vexels.png">
       </a>
     </nav>
     <div class="row">
-      <ul class="nav flex-column col-md-2 col-3 pr-0">
+      <ul class="nav flex-column col-md-2 col-sm-3 d-sm-flex d-none pr-0">
         <div class="my-5 pt-3 pr-xl-4 pl-xl-4">
           <div class="col pl-0 d-flex justify-content-center   mx-0">
             <div class="p-0   rounded-circle img-header  col-9">
@@ -29,10 +37,10 @@
           <div class="text-center mr-3 mb-2"><h5>Hello Ritesh</h5></div>
         </div>
           <a class="nav-link pl-4 ml-2" href="#collapseExample" data-toggle="collapse">My Profile</a>
-          <ul type="none" class="mt-0 p-0 pl-1" id="collapseExample">
+          <ul type="none" class="mt-0 p-0 pl-1 collapse show" id="collapseExample">
             
-            <li class=" nav-link active text-center  "><a class=" nav-item active mr-xl-5 pr-xl-3 d-xl-flex justify-content-center"  href="#">Personal Details</a></li>
-            <li class="nav-link activ  text-center  "><a class="mr-xl-4 pr-xl-4 nav-item d-xl-flex justify-content-center"  href="#">Manage Addresses</a></li>
+            <li class=" nav-link activ text-center  "><a class=" nav-item  mr-xl-5 pr-xl-3 d-xl-flex justify-content-center"  href="./profile.html">Personal Details</a></li>
+            <li class="nav-link active  text-center  "><a class="mr-xl-4  active pr-xl-4 nav-item d-xl-flex justify-content-center"  href="./manageadd.html">Manage Addresses</a></li>
             <li class="nav-link activ  text-center  "><a class=" mr-xl-3 pr-xl-1 nav-item d-xl-flex justify-content-center"  href="#">Deliveries & Packaging</a></li>
             <li class="nav-link activ  text-center "><a class="mr-xl-5 pr-xl-3 pl-xl-1 nav-item d-xl-flex justify-content-center"  href="#">Food Preferences</a></li>
             <li class="nav-link activ  text-center "><a class="mr-xl-3 pr-xl-3 nav-item d-xl-flex justify-content-center"  href="#">Manage Subscription</a></li>
@@ -58,58 +66,149 @@
           <a class="nav-link" href="#">Sign Out</a>
         </li>
       </ul>
-      <div class="col main ">
-       <div class="mx-xl-5 p-xl-5 py-5">
-        <div class="mx-xl-5 px-xl-5">
-          <div class="content bg-white mx-5 px-4  border rounded">
-            <form>
-              <h5 class=" ml-xl-4 pl-xl-3 py-4 my-3">Profile</h5>
-              <div class="form-group row">
-                <label for="inputname" class=" col-sm-2 pl-xl-5 pr-xl-4 col-form-label"><div class=" ml-xl-2 my-1">Name</div></label>
-                <div class=" col-sm-10 pl-4 pr-5">
-                  <input type="text" class="rounded-0 form-control " id="name" placeholder="Ritesh">
+    <div class="col mainc px-0 ">  <div class="main pb-sm-0 pb-5  p-xl-5 py-sm-5 py-4">
+    
+     <div class="px-xl-5 mx-xl-5">
+      <div class="mx-lg-5 px-lg-5 pb-sm-2 pb-0 mb-sm-5 mb-0">
+        <div class="content bg-white mx-5 px-5  border rounded">
+          <form>
+           <div class="m-sm-4 py-sm-2 pt-3">
+            <div class=" d-flex-sm-none justify-content-sm-start d-flex justify-content-center"><h5>Manage Addresses</h5></div>
+            <div class="row pt-sm-5 pt-4">
+              <div class="col-6 ">
+                    <a href="#" onclick="saveadd(this)" class="nav-link active1 d-sm-flex justify-content-sm-center px-md-auto px-0 py-sm-auto py-0 d-sm-flex d-inline-flex" id="save">
+                      <h6 class="mb-sm-3 mb-0">Saved Addresses</h6>
+                    </a>
+              </div>
+              <div class="col-6 ">
+                <a href="#" onclick="saveadd(this)" class="nav-link disabled px-0 d-sm-flex justify-content-sm-start d-flex justify-content-end py-sm-auto py-0 d-sm-flex d-inline-flex" id="add">
+                  <h6 class="mb-sm-3 mb-0"> Add New Address</h6>
+                </a>
+              </div>
+            </div>
+            <div class="save">
+              <div class="row pt-sm-5 pt-2 ">
+                <div class="col-sm-6 col-12 pt-sm-4 pt-2" id="delete1">   
+                  <div class="row">
+                    <div class="col-sm-10 col-9">
+                      <h6  class="font-weight-bold mb-sm-1 mb-0 pt-sm-0 pt-3" ><input id="save1" class="border-0" type="text" value="Chaitali Das"></h6>
+                    </div>
+                    <div class="col-sm-2 col-3">
+                      <div class="row">
+                        <div class="col-6 px-sm-0 text-center">
+                       <a href="#save1"> <h6 class="m-sm-auto m-0 pt-sm-0 pt-3"><img src="./icon/edit.png" alt=""></h6></a>
+                      </div>
+                      <div class="col-6 px-sm-0">
+                     <a href="#delete1" onclick="deletead(this)">   <h6 class="m-sm-auto m-0 pt-sm-0 pt-3"><img src="./icon/delete.png" alt=""></h6></a>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="col-12"><h6 class="mb-sm-1 mb-0"><input class="border-0" type="text" value="Home"></h6></div>
+                    <div class="col-12"><h6 class="mb-sm-1 mb-0"><input class="border-0" type="text" value="18, Riveria Heights,"> </h6></div>
+                    <div class="col-12"><h6 class="mb-sm-1 mb-0"><input class="border-0" type="text" value="Koramangala, 6th Block"></h6></div>
+                    <div class="col-12"><h6 class="mb-sm-1 mb-0"><input class="border-0" type="text" value="Bangalore, Karnataka "></h6></div>
+                    <div class="col-12"><h6 class="mb-sm-1 mb-0"><input class="border-0" type="text" value="560012 "></h6></div>
+                    
+                    <div class="col-12  py-2 d-sm-none"><button type="button" class="border-0 btn btn-warning btn-lg col-12"><h6 class="m-0">Deliver to this address</h6></button></div>
+                  </div>
+                  
                 </div>
-              </div>
-              <div class="form-group row">
-                <label for="inputPassword" class=" col-sm-2 pl-xl-5 pr-xl-0 col-form-label "><div class=" ml-xl-2 my-1">Email</div></label>
-                <div class="col-sm-10 pl-4 pr-5">
-                  <input type="email" class="rounded-0 form-control" id="email" placeholder="Ritesh @gmail.com">
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="inputPassword" class=" col-sm-2 pl-xl-5 pr-xl-0 col-form-label"><div class=" ml-xl-2 my-1">Phone</div></label>
-                <div class="col-sm-10 pl-4 pr-5">
-                  <input type="text" class="rounded-0 form-control" id="phone" placeholder="9876543210">
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="inputPassword" class="col-sm-2 pl-xl-5 pr-xl-0 col-form-label "><div class=" ml-xl-2 my-1">Address</div></label>
-                <div class="col-sm-10 pl-4 pr-5">
-                  <textarea type="number" class="rounded-0 form-control" id="phone" rows="5" placeholder="No 20,  Bangalore"></textarea>
-                </div>
-              </div>
-              <div class="form-group row d-flex justify-content-center  pt-4">
-                <button type="submit" class="text-center 
-                btn btn-primary my-3 py-2 px-5">Save</button>
-              </div>
               
-            </form>
-          </div>
+                <div class="col-sm-6 col-12 pt-sm-4 pt-2" id="delete2">   
+                  <div class="row">
+                    <div class="col-sm-10 col-9">
+                      <h6 class="font-weight-bold mb-sm-1 mb-0 pt-sm-0 pt-3" ><input id="save2" class="border-0" type="text" value="Chaitali Das"></h6>
+                    </div>
+                    <div class="col-sm-2 col-3">
+                      <div class="row">
+                        <div class="col-6 px-sm-0 text-center">
+                       <a href="#save2"> <h6 class="m-sm-auto m-0 pt-sm-0 pt-3"><img src="./icon/edit.png" alt=""></h6></a>
+                      </div>
+                      <div class="col-6 px-sm-0">
+                     <a href="#delete2" onclick="deletead(this)">   <h6 class="m-sm-auto m-0 pt-sm-0 pt-3"><img src="./icon/delete.png" alt=""></h6></a>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="col-12"><h6 class="mb-sm-1 mb-0"><input class="border-0" type="text" value="Office"></h6></div>
+                    <div class="col-12"><h6 class="mb-sm-1 mb-0"><input class="border-0" type="text" value="#216,/A, TVS front gate"></h6></div>
+                    <div class="col-12"><h6 class="mb-sm-1 mb-0"><input class="border-0" type="text" value="Bangalore"></h6></div>
+                    <div class="col-12"><h6 class="mb-sm-1 mb-0"><input class="border-0" type="text" value="560012"> </h6></div>
+                   
+                    
+                    <div class="col-12  py-2 d-sm-none"><button type="button" class="border-0 btn btn-warning btn-lg col-12"><h6 class="m-0">Deliver to this address</h6></button></div>
+                  </div>
+                 
+                </div>
+               
+           
+              </div>
+              <div class="row">
+                <div id="delete1b" class="col-6 py-2 d-sm-block d-none"><button type="button" class="btn btn-warning btn-lg col-12"><h6 class="m-0">Deliver to this address</h6></button></div>
+                <div id="delete2b" class="col-6 py-2 d-sm-block d-none"><button type="button" class="btn btn-warning btn-lg col-12"><h6 class="m-0">Deliver to this address</h6></button></div>
+              </div>
+            </div>
+           <div class="px-sm-5">
+            <div id="add1" class=" pt-5 add">
+              <form >
+                <label id="addid" for="address1">Address 1</label>
+                <div class="form-group"> 
+                  <input type="text" class="form-control" id="flat/house"  placeholder="Flat/House No">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="locality" placeholder="Locality">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="buildingname" placeholder="Building Name">
+                </div>
+                <div class="form-group">
+                  <input type="number" class="form-control" id="pincode" placeholder="Pincode">
+                </div>
+                <div class="form-group text-right">
+                  <label for="locateme">Locate Me <a href="#"><img src="./icon/locateme.png" alt=""></a></label>
+                
+                </div>
+                <div class="form-group">
+
+                <input type="text" onfocus="rembg(this)" onblur="rembg1(this)"  class="form-control mr-5 tag" id="tag" value="Tag">
+               </div>
+               <div class="form-group">
+                <button type="button" class="border-0 btn btn-warning btn-lg col-12"><h6 class="m-0">Add Address</h6></button>
+               </div>
+               <div id="add2"></div>
+              </form>
+              <div class="form-grou text-center pt-4">
+                <a href="#add" onclick="addmore(this)" class="ablue">Add More +</a>
+              </div>
+            </div>
+           </div>
+            
+            <div class="row pt-sm-5 pt-4 pb-sm-0 pb-3"><button type="button" class="btn btenpx btn-primary btn-lg mx-auto px-5">Save</button></div>
+           </div>
+            
+            
+          </form>
         </div>
-       </div>
       </div>
+     </div>
+   
+     </div></div>
     </div>
-    <footer class=" pt-5">
+
+
+
+
+
+    <footer class=" pt-5 ">
       <section>
         <div class="">
           <div class="row ">
-            <div class="col pr-5  text-center"><a href="" class="pr-5"><img class="pr-5" src="./images/sprinkfooter.png" alt=""></a></div>
+            <div class="col pr-sm-5  text-center"><a href="" class="pr-sm-5"><img class="pr-sm-5" src="./images/sprinkfooter.png" alt=""></a></div>
            
             <div class="col-lg">
             <div class=""> <div class="row  ">
     
-              <div class="col  pt-4 mt-3 pr-5 mr-5">
-          <div class="">      <div class="row justify-content-end pr-5 mr-5"><div class="">Follow US</div></div>
+              <div class="col pt-4 mt-3 pr-sm-5 mr-sm-5">
+          <div class="">      <div class="row justify-content-end pr-sm-5 mr-5"><div class="">Follow US</div></div>
           <div class="row justify-content-end pt-3 pb-5"><div class="">
             <a href=""><i class="fab fa-instagram  fad"></i> </a>
             <a href=""><i class="fa fad fa-dribbble mx-2"></i></a>
@@ -117,9 +216,9 @@
             <a href=""><i class="fa fad fa-youtube-play mx-2" aria-hidden="true"></i> </a></div></div>
           </div>
               </div>
-              <div class="col pt-4  ">
-                <div class="row ">Contact US</div>
-                <div class="row pt-3 pb-5">
+              <div class="col pt-4   ">
+                <div class="row pl-sm-0 pl-5 ">Contact US</div>
+                <div class="row pt-3 pb-5 pl-sm-0 pl-4">
       
                   <div class="">+91 96114-81517
                     <br>
@@ -131,7 +230,7 @@
           </div>
           <div class="row  ">
             <div class="container">
-            <div class="row justify-content-center align-items-center ">
+            <div class="row justify-content-center align-items-center px-4">
               <h5><a href="../static/faq.html">FAQs </a> <h1 class="pb-3 mb-3 mx-2"> .</h1>  </h5> 
               <h5> <a href="../static/privacy.html">Privacy</a> <h1 class="pb-3 mb-3 mx-2"> .</h1>  </h5> 
                <h5><a href="../static/career.html">Careers</a> <h1 class="pb-3 mb-3 mx-2"> .</h1> </h5> 
@@ -155,6 +254,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/e8dd7f2a6b.js" crossorigin="anonymous"></script>
-    <script src="./js/profile.js"></script>
+    <script src="./js/manageadd.js"></script>
   </body>
 </html>

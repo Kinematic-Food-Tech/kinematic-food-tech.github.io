@@ -1,10 +1,11 @@
 body {
-  object-fit: contain;
+  object-fit: cover;
   background-image: url("../images/T&Cs.png");
 
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
+  overflow-x: hidden;
 }
 .bgsize {
   background-size: contain;
