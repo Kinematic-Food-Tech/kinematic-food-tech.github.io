@@ -1,6 +1,6 @@
 body {
   object-fit: contain;
-  background-image: url("/images/T&Cs.png");
+  background-image: url("../images/T&Cs.png");
 
   background-repeat: no-repeat;
   background-size: contain;
@@ -18,7 +18,7 @@ body {
   color: #233a5a;
   height: 119.61px;
   width: 100%;
-  background-image: url("/images/Group\ 13409.png");
+  background-image: url("../images/Group 13409.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center center;
@@ -31,7 +31,7 @@ body {
   }
   body {
     object-fit: contain;
-    background-image: url("/images/T&Cs.png");
+    background-image: url("../images/T&Cs.png");
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
