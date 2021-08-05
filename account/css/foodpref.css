@@ -1,0 +1,239 @@
+.h6,
+h6 {
+  font-size: 18px;
+}
+.btenpx {
+  border-radius: 10px;
+}
+@font-face {
+  font-family: "SF PRO DISPLAY";
+  src: url("../fonts/FontsFree-Net-SFProDisplay-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF PRO DISPLAY bold";
+  src: url("../fonts/SF\ Pro\ Display\ Bold.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+.font-weight-bold {
+  font-family: "SF PRO DISPLAY bold";
+}
+.d-inline-flex {
+  display: -webkit-inline-box !important;
+  display: -ms-inline-flexbox !important;
+  /* display: inline-flex!important; */
+}
+.btn-warning {
+  background: rgba(55, 186, 215, 0.33) !important;
+  border-radius: 20px;
+  border: 0px !important;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.btn-group-lg > .btn,
+.btn-lg {
+  font-size: 24px;
+}
+.active1 {
+  border-bottom: 1px solid #fdb853;
+}
+.b10r {
+  border-radius: 10px;
+  border: 1px solid #b7b3b5;
+}
+
+h5 {
+  font-size: 20px !important;
+}
+.fw7 {
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "SF PRO DISPLAY 500";
+  src: url("../fonts/FontsFree-Net-SFProDisplay-Medium.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+.fw5 {
+  font-family: "SF PRO DISPLAY 500";
+}
+body {
+  object-fit: cover;
+  overflow-x: hidden;
+}
+
+.online {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.active {
+  background-color: #93278f;
+  color: white !important;
+}
+.activ:hover {
+  background-color: #93278f;
+}
+.activ:hover a {
+  color: white !important;
+}
+a {
+  text-decoration: none !important;
+  color: black;
+}
+a:hover {
+  text-decoration: none !important;
+  color: black;
+}
+.ablue {
+  color: #1e8ff7;
+}
+.ablue:hover {
+  text-decoration: underline !important;
+  color: #1e8ff7;
+}
+
+.main {
+  object-fit: contain;
+  background-image: url("../images/mainbg.png");
+  box-shadow: inset 4px 3px 8px 1px #969696;
+  background-size: contain;
+  font-family: "SF PRO DISPLAY";
+  font-size: 14px !important;
+}
+.mainc {
+  object-fit: contain;
+  background: linear-gradient(180deg, #e7c5ca 0%, #fff5e9 100%);
+  background-size: contain;
+}
+.content {
+  border-radius: 20px !important;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.25);
+}
+.border {
+border-radius: 10px;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.25);
+
+}
+.form-group input {
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 5px !important;
+  border: 0px !important;
+}
+.grhead {
+  font-size: 20px !important;
+  color: rgba(108, 102, 105, 1);
+}
+/* footer */
+footer {
+  background-color: #233862;
+  color: white;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+}
+footer a:hover {
+  color: white;
+  text-decoration: none;
+}
+footer h5 {
+  font-weight: normal;
+  font-weight: bold;
+}
+footer section .cryt {
+  background-color: #1a2b4e;
+}
+/* footer a i {
+    color: ;
+    border: 5px solid #f2f2f2;
+    border-radius: 50%;
+  } */
+i.fad {
+  background: #f2f2f217;
+  padding: 10px;
+  border-radius: 50%;
+}
+.show {
+  display: block !important;
+}
+.collaps {
+  display: none !important;
+}
+.add {
+  display: none;
+}
+.input-icons {
+  position: absolute;
+}
+.input-icons img {
+  position: absolute;
+}
+.tag {
+  background-image: url("../icon/tag.png");
+  background-repeat: no-repeat;
+  background-position: 40px;
+}
+.tag1 {
+  background-image: none !important;
+}
+
+/* mobile */
+@media (max-width: 576px) {
+  body {
+    object-fit: cover;
+    overflow-x: hidden;
+  }
+
+  .main {
+    object-fit: cover;
+    background-image: url("../images/mobbgimg.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 95%;
+    box-shadow: none;
+    font-family: "SF PRO DISPLAY";
+    font-size: 14px !important;
+  }
+  .rounded-0 {
+    border-radius: 8px !important;
+    box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.1) !important;
+
+    border-top: 0px !important;
+  }
+
+  .content {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border-bottom: 5px;
+    border-radius: 10px !important;
+  }
+  .btn-group-lg > .btn,
+  .btn-lg {
+    font-size: 24px;
+  }
+  .h6,
+  h6 {
+    font-size: 14px;
+  }
+  h5 {
+    font-size: 14px;
+  }
+  .grhead {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 1);
+    !important;
+  }
+  .fw7{
+    font-size: 14px!important;
+  }
+  .fs14 {
+    font-size: 14px !important ;
+  }
+  .btenpx {
+    border-radius: 10px;
+    font-size: 14px;
+  }
+}
