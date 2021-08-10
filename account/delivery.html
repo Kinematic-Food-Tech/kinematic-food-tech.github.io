@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-<link rel="stylesheet" href="./css/manageadd.css">
+<link rel="stylesheet" href="./css/delivery.css">
 <link rel="stylesheet" href="./fonts/FontsFree-Net-SFProDisplay-Regular.ttf">
     <title>Hello Ritesh</title>
   </head>
@@ -53,9 +53,8 @@
       </div></div>
     </nav>
     <div class="row">
-      <ul class="nav flex-column col-md-2 col-sm-3 d-sm-flex d-none  pr-0">
-       <div class="">
-          <div class="my-5 pt-3 pr-xl-4 pl-xl-4 ">
+      <ul class="nav flex-column col-md-2 col-sm-3 d-sm-flex d-none pr-0">
+        <div class="my-5 pt-3 pr-xl-4 pl-xl-4">
           <div class="col pl-0 d-flex justify-content-center   mx-0">
             <div class="p-0   rounded-circle img-header  col-9">
               <img class="p-0  rounded-circle col-12 border  " src="https://images.vexels.com/media/users/3/129616/isolated/preview/fb517f8913bd99cd48ef00facb4a67c0-businessman-avatar-silhouette-by-vexels.png">
@@ -65,13 +64,12 @@
           </div>
           <div class="text-center mr-3 mb-2"><h5>Hello Ritesh</h5></div>
         </div>
-       </div>
           <a class="nav-link pl-4 ml-2" href="#collapseExample" data-toggle="collapse">My Profile</a>
           <ul type="none" class="mt-0 p-0 pl-1 collapse show" id="collapseExample">
             
             <li class=" nav-link activ text-center  "><a class=" nav-item  mr-xl-5 pr-xl-3 d-xl-flex justify-content-center"  href="./profile.html">Personal Details</a></li>
-            <li class="nav-link active  text-center  "><a class="mr-xl-4  active pr-xl-4 nav-item d-xl-flex justify-content-center"  href="./manageadd.html">Manage Addresses</a></li>
-            <li class="nav-link activ  text-center  "><a class=" mr-xl-3 pr-xl-1 nav-item d-xl-flex justify-content-center"  href="./delivery.html">Deliveries & Packaging</a></li>
+            <li class="nav-link activ  text-center  "><a class="mr-xl-4   pr-xl-4 nav-item d-xl-flex justify-content-center"  href="./manageadd.html">Manage Addresses</a></li>
+            <li class="nav-link active  text-center  "><a class=" mr-xl-3 active pr-xl-1 nav-item d-xl-flex justify-content-center"  href="./delivery.html">Deliveries & Packaging</a></li>
             <li class="nav-link activ  text-center "><a class="mr-xl-5 pr-xl-3 pl-xl-1 nav-item d-xl-flex justify-content-center"  href="./foodpref.html">Food Preferences</a></li>
             <li class="nav-link activ  text-center "><a class="mr-xl-3 pr-xl-3 nav-item d-xl-flex justify-content-center"  href="./managesub.html">Manage Subscription</a></li>
           </ul>
@@ -93,121 +91,150 @@
           <a class="nav-link" href="#">Sign Out</a>
         </li>
       </ul>
-    <div class="col mainc px-0 ">  <div class="main pb-sm-0 pb-5  p-xl-5 py-sm-5 py-4">
+    <div class="col mainc px-0 ">  <div class="main pb-sm-0 pb-5 p-xl-5 py-4 mb-0">
     
-     <div class="px-xl-5 mx-xl-5">
-      <div class="mx-lg-5 px-lg-5 pb-sm-0 pb-0 mb-sm-5 mb-0">
-        <div class="content bg-white mx-5 px-5  border rounded">
+     <div class="px-sm-0 mx-sm-5 pt-sm-5  mt-sm-5">
+      <div class="mx-md-5 px-sm-0 pb-sm-2 pb-0 mb-sm-5 mb-0">
+        <div class="content py-sm-2 bg-white px-sm-4 mx-5  px-3  border rounded">
           <form>
-           <div class="ml-lg-4 pl-lg-3 py-4 my-3 mx-sm-0 ">
-            <div class=" d-flex-sm-none justify-content-sm-start d-flex justify-content-center"><h5>Manage Addresses</h5></div>
-            <div class="row pt-sm-5 pt-4">
-              <div class="col-6 ">
-                    <a href="#" onclick="saveadd(this)" class="nav-link active1 d-sm-flex justify-content-sm-center px-md-auto px-0 py-sm-auto py-0 d-sm-flex d-inline-flex" id="save">
-                      <h6 class="mb-sm-3 mb-0">Saved Addresses</h6>
-                    </a>
+           <div class="ml-lg-4 pl-lg-3 py-4 my-3 mx-sm-0">
+            <div class="px-sm-4 py-2 d-flex-sm-none justify-content-sm-start d-flex justify-content-center"><h5 class=" grhead px-sm-2 pb-2 active1">Manage Deliveries</h5></div>
+            <div class="row pt-sm-1 pt-sm-4 ">
+              <div class="fs14 col-12 mx-sm-3 px-sm-3 d-flex-sm-none justify-content-sm-start d-flex justify-content-center">
+                        Select your prefered delivery time.
               </div>
-              <div class="col-6 ">
-                <a href="#" onclick="saveadd(this)" class="nav-link disabled px-0 d-sm-flex justify-content-sm-start d-flex justify-content-end py-sm-auto py-0 d-sm-flex d-inline-flex" id="add">
-                  <h6 class="mb-sm-3 mb-0"> Add New Address</h6>
-                </a>
-              </div>
-            </div>
-            <div class="save">
-              <div class="row pt-sm-5 pt-2 ">
-                <div class="col-md-6 col-12 pt-sm-4 pt-2" id="delete1">   
-                  <div class="row">
-                    <div class="col-sm-10 col-9">
-                      <h6  class="font-weight-bold mb-sm-1 mb-0 pt-sm-0 pt-3" ><input id="save1" class="border-0" type="text" value="Chaitali Das"></h6>
-                    </div>
-                    <div class="col-sm-2 col-3">
+            
+              <div class="col-xl-4 mt-xl-5 mt-4">
+                <h5 class="fw5 pl-2">BREAKFAST</h5>
+                    <a href="#q" onclick="selec(this)" class="col-12 b10r p-2 mb-sm-3 mb-2 btn-warning" type="button">
                       <div class="row">
-                        <div class="col-6 px-sm-0 text-center">
-                       <a href="#save1"> <h6 class="m-sm-auto m-0 pt-sm-0 pt-3"><img src="./icon/edit.png" alt=""></h6></a>
-                      </div>
-                      <div class="col-6 px-sm-0">
-                     <a href="#delete1" onclick="deletead(this)">   <h6 class="m-sm-auto m-0 pt-sm-0 pt-3"><img src="./icon/delete.png" alt=""></h6></a>
-                      </div>
-                    </div>
-                    </div>
-                    <div class="col-12"><h6 class="mb-sm-1 mb-0"><input class="border-0" type="text" value="Home"></h6></div>
-                    <div class="col-12"><h6 class="mb-sm-1 mb-0"><input class="border-0" type="text" value="18, Riveria Heights,"> </h6></div>
-                    <div class="col-12"><h6 class="mb-sm-1 mb-0"><input class="border-0" type="text" value="Koramangala, 6th Block"></h6></div>
-                    <div class="col-12"><h6 class="mb-sm-1 mb-0"><input class="border-0" type="text" value="Bangalore, Karnataka "></h6></div>
-                    <div class="col-12"><h6 class="mb-sm-1 mb-0"><input class="border-0" type="text" value="560012 "></h6></div>
-                    
-                    <div class="col-12  py-2 d-md-none"><button type="button" class="border-0 btn btn-warning btn-lg col-12"><h6 class="m-0">Deliver to this address</h6></button></div>
-                  </div>
-                  
-                </div>
-              
-                <div class="col-md-6 col-12 pt-sm-4 pt-2" id="delete2">   
-                  <div class="row">
-                    <div class="col-sm-10 col-9">
-                      <h6 class="font-weight-bold mb-sm-1 mb-0 pt-sm-0 pt-3" ><input id="save2" class="border-0" type="text" value="Chaitali Das"></h6>
-                    </div>
-                    <div class="col-sm-2 col-3">
-                      <div class="row">
-                        <div class="col-6 px-sm-0 text-center">
-                       <a href="#save2"> <h6 class="m-sm-auto m-0 pt-sm-0 pt-3"><img src="./icon/edit.png" alt=""></h6></a>
-                      </div>
-                      <div class="col-6 px-sm-0">
-                     <a href="#delete2" onclick="deletead(this)">   <h6 class="m-sm-auto m-0 pt-sm-0 pt-3"><img src="./icon/delete.png" alt=""></h6></a>
-                      </div>
-                    </div>
-                    </div>
-                    <div class="col-12"><h6 class="mb-sm-1 mb-0"><input class="border-0" type="text" value="Office"></h6></div>
-                    <div class="col-12"><h6 class="mb-sm-1 mb-0"><input class="border-0" type="text" value="#216,/A, TVS front gate"></h6></div>
-                    <div class="col-12"><h6 class="mb-sm-1 mb-0"><input class="border-0" type="text" value="Bangalore"></h6></div>
-                    <div class="col-12"><h6 class="mb-sm-1 mb-0"><input class="border-0" type="text" value="560012"> </h6></div>
+                        <div class="col-sm-12 col-3">Standard</div>
+                      <div class=" col">
                    
-                    
-                    <div class="col-12  py-2 d-md-none"><button type="button" class="border-0 btn btn-warning btn-lg col-12"><h6 class="m-0">Deliver to this address</h6></button></div>
-                  </div>
-                 
-                </div>
-               
-           
-              </div>
-              <div class="row">
-                <div id="delete1b" class="col-6 py-2 d-md-block d-none"><button type="button" class="btn btn-warning btn-lg col-12"><h6 class="m-0">Deliver to this address</h6></button></div>
-                <div id="delete2b" class="col-6 py-2 d-md-block d-none"><button type="button" class="btn btn-warning btn-lg col-12"><h6 class="m-0">Deliver to this address</h6></button></div>
-              </div>
-            </div>
-           <div class="px-sm-5">
-            <div id="add1" class=" pt-5 add">
-              <form >
-                <label id="addid" for="address1">Address 1</label>
-                <div class="form-group"> 
-                  <input type="text" class="form-control" id="flat/house"  placeholder="Flat/House No">
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" id="locality" placeholder="Locality">
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" id="buildingname" placeholder="Building Name">
-                </div>
-                <div class="form-group">
-                  <input type="number" class="form-control" id="pincode" placeholder="Pincode">
-                </div>
-                <div class="form-group text-right">
-                  <label for="locateme">Locate Me <a href="#"><img src="./icon/locateme.png" alt=""></a></label>
-                
-                </div>
-                <div class="form-group">
+                        <div class="row">  <div class="col">07:00  am-08:30 am </div>
+                        <div class="col-sm-4 col-4 text-right">Free</div></div></div>
+                      </div>
+                     
+                                            </a>
+                    <a href="#q" onclick="selec(this)" class="col-12 b10r p-2  btn-warning" type="button">
+                      <div class="row">
+                        <div class="col-sm-12 col-3">Scheduled</div>
+                      <div class=" col">
+                   
+                        <div class="row">  <div class="col">09:00 am-10:30 am </div>
+                        <div class="col-sm-5 col-4 text-right">₹30/Meal</div></div></div>
+                      </div>
+                     
+                                            </a>
 
-                <input type="text" onfocus="rembg(this)" onblur="rembg1(this)"  class="form-control mr-5 tag" id="tag" value="Tag">
-               </div>
-               <div class="form-group">
-                <button type="button" class="border-0 btn btn-warning btn-lg col-12"><h6 class="m-0">Add Address</h6></button>
-               </div>
-               <div id="add2"></div>
-              </form>
-              <div class="form-group row justify-content-center text-center pt-4">
-                <a href="#add" onclick="addmore(this)" class="ablue">Add More +</a>
-              </div>
             </div>
+              <div class="col-xl-4 mt-xl-5 mt-4">
+                <h5 class="fw5 pl-2">LUNCH</h5>
+                    <a href="#q" onclick="selec(this)" class="col-12 b10r p-2 mb-sm-3 mb-2 btn-warning" type="button">
+                      <div class="row">
+                        <div class="col-sm-12 col-3">Standard</div>
+                      <div class=" col">
+                   
+                        <div class="row">  <div class="col">11:00  am- 1:30 pm  </div>
+                        <div class="col-sm-4 col-4 text-right">Free</div></div></div>
+                      </div>
+                     
+                                            </a>
+                    <a href="#q" onclick="selec(this)" class="col-12 b10r p-2  btn-warning" type="button">
+                      <div class="row">
+                        <div class="col-sm-12 col-3">Scheduled</div>
+                      <div class=" col">
+                   
+                        <div class="row">  <div class="col">12:00 pm- 2:30 pm  </div>
+                        <div class="col-sm-5 col-4 text-right">₹30/Meal</div></div></div>
+                      </div>
+                     
+                                            </a>
+
+            </div>
+            <div class="col-xl-4 mt-xl-5 mt-4">
+              <h5 class="fw5 pl-2">DINNER</h5>
+                  <a href="#q" onclick="selec(this)" class="col-12 b10r p-2 mb-sm-3 mb-2 btn-warning" type="button">
+                    <div class="row">
+                      <div class="col-sm-12 col-3">Standard</div>
+                    <div class=" col">
+                 
+                      <div class="row">  <div class="col">6:00 pm- 8:00 pm </div>
+                      <div class="col-sm-4 col-4 text-right">Free</div></div></div>
+                    </div>
+                   
+                                          </a>
+                  <a href="#q" onclick="selec(this)" class="col-12 b10r p-2  btn-warning" type="button">
+                    <div class="row">
+                      <div class="col-sm-12 col-3">Scheduled</div>
+                    <div class=" col">
+                 
+                      <div class="row">  <div class="col">7:00 pm- 9:30 pm  </div>
+                      <div class="col-sm-5 col-4 text-right">₹30/Meal</div></div></div>
+                    </div>
+                   
+                                          </a>
+
+          </div>
+      
+            </div>
+        
+         
+            
+            <div class="row pt-sm-5 pt-4 pb-sm-0 pb-3"><button type="button" class="btn btenpx btn-primary btn-lg mx-auto px-5">Save</button></div>
            </div>
+            
+            
+          </form>
+        </div>
+      </div>
+     </div>
+
+     <div class="px-sm-0 mx-sm-5 pb-sm-5 mb-sm-5 mt-3">
+      <div class="mx-sm-5 px-sm-0 pb-sm-2 pb-0 mb-sm-5 mb-0">
+        <div class="content py-sm-2 bg-white px-sm-4 mx-5  px-3  border rounded">
+          <form>
+           <div class="my-sm-4 mx-1 py-sm-2 pt-3">
+            <div class="grhead px-sm-4 py-2 d-flex-sm-none justify-content-sm-start d-flex justify-content-center"><h5 class="px-sm-2 pb-2 active1">Manage Packaging</h5></div>
+            <div class="row pt-sm-1 pt-sm-4 ">
+              <div class="col-12 mx-sm-3 mb-4 px-sm-3 d-flex-sm-none justify-content-sm-start d-flex justify-content-center">
+                Select your packaging type.
+              </div>
+         
+        
+        <div class="col-12">
+          <div class="row mt-xl-4 mx-1">
+
+<div class="col-xl-4 col-12 px-xl-0 px-sm-2 px-0">
+  <a href="#q" onclick="selec1(this)" class=" col-12  b10r mx-sm-0     py-2 mb-sm-3 mb-2  btn-warning" type="button">
+    <div class="row">
+      <div class="col-sm-7 col-8 ">Single use pack</div>
+
+      <div class="col-sm-5 col-4 text-right">Free</div></div>
+                          </a>
+</div>
+                          <div class="col-xl-4 col-12 px-sm-2 px-0">
+                            <a href="#q" onclick="selec1(this)" class=" col-12 b10r mx-sm-0  py-2 mb-sm-3 mb-2  btn-warning" type="button">
+                              <div class="row">
+                                <div class="col-sm-7 col-8 ">Eco-Friendly pack</div>
+                         
+                                <div class="col-sm-5 col-4 text-right">₹25/Meal</div></div>
+                                                    </a>
+                          </div>
+          
+                                   <div class="col-xl-4 col-12 px-xl-0 px-sm-2 px-0">
+                                    <a href="#q" onclick="selec1(this)" class=" b10r col-12  mx-sm-0 py-2 mb-sm-3 mb-2  btn-warning" type="button">
+                                      <div class="row">
+                                        <div class="col-sm-7 col-8 ">Resuable Pack</div>
+                                 
+                                        <div class="col-sm-5 col-4 text-right">₹20/Meal</div></div>
+                                                            </a>
+                                   </div>
+    </div>
+        </div>
+            </div>
+        
+         
             
             <div class="row pt-sm-5 pt-4 pb-sm-0 pb-3"><button type="button" class="btn btenpx btn-primary btn-lg mx-auto px-5">Save</button></div>
            </div>
@@ -281,6 +308,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/e8dd7f2a6b.js" crossorigin="anonymous"></script>
-    <script src="./js/manageadd.js"></script>
+    <script src="./js/delivery.js"></script>
   </body>
 </html>
